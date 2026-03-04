@@ -1,41 +1,133 @@
-# INFO5995 Assignment Workspace
+# INFO5995 Assignment 1：你需要做什么
 
-This repository is the working space for **INFO5995 Assignment** (Tutorial 15, Group 1).
+> 作业主题：**AI-Assisted Cryptographic Vulnerability Discovery**  
+> 占比：**20%**（总分 15 分）  
+> 形式：**小组作业**（优先 5 人；6 人仅在组内至少 1 名 non-technical 时允许）
 
-## Purpose
+---
 
-Use this repo to collaborate on the assignment deliverables, including:
+## 一、作业核心目标（老师要看什么）
 
-- APK reverse engineering notes
-- Threat model and system model drafts
-- Vulnerability analysis and evidence
-- AI usage logs
-- PoC materials and presentation assets
+你们要分析一个给定 APK（Android 安装包），完成一条完整安全分析链路：
 
-## Suggested Structure
+1. 反编译 APK 并搭建分析流程
+2. 理解 App 行为并建一个简化系统模型
+3. 找到至少 1 个漏洞（重点提示：**安全敏感随机数/密码学相关用法**）
+4. 解释漏洞原理、攻击者能力和攻击路径
+5. 写成规范报告 + AI 日志 + 演示视频
 
-```text
-report/
-ai-log/
-pocs/
-presentation/
-scripts/
-notes/
-```
+---
 
-## Assignment Summary (from Obsidian)
+## 二、你必须交的文件（Submission Package）
 
-Reference document prepared in Obsidian:
+1. `report.pdf`  
+   - **必须用 USENIX 官方模板（LaTeX 或 Word）**
+   - **最多 2 页（包含图和参考文献）**
 
-- `INFO5995-Assignment1-任务总结.md`
-- Local path: `/Users/joey/blog/source/_posts/课程/INFO5995/INFO5995-Assignment1-任务总结.md`
+2. `ai-log/`  
+   - 记录 AI 使用日志（可用总结，不要求全量逐字）
+   - 包含工具/文档引用
+   - 包含至少一次“基于 rubric 的 LLM 模拟问答”记录
 
-This file contains:
-- Task-by-task breakdown (Task 1–5)
-- Submission package checklist
-- Penalty rules (page/time limits)
-- Recommended execution order
+3. `pocs/`  
+   - 漏洞 PoC 视频 + README
 
-## Team Note
+4. `presentation.mp4`  
+   - **最多 5 分钟**
 
-All group members should commit regularly and keep changes clear with descriptive commit messages.
+5. 其他支持材料（脚本、配置等）
+
+---
+
+## 三、分任务拆解（按老师原始 Task 1~5）
+
+## Task 1：反编译 APK
+
+你要完成：
+- 用自己的话解释：什么是 APK，为什么审计要先反编译
+- 使用 AI 帮你选/配工具（如 `jadx`, `apktool`），保留至少一段 step-by-step AI 交互记录
+- 反编译后确认你能定位：
+  - package name
+  - main activity
+  - manifest
+  - 至少 1 个登录/注册相关 class
+- 放 1 张相关代码截图（如登录逻辑）
+
+## Task 2：理解 App + 建模
+
+你要完成：
+- 最好在模拟器/真机跑起来（注册、登录、登出）；跑不起来可用 tutor demo + 静态分析
+- 用 3~5 句总结 app 目的和主要功能
+- 画一个简化系统模型图：
+  - 组件（UI/存储/外部服务）
+  - 关键资产（凭证/token）
+  - 数据流
+- 写清核心假设和攻击目标
+
+## Task 3：至少找到 1 个漏洞（重点：随机数/密码学）
+
+你要完成：
+- 静态分析定位所有“random/code/token”等值
+- 每个点记录：
+  - class/method
+  - 生成 API/helper
+  - 安全角色（UI-only / identifier / token / key）
+- 判断哪些生成方式不适合安全用途（可用 AI 辅助）
+- 选 1 个安全相关弱点作为主漏洞
+
+## Task 4：解释漏洞 + 威胁模型
+
+你要完成：
+- 解释值在哪里生成、为什么方法不安全
+- 写攻击者模型（如网络监听者、恶意 app、root 用户）
+- 写一个短攻击路径（步骤化）
+
+## Task 5：成文与展示
+
+报告 2 页内必须覆盖：
+- 引言（目标 + 为什么 APK 分析）
+- 系统/威胁模型
+- 漏洞发现过程（含工具与 AI 使用）
+- 漏洞细节（代码位置、风险、利用路径）
+- 修复方案与有效性说明
+
+同时：
+- 做 rubric 驱动 LLM 彩排问答并记录在 AI log
+- 录一个 ≤5 分钟演示视频
+
+---
+
+## 四、扣分雷区（非常重要）
+
+1. **报告超过 2 页 或 未使用官方 USENIX 模板**  
+   → 扣 **3 分（/15）**
+
+2. **演示超过 5 分钟**  
+   → 每超 10 秒扣 **1 分（/15）**
+
+---
+
+## 五、建议你的执行顺序（可直接照做）
+
+1. 组队并明确每人负责模块（工具/建模/漏洞/写作/视频）
+2. 当天先完成反编译和代码定位（Task 1）
+3. 次日完成系统图与威胁模型（Task 2 + 4）
+4. 用“随机数与 token 生成点”做主线挖漏洞（Task 3）
+5. 先写 2 页报告骨架，再填证据
+6. 做一次 LLM rubric rehearsal，修正薄弱点
+7. 录 ≤5 分钟视频并压时长
+
+---
+
+## 六、你现在立刻该做的 3 件事
+
+1. 确认小组成员与分工（谁负责逆向、谁负责报告、谁负责演示）
+2. 把 APK 用 `jadx` / `apktool` 跑通并截图关键类
+3. 建一个漏洞证据表（class/method/API/安全角色/风险）
+
+---
+
+## 参考（作业要求中给出的模板）
+
+- USENIX paper template:  
+  https://www.usenix.org/conferences/author-resources/paper-templates
