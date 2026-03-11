@@ -8,7 +8,18 @@
 
 ---
 
-## 一、作业目标
+
+## 一、文档说明
+
+本文件依据以下课程材料整理而成：
+- `assignment1-spec.pdf`
+- `assignment1-rubric-2.pdf`
+
+本文件的作用是为小组成员提供结构化执行参考，便于统一理解作业要求、评分重点、交付物与罚分规则。若本文件与课程官方 PDF 存在差异，应以课程官方文件为准。
+
+---
+
+## 二、作业目标
 
 Assignment 1 要求团队对课程提供的 Android APK 进行分析，并完成一条完整的 AI-assisted security analysis workflow。重点不在于 Android 开发背景，而在于是否能够在陌生平台上：
 
@@ -20,7 +31,7 @@ Assignment 1 要求团队对课程提供的 Android APK 进行分析，并完成
 
 ---
 
-## 二、作业总体结构
+## 三、作业总体结构
 
 | Task | 内容 | 目标 |
 |---|---|---|
@@ -32,7 +43,7 @@ Assignment 1 要求团队对课程提供的 Android APK 进行分析，并完成
 
 ---
 
-## 三、Task 1：Unpack and Decompile the APK
+## 四、Task 1：Unpack and Decompile the APK
 
 ### 要求
 
@@ -53,7 +64,7 @@ Assignment 1 要求团队对课程提供的 Android APK 进行分析，并完成
 
 ---
 
-## 四、Task 2：Understand the App and Build a Simple Model
+## 五、Task 2：Understand the App and Build a Simple Model
 
 ### 要求
 
@@ -74,7 +85,7 @@ Assignment 1 要求团队对课程提供的 Android APK 进行分析，并完成
 
 ---
 
-## 五、Task 3：Find at Least One Vulnerability
+## 六、Task 3：Find at Least One Vulnerability
 
 > 重点提示：**Randomness and Crypto**
 
@@ -98,7 +109,7 @@ Assignment 1 要求团队对课程提供的 Android APK 进行分析，并完成
 
 ---
 
-## 六、Task 4：Explain What Went Wrong and the Threat Model
+## 七、Task 4：Explain What Went Wrong and the Threat Model
 
 ### 要求
 
@@ -118,7 +129,7 @@ Assignment 1 要求团队对课程提供的 Android APK 进行分析，并完成
 
 ---
 
-## 七、Task 5：Write Up Your Findings
+## 八、Task 5：Write Up Your Findings
 
 ### 报告要求
 
@@ -148,7 +159,7 @@ Assignment 1 要求团队对课程提供的 Android APK 进行分析，并完成
 
 ---
 
-## 八、Submission Package
+## 九、Submission Package
 
 | 文件/目录 | 说明 |
 |---|---|
@@ -160,7 +171,7 @@ Assignment 1 要求团队对课程提供的 Android APK 进行分析，并完成
 
 ---
 
-## 九、Tutorial 与罚分规则
+## 十、Tutorial 与罚分规则
 
 | 项目 | 规则 |
 |---|---|
@@ -178,7 +189,7 @@ Assignment 1 要求团队对课程提供的 Android APK 进行分析，并完成
 
 ---
 
-## 十、建议执行顺序
+## 十一、建议执行顺序
 
 | 阶段 | 建议任务 | 建议产出 |
 |---|---|---|
@@ -192,7 +203,7 @@ Assignment 1 要求团队对课程提供的 Android APK 进行分析，并完成
 
 ---
 
-## 十一、总结
+## 十二、总结
 
 Assignment 1 的评分重点在于：
 - 是否形成完整分析链路；
@@ -204,7 +215,7 @@ Assignment 1 的评分重点在于：
 
 ---
 
-## 十二、Assignment 1 Rubric（补充整理）
+## 十三、Assignment 1 Rubric（补充整理）
 
 ### 评分结构
 
@@ -245,3 +256,14 @@ Assignment 1 的评分重点在于：
 - `assignment1-rubric-2.pdf` 对应的评分项证据
 - `activity-log.pdf` 的 N×N contribution matrix
 - 一份能在 5 分钟内完成且每名成员均满足 40 秒发言要求的 presentation
+
+
+---
+
+## 十四、当前阶段建议
+
+由于当前小组工作重点为 Assignment 1，建议团队优先完成以下内容：
+- `a1_case1.apk` 的反编译与代码定位；
+- 按 rubric 准备系统模型、漏洞证据、修复方案；
+- 完成 `activity-log.pdf` 的 N×N contribution matrix；
+- 录制一份满足时长要求且每位成员发言时间合规的 presentation。

@@ -17,6 +17,41 @@
 
 ## 一、作业定位与评分导向
 
+---
+
+## 二、Assignment 2 Spec 补充说明（基于 `assignment2-spec-2.pdf`）
+
+### 1）Assignment 2 的两部分结构
+
+| 部分 | 说明 | 分值 |
+|---|---|---:|
+| Part A | 对提供的 Android APK 进行网络安全分析 | 10 |
+| Part B | 在合法 bug bounty 项目中进行 in-the-wild hunting | 15 |
+
+### 2）Part A 的重点变化（Modified 11 Mar）
+
+| 项目 | 说明 |
+|---|---|
+| Part A 评分材料 | tutors 仅根据 **提交的 Part A 材料** 评分，尤其是 recorded Part A video 与 supporting materials |
+| Part A tutorial 形式 | **没有 Part A tutorial interaction，也没有单独 Part A Q&A** |
+| Part A 漏洞范围 | 仅评分 **insecure network transport / TLS configuration issue**，例如 cleartext traffic 或 certificate / hostname validation 问题 |
+| Part A 视频 | 需提交 `parta-presentation.mp4`，且 ≤ 5 分钟 |
+
+### 3）Part B 的要求
+
+| 项目 | 说明 |
+|---|---|
+| 提交方式 | Part B **没有单独 written report** |
+| 评分依据 | 通过 **presentation + Q&A** 评分 |
+| finding 数量 | 只提交 **exactly one**：最高影响力 valid finding |
+| finding 类型 | Type 1 = confirmed non-zero-day；Type 2 = zero-day candidate |
+
+### 4）Part B 合法目标来源
+- 合法 bug bounty 平台；
+- 或课程明确允许的 company-run programs；
+- 其他 company-run target 需提前取得书面批准。
+
+
 Assignment 2 包含 **Part A（系统与网络安全分析）** 与 **Part B（真实世界漏洞发现与影响论证）** 两部分。评分强调团队是否能够：
 
 1. 建立正确的系统与威胁模型；

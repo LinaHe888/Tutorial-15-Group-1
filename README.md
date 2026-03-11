@@ -64,3 +64,41 @@
 - `assignment2-rubric-1.pdf`
 - `README_1.md`
 - `README_2.md`
+
+
+---
+
+## 文档适用范围
+
+本仓库文档主要服务于以下用途：
+- 小组内部协作与材料归档；
+- 根据课程说明与 rubric 对任务进行拆解；
+- 在提交前完成统一的格式、时长与材料完整性检查。
+
+本仓库中的中文说明文件属于对课程原始文档的结构化整理，实际评分仍应以课程官方发布的 PDF 文件为准。
+
+---
+
+## 当前执行重点（建议）
+
+鉴于当前时间节点，建议团队优先完成以下事项：
+
+1. 完成 `a1_case1.apk` 的反编译与关键类定位；
+2. 根据 `assignment1-rubric-2.pdf` 整理 Assignment 1 的评分证据；
+3. 准备 `report.pdf`、`presentation.mp4`、`ai-log/`、`pocs/` 与 `activity-log.pdf`；
+4. 检查 presentation 总时长与每位成员发言时长是否满足要求；
+5. 采用 N×N contribution matrix 形式准备活动记录。
+
+---
+
+## 提交前检查清单
+
+| 检查项 | Assignment 1 | Assignment 2 |
+|---|---|---|
+| 是否使用官方模板 | 必须 | Part A 必须 |
+| 是否控制在规定页数内 | 必须 | Part A 必须 |
+| 是否准备完整 required items | 必须 | 必须 |
+| presentation 是否超时 | 必须检查 | 必须检查 |
+| 每位成员是否达到最少发言时长 | 必须检查 | 必须检查 |
+| activity-log 是否齐全 | 必须 | 必须 |
+| 证据是否可支撑 Q&A | 必须 | 必须 |
