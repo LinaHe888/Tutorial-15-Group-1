@@ -177,171 +177,171 @@
 - **D1**：反编译跑通 + 关键类定位 + 候选漏洞池
 - **D2**：系统模型图 + 威胁模型 + 锁定主漏洞
 - **D3**：报告初稿（2页内）+ AI log + mock Q&A
-- **D4**：视频录制 + 全组答辩彩排 + 最终提交检查
----
+- **D4**：视频录制 + 全组答辩彩排 + 最终提交检查---
 
-# INFO5995 Assignment 2：评分标准与交付要求（中文精排版完整版）
+# INFO5995 Assignment 2：评分标准与交付要求（中文正式版）
 
 > 作业主题：**AI-Assisted Network Security Analysis & Bug Bounty Exploration**  
 > 总分：**25 分**  
-> 评分核心：**以团队提交的单个最高影响力、有效、真实世界（in-the-wild）漏洞为主**  
-> 最高优先级：**有充分证据支撑的 zero-day candidate**
+> 评分核心：**以团队提交的单个最高影响力、有效、真实世界（in-the-wild）漏洞为主要评价依据**  
+> 最高优先级：**具备充分证据支撑的 zero-day candidate**
 
 ---
 
-## 一、先看结论：Assignment 2 到底怎么拿分
+## 一、作业定位与评分导向
 
-### 核心结论
+Assignment 2 由 **Part A（系统与网络安全分析）** 与 **Part B（真实世界漏洞发现与论证）** 两部分构成。整体评分强调团队对真实安全问题的分析能力、证据组织能力、影响论证能力，以及对合法漏洞披露边界的理解。
 
-| 项目 | 你需要理解的重点 |
+本作业的主要评分依据不是材料数量，而是团队是否能够围绕一个**有效、可验证、影响明确的高质量 finding**，形成完整、合规、证据充分的技术论证。
+
+### 总体理解
+
+| 项目 | 说明 |
 |---|---|
-| Part A | 证明你会做**系统化网络安全分析**：系统模型、漏洞、影响、修复 |
-| Part B | 证明你能找到**真实世界、合法、可验证、尽量高影响**的漏洞 |
-| 评分重心 | 主要看 **单个最高影响力 finding**，不是看你写了多少字 |
-| 冲高分关键 | **zero-day candidate + 强证据 + 清楚 impact + 合法 scope** |
-| 致命风险 | 没有有效 in-the-wild finding 时，**总分最高只能 15/25** |
+| Part A | 用于展示团队对目标系统、威胁模型、网络弱点、影响与修复方案的系统化分析能力 |
+| Part B | 用于展示团队在真实漏洞奖励项目或指定公司项目中识别、验证并论证真实世界漏洞的能力 |
+| 评分重点 | 团队提交的**单个最高影响力 valid in-the-wild finding** |
+| 高分关键 | 合法 scope、强证据、清晰影响链、明确严重性映射、具备充分支撑的 zero-day candidate |
+| 重要限制 | 若未提交有效的 in-the-wild finding，则 **Assignment 2 总分最高为 15/25** |
 
 ---
 
-## 二、Assignment 2 整体结构
+## 二、Assignment 2 评分结构总览
 
-| 部分 | 内容 | 分值 | 老师看什么 |
+| 部分 | 内容 | 分值 | 评价重点 |
 |---|---:|---:|---|
-| Part A | System & Threat Model | 3 | 模型是否清楚、攻击者是否合理、资产与 trust boundary 是否讲明白 |
-| Part A | Vulnerability Discovery & Impact Reasoning | 5 | 是否找对主要网络弱点，证据是否充分，影响分析是否可信 |
-| Part A | Mitigation | 2 | 修复是否解决根因，是否真的降低风险 |
-| Part B | In-the-Wild Finding Quality & Scope Handling | 2 | finding 是否真实、合法、在 scope 内、可复现 |
-| Part B | Highest-Impact Finding (Zero-Day Prioritised) | 10 | 严重性、影响证据、新颖性（zero-day 优先） |
-| Presentation | Recorded Presentation & Q&A | 3 | 讲解是否清楚，Q&A 是否有证据支撑 |
+| Part A | System & Threat Model | 3 | 系统模型是否准确，攻击者能力、受保护资产与信任边界是否表述清晰 |
+| Part A | Vulnerability Discovery & Impact Reasoning | 5 | 是否识别正确的主要网络安全弱点，并给出充分证据与可信影响分析 |
+| Part A | Mitigation | 2 | 修复方案是否技术正确、针对根因、能够降低风险 |
+| Part B | In-the-Wild Finding Quality & Scope Handling | 2 | finding 是否真实、合法、在 scope 内，并具备可复现性 |
+| Part B | Highest-Impact Finding (Zero-Day Prioritised) | 10 | 严重性、影响证据与新颖性（zero-day 优先） |
+| Presentation | Recorded Presentation & Q&A | 3 | 演示是否清晰、完整，Q&A 是否基于证据、回答有说服力 |
 | **总计** |  | **25** |  |
 
 ---
 
-## 三、Part A 评分细则（逐项看懂）
+## 三、Part A 评分标准
 
 ## 1）System & Threat Model（3 分）
 
-| 档位 | 分数 | 标准 |
+| 等级 | 分数 | 要求 |
 |---|---:|---|
-| Exceeds Expectations | 3 | app / network model 清晰；攻击者模型现实；攻击者能力与资产、信任边界明确关联；能从 Part A report 中直接看到证据 |
-| Meets Expectations | 2 | 模型基本正确，但攻击者能力、资产或 trust boundary 之间仍有小缺口 |
-| Developing | 1 | 只做出部分模型；攻击者描述模糊；与资产关联弱 |
-| Incomplete | 0 | 缺失或整体错误 |
+| Exceeds Expectations | 3 | 系统模型与网络模型清晰；攻击者能力现实且合理；攻击者能力与受保护资产、信任边界之间的关系明确；相关论证可在 Part A 报告中直接获得证据支持 |
+| Meets Expectations | 2 | 模型整体正确，但在攻击者能力描述、资产关联或边界说明上仍存在轻微缺口 |
+| Developing | 1 | 仅形成部分模型；攻击者描述较为模糊；与资产、边界之间的联系不充分 |
+| Incomplete | 0 | 模型缺失，或核心内容明显错误 |
 
-### 老师想看到的内容
-- app / network components 是什么
-- 谁是 attacker
-- attacker 能做到什么
-- 资产是什么（token、session、credential、敏感数据等）
-- 信任边界在哪里
-- 哪些数据跨边界流动
+### 建议在本部分明确呈现的内容
+- 系统中的主要组件与网络交互对象
+- 攻击者类型及其可行能力
+- 关键资产（例如凭证、token、敏感数据、会话信息等）
+- 信任边界与跨边界数据流
+- 攻击目标与安全假设
 
 ---
 
 ## 2）Vulnerability Discovery & Impact Reasoning（5 分）
 
-| 档位 | 分数 | 标准 |
+| 等级 | 分数 | 要求 |
 |---|---:|---|
-| Exceeds Expectations | 5 | 找到了**正确的主要网络弱点**；代码/配置/行为证据强；impact reasoning 清楚、可信、完整 |
-| Meets Expectations | 3–4 | 问题基本找对；证据较合理；影响分析大体可信 |
-| Developing | 1–2 | 只发现了部分问题，或是次要问题；影响分析偏猜测 |
-| Incomplete | 0 | 漏洞 claim 无效 |
+| Exceeds Expectations | 5 | 正确识别主要网络弱点；具有充分的代码、配置、行为或流量证据；影响分析完整、可信、逻辑严密 |
+| Meets Expectations | 3–4 | 识别结果基本正确；证据较为合理；影响分析总体可信，但论证深度略有不足 |
+| Developing | 1–2 | 仅识别部分问题或识别到次要问题；影响分析较弱或存在较强推测成分 |
+| Incomplete | 0 | 漏洞结论无效，或无法成立 |
 
-### 老师最在意的证据
-- 配置错误（如证书校验、明文传输、弱 TLS 配置等）
-- 代码证据（请求层、验证逻辑、异常处理）
-- 抓包/行为证据
-- 影响链条是否完整：**弱点 → 可利用条件 → 后果**
+### 本部分建议提供的证据类型
+- 代码证据（网络请求逻辑、校验逻辑、异常处理逻辑等）
+- 配置证据（如 TLS、证书校验、明文通信配置）
+- 运行行为证据（测试行为、抓包结果、可观测现象）
+- 从漏洞到后果的完整逻辑链条：**弱点 → 可利用条件 → 受影响资产 → 现实后果**
 
 ---
 
 ## 3）Mitigation（2 分）
 
-| 档位 | 分数 | 标准 |
+| 等级 | 分数 | 要求 |
 |---|---:|---|
-| Exceeds Expectations | 2 | 修复方案具体、技术上正确、能解决 root cause，并解释为什么风险下降 |
-| Meets Expectations | 1.5 | 修复大体正确，但仍有小缺口 |
-| Developing | 0.5–1 | 修复模糊、片面，或没针对根因 |
-| Incomplete | 0 | 修复无效或没写 |
+| Exceeds Expectations | 2 | 修复方案具体、技术正确、能够解决根因，并明确说明为何该方案能有效降低风险 |
+| Meets Expectations | 1.5 | 修复方向总体正确，但在完整性或细节上存在轻微不足 |
+| Developing | 0.5–1 | 修复表述较为笼统，或仅覆盖部分问题，或未有效针对根因 |
+| Incomplete | 0 | 修复方案无效，或未提供 |
 
-### 好 mitigation 应该长这样
-- 不是“加强安全性”这种口号
-- 要写**改什么、在哪改、为什么有效**
-- 最好能说明残余风险是否仍存在
+### 高质量 mitigation 的基本特征
+- 明确说明应修改的实现位置与机制
+- 针对 root cause，而非仅处理表面症状
+- 能解释风险如何被降低，以及是否存在残余风险
 
 ---
 
-## 四、Part B 评分细则（这是高分关键）
+## 四、Part B 评分标准
 
 ## 4）In-the-Wild Finding Quality & Scope Handling（2 分）
 
-| 档位 | 分数 | 标准 |
+| 等级 | 分数 | 要求 |
 |---|---:|---|
-| Exceeds Expectations | 2 | finding 来自合法 bug bounty 或作业允许的公司项目；包含 target URL、scope evidence、legal boundaries、repro steps、finding type classification |
-| Meets Expectations | 1.5 | finding 基本有效、基本在 scope 内，但 scope proof / reproducibility / classification 有一项不够完整 |
-| Developing | 0.5–1 | 证据不够，scope 不清，复现或分类细节弱 |
-| Incomplete | 0 | out-of-scope、不可验证、无效 finding、或来自未批准项目 |
+| Exceeds Expectations | 2 | finding 来自合法 bug bounty 项目，或作业明确允许的公司自营项目；提交材料包含 target URL、scope evidence、legal boundaries、reproducible steps 以及 finding-type classification |
+| Meets Expectations | 1.5 | finding 基本有效且基本在 scope 内，但在 scope proof、复现细节或 finding classification 中存在一项不完整 |
+| Developing | 0.5–1 | 证据较弱；scope 控制不清晰；复现或分类说明不充分 |
+| Incomplete | 0 | finding 无效、不可验证、超出 scope、来源不合法，或来自未经批准的公司项目 |
 
-### 允许的 company-run program（作业明确列出）
+### 作业明确允许的 company-run programs
 
-| 已明确允许 | 备注 |
+| 项目 | 说明 |
 |---|---|
-| Google | 合法 program 内 |
-| Meta | 合法 program 内 |
-| Microsoft | 合法 program 内 |
-| Apple | 合法 program 内 |
-| GitHub | 合法 program 内 |
-| OpenClaw | 合法 program 内 |
-| Anthropic | 合法 program 内 |
-| OpenAI | 合法 program 内 |
+| Google | 明确允许 |
+| Meta | 明确允许 |
+| Microsoft | 明确允许 |
+| Apple | 明确允许 |
+| GitHub | 明确允许 |
+| OpenClaw | 明确允许 |
+| Anthropic | 明确允许 |
+| OpenAI | 明确允许 |
 
-### 重要限制
-- 如果目标不是合法 bug bounty program，也不在上表里：
-  - **必须先拿到 unit coordinator 的书面批准**
-- 否则可能直接 **0 分**
+### 合规限制说明
+- 若 finding 不来自合法 bug bounty 项目，且目标也不在上述公司名单中，必须事先取得 **unit coordinator 的书面批准**。
+- 未满足该条件的 finding，可能在本项中直接记为 **0 分**。
 
 ---
 
-## 5）Highest-Impact Finding（10 分，zero-day 优先）
+## 5）Highest-Impact Finding（10 分，Zero-Day Prioritised）
 
-| 档位 | 分数 | 标准 |
+| 等级 | 分数 | 要求 |
 |---|---:|---|
-| 顶档 | 9–10 | normalized severity = **S4 Critical**；impact evidence 很强；severity mapping 清晰；novelty evidence 强，足以支持 zero-day candidate |
-| 高档 | 6–8 | normalized severity = **S3 High**；或虽然到 S4 但在证据/新颖性上仍有缺口 |
-| 中低档 | 1–5 | normalized severity 只有 **S1–S2**；或严重性/影响映射较弱 |
-| 无效 | 0 | 没有有效 in-the-wild finding |
+| 顶档 | 9–10 | normalized severity 达到 **S4 Critical**；impact evidence 强；严重性映射清晰；novelty evidence 充分支持其为 zero-day candidate |
+| 高档 | 6–8 | normalized severity 达到 **S3 High**，或虽达到 S4 但在证据或新颖性上存在明显缺口 |
+| 中低档 | 1–5 | normalized severity 仅为 **S1–S2**，或严重性映射、影响证据不足 |
+| 无效 | 0 | 未提交有效 in-the-wild finding |
 
-### 这一项实际上怎么打分
-Part B 的 10 分不是拍脑袋给，而是按下面公式拆开：
+### Part B 最高影响力 finding 的客观评分模型
 
-| 组成 | 分值范围 | 说明 |
+| 组成部分 | 分值范围 | 说明 |
 |---|---:|---|
-| Severity score | 0–6 | 按 S0–S4 映射 |
-| Impact-evidence score | 0–2 | exploit path、受影响资产/数据、现实后果是否清楚 |
-| Novelty score | 0–2 | 是否是有证据支撑的 zero-day candidate |
-| **总分** | **0–10** | 三项相加，封顶 10 |
+| Severity score | 0–6 | 根据 finding 的 normalized severity tier 赋分 |
+| Impact-evidence score | 0–2 | 判断 exploit path、受影响资产/数据及现实后果是否有充分证据 |
+| Novelty score | 0–2 | 判断其是否为有充分支撑的 zero-day candidate，或为已确认 non-zero-day |
+| **总分** | **0–10** | 三部分相加，最终封顶 10 分 |
 
 ---
 
 ## 五、严重性映射（Normalized Severity Tiers）
 
-| 级别 | 分数 | 对应标准 |
+| 等级 | 分值 | 典型映射 |
 |---|---:|---|
 | S4 Critical | 6.0 | HackerOne Critical / CVSS ≥ 9.0 / Bugcrowd P1 / Intigriti Critical / Immunefi Critical / YesWeHack Critical |
 | S3 High | 4.5 | HackerOne High / CVSS 7.0–8.9 / Bugcrowd P2 / Intigriti High / Immunefi High / YesWeHack High |
 | S2 Medium | 3.0 | HackerOne Medium / CVSS 4.0–6.9 / Bugcrowd P3 / Intigriti Medium / Immunefi Medium / YesWeHack Medium |
 | S1 Low | 1.5 | HackerOne Low / CVSS 0.1–3.9 / Bugcrowd P4/P5 / Intigriti Low / Immunefi Low / YesWeHack Low |
-| S0 None | 0.0 | informational only / policy-only / no exploitable impact |
+| S0 None | 0.0 | informational only / policy-only issue / non-exploitable issue / no verifiable security impact |
 
 ### 严重性优先级规则（Severity Precedence Rule）
 
 | 情况 | 采用方式 |
 |---|---|
-| 平台已有 severity / priority | **优先采用平台等级** |
-| 平台没有给等级 | tutor 根据证据推导 **CVSS v3.1** |
-| 只有学生自称“critical” | 如果证据不够，**最高不能超过 S2** |
+| 平台已提供 severity / priority | 优先采用平台定义 |
+| 平台未提供等级 | 由 tutor 基于证据推导 CVSS v3.1 严重性 |
+| 仅有学生自述严重性 | 若缺乏充分证据，严重性最高不得超过 **S2** |
 
-### 官方校准参考（老师会参考）
+### 官方校准参考资料
 - HackerOne severity taxonomy  
   https://docs.hackerone.com/en/articles/8494552-severity-taxonomy
 - Bugcrowd VRT and priority model  
@@ -350,215 +350,184 @@ Part B 的 10 分不是拍脑袋给，而是按下面公式拆开：
   https://kb.intigriti.com/en/articles/4917102-intigriti-triage-standards
 - Immunefi vulnerability severity classification  
   https://immunefi.com/immunefi-vulnerability-severity-classification-system-v2-3/
-- YesWeHack severity/CVSS guidance  
+- YesWeHack programs severity/CVSS guidance  
   https://yeswehack.com/programs
 
 ---
 
-## 六、Presentation 与 Q&A 评分（3 分）
+## 六、Recorded Presentation & Q&A（3 分）
 
-| 档位 | 分数 | 标准 |
+| 等级 | 分数 | 要求 |
 |---|---:|---|
-| Exceeds Expectations | 3 | ≤5 分钟，清楚讲明 target、root cause、impact、impact justification、mitigation；Q&A 回答有证据支撑且有说服力 |
-| Meets Expectations | 2 | 整体清楚，但 impact justification 或技术深度略有不足 |
-| Developing | 1 | presentation 难跟、缺少关键技术/影响证据；Q&A 理解有限 |
-| Incomplete | 0 | 没交，或录制不可用 |
+| Exceeds Expectations | 3 | 演示视频长度不超过 5 分钟；清楚说明最高影响力 finding 的 target、root cause、impact、impact justification 与 mitigation；Q&A 回答基于证据，逻辑清晰且有说服力 |
+| Meets Expectations | 2 | 演示与 Q&A 整体清楚，但在影响论证或技术深度方面存在轻微不足 |
+| Developing | 1 | 演示表达不够清晰，缺少关键技术或影响证据；Q&A 表现出理解有限 |
+| Incomplete | 0 | 未提交演示，或录制文件不可用 |
 
 ---
 
-## 七、最容易丢分的地方（务必看）
+## 七、重要规则与扣分项
 
-## 1）没有有效 in-the-wild finding
+## 1）Primary Grading Rule
 
-| 情况 | 后果 |
-|---|---|
-| 没有提交有效真实世界 finding | **总分最高只能 15/25** |
+Assignment 2 的主要评分依据为团队提交的**单个最高影响力 valid in-the-wild finding**。若团队未提交有效真实世界 finding，则**Assignment 2 最高总分为 15/25**。
 
-## 2）zero-day priority rule
+## 2）Zero-Day Priority Rule
 
-| 情况 | 后果 |
-|---|---|
-| confirmed non-zero-day | 可以得分 |
-| 想冲 Part B 顶档（9–10） | 必须是**有充分证据支撑的 zero-day candidate** |
+已确认的 non-zero-day finding 仍可得分；但 **Part B 最高档（9–10 分）仅保留给具备充分证据支撑的 zero-day candidate**。
 
 ## 3）超时罚分（Timing Penalty）
 
 | 规则 | 后果 |
 |---|---|
-| presentation 必须 ≤ 5 分钟 | 硬规则 |
-| 每多 10 秒 | **扣 1 分（/25）** |
+| presentation 必须 ≤ 5 分钟 | 硬性要求 |
+| 每超出 10 秒 | **Assignment 2 总分扣 1 分（/25）** |
 
-> 不是“差不多就行”，是真的每超 10 秒扣 1 分。
+## 4）发言公平规则（Updated 27 Feb）
 
-## 4）每个成员必须说够 40 秒（Updated 27 Feb）
+在 5 分钟演示中，每位组员必须发言 **至少 40 秒**。若某成员实际发言时间 `t < 40` 秒，则其个人 Assignment 2 分数按下式计算：
 
-| 规则 | 后果 |
-|---|---|
-| 每个成员在 5 分钟视频里至少讲 40 秒 | 否则个人分单独被降 |
-| 个人分公式 | **⌊ M × t / 40 ⌋** |
-| M | 团队 Assignment 2 分数 |
-| t | 该学生实际发言秒数 |
+**⌊ M × t / 40 ⌋**
 
-### 例子
-如果：
-- 团队分数 `M = 14`
-- 某同学只讲了 `39` 秒
+其中：
+- `M` 为团队 Assignment 2 分数
+- `t` 为该成员实际发言秒数
+- `⌊ ⌋` 表示向下取整
 
-那么这个同学的分数：
-- `⌊14 × 39 / 40⌋ = ⌊13.65⌋ = 13`
+### 示例
+若团队分数 `M = 14`，某成员仅发言 `39` 秒，则该成员个人分数为：
 
-## 5）贡献不均衡（Updated 27 Feb）
+`⌊14 × 39 / 40⌋ = ⌊13.65⌋ = 13`
 
-| 要求 | 后果 |
-|---|---|
-| 必须提交 `activity-log.pdf` | tutor 用来判断成员贡献 |
-| 如果贡献明显不均衡 | tutor 可调整**个人分数** |
+## 5）贡献公平规则（Updated 27 Feb）
 
-## 6）Part A 报告格式违规
+团队必须提交 **`activity-log.pdf`**，用于说明各成员贡献。若 tutor 认为团队成员贡献明显不均衡，可据此调整个人成绩。
+
+## 6）Part A 报告合规罚分
 
 | 情况 | 后果 |
 |---|---|
-| 报告超过 2 页 | **扣 3 分** |
-| 没使用官方 USENIX 模板 | **扣 3 分** |
+| Part A 报告超过 2 页 | **扣 3 分** |
+| Part A 报告未使用官方 USENIX conference paper template | **扣 3 分** |
 
-> 这个罚分只针对 **Part A report**。
+> 该罚分规则仅适用于 **Part A report**。
 
 ---
 
 ## 八、证据来源规则（Evidence Source Rule）
 
-| 部分 | 老师主要看什么 |
+| 部分 | 主要评分依据 |
 |---|---|
-| Part A | **USENIX 报告** + tutor Q&A clarification |
-| Part B | **presentation + tutorial Q&A only** |
+| Part A | **Part A 的 USENIX 报告**，辅以 tutor 在 Q&A 中的澄清判断 |
+| Part B | **Part B presentation + tutorial Q&A only** |
 
-### 重要提醒
-- **Part B 没有单独 written report 来补分**
-- 所以真实世界 finding 的关键证据，要能在：
-  - presentation 里讲清楚
-  - Q&A 里答出来
+### 特别说明
+- Part B **不设单独 written report 补充分数**。
+- 因此，Part B 的关键证据、严重性映射、影响论证与新颖性说明，必须能够在演示与问答中清晰呈现。
 
 ---
 
-## 九、Tutorial 现场时间结构（严格）
+## 九、Tutorial 时间安排（严格执行）
 
 | 环节 | 时间 |
 |---|---:|
-| 播放 presentation | 5 分钟 |
-| tutor Q&A | 最多 5 分钟 |
-| 总时长 | **最多 10 分钟，strict** |
+| Presentation 播放 | 5 分钟 |
+| Tutor Q&A | 最多 5 分钟 |
+| 总时长 | **最多 10 分钟，严格限制** |
 
 ---
 
-## 十、Bonus 政策
+## 十、Bonus Policy
 
-| 奖励 | 条件 |
+| 奖励内容 | 条件 |
 |---|---|
 | +10 bonus | 严重性最高的前 3 个团队 |
 | +10 bonus | 漏洞数量最多的前 3 个团队 |
-| 封顶 | 总成绩最高 100 |
-| 额外奖励 | Top 1 team（最高影响力有效漏洞）会被邀请和 unit coordinator 吃 lunch |
+| 总成绩上限 | 100 |
+| 额外奖励 | Top 1 team（最高影响力有效漏洞）将获邀与 unit coordinator 共进午餐 |
 
-> 一共最多 6 个团队拿到这类 bonus。
-
----
-
-## 十一、老师真正想看到的高分作业长什么样
-
-### Part A 高分特征
-
-| 维度 | 高分标准 |
-|---|---|
-| 系统模型 | 结构清楚，不空泛 |
-| 攻击者模型 | realistic，不乱写超能力 |
-| 漏洞证据 | 有代码/配置/行为/抓包支撑 |
-| 影响分析 | 从弱点到后果链条完整 |
-| 修复方案 | 修 root cause，不喊口号 |
-
-### Part B 高分特征
-
-| 维度 | 高分标准 |
-|---|---|
-| finding 来源 | 合法、在 scope 内、可复现 |
-| 严重性 | 尽量往 S3 / S4 走 |
-| 影响证据 | exploit path、受影响资产、现实后果都讲清楚 |
-| 新颖性 | 能证明是 zero-day candidate 最好 |
-| 表达方式 | presentation 和 Q&A 证据驱动 |
+> 最多共有 6 个团队可获得上述 bonus。
 
 ---
 
-## 十二、最实用的提交清单（照这个准备最稳）
+## 十一、建议的交付清单
 
-## Part A 提交准备
+## Part A
 
-| 项目 | 是否必须 | 说明 |
+| 项目 | 是否建议/必须 | 说明 |
 |---|---|---|
-| USENIX 模板报告 | 必须 | 且 **≤ 2 页** |
-| 系统模型图 | 强烈建议 | 最好画清楚 trust boundary |
-| 威胁模型 | 必须 | 明确 attacker、asset、boundary |
-| 网络弱点证据 | 必须 | 代码/配置/流量至少一种，最好多种 |
-| impact reasoning | 必须 | 讲清 exploit path 与现实后果 |
-| mitigation | 必须 | 解决根因 |
+| USENIX 模板报告 | 必须 | 且须控制在 **2 页以内** |
+| 系统模型图 | 强烈建议 | 应清晰体现信任边界与关键数据流 |
+| 威胁模型 | 必须 | 明确 attacker、assets、boundaries |
+| 漏洞证据 | 必须 | 代码、配置、抓包或行为证据至少应具备一类，建议多源支撑 |
+| Impact reasoning | 必须 | 应构成完整因果链条 |
+| Mitigation | 必须 | 应针对 root cause |
 
-## Part B 提交准备
+## Part B
 
-| 项目 | 是否必须 | 说明 |
+| 项目 | 是否建议/必须 | 说明 |
 |---|---|---|
-| 最高影响力真实世界 finding | 必须 | 核心评分来源 |
+| 最高影响力真实世界 finding | 必须 | Part B 核心评分对象 |
 | target URL | 必须 | 明确目标 |
-| scope proof | 必须 | 证明合法且在范围内 |
-| legal boundary | 必须 | 说明你没有越界 |
-| reproducible steps | 必须 | tutor 要能理解复现 |
-| finding classification | 必须 | non-zero-day / zero-day candidate |
-| severity mapping | 必须 | 平台等级优先，没有就 CVSS |
-| impact evidence | 必须 | 数据/资产/后果 |
-| novelty evidence | 强烈建议 | 冲高分关键 |
+| scope proof | 必须 | 证明目标在合法范围内 |
+| legal boundaries 说明 | 必须 | 说明行为未越界 |
+| reproducible steps | 必须 | 可复现性必须明确 |
+| finding classification | 必须 | 标明 non-zero-day 或 zero-day candidate |
+| severity mapping | 必须 | 优先平台等级，不足时用 CVSS |
+| impact evidence | 必须 | 指出受影响资产、后果与 exploit path |
+| novelty evidence | 强烈建议 | 是冲击高分的重要因素 |
 
-## Presentation / Tutorial 准备
+## Presentation / Tutorial
 
-| 项目 | 是否必须 | 说明 |
+| 项目 | 是否建议/必须 | 说明 |
 |---|---|---|
-| ≤5 分钟视频 | 必须 | 超时扣分 |
-| 每人 ≥40 秒发言 | 必须 | 否则个人分下降 |
-| Q&A 准备 | 必须 | 要能用证据回答 |
-| activity-log.pdf | 必须 | 用于 contribution fairness |
+| ≤5 分钟录制视频 | 必须 | 超时会直接扣分 |
+| 每位成员 ≥40 秒发言 | 必须 | 关系到个人成绩 |
+| Q&A 准备 | 必须 | 回答需 evidence-based |
+| activity-log.pdf | 必须 | 用于贡献公平性判断 |
 
 ---
 
-## 十三、建议执行顺序（很适合小组照做）
+## 十二、建议执行顺序
 
-| 阶段 | 目标 | 产出 |
+| 阶段 | 任务目标 | 建议产出 |
 |---|---|---|
-| 第 1 步 | 先锁定 Part A | 系统模型、威胁模型、主要网络弱点 |
-| 第 2 步 | 再冲 Part B | 合法真实世界 finding + scope + 复现 |
-| 第 3 步 | 做 severity / impact / novelty 映射 | 确定是否能冲高分 |
-| 第 4 步 | 压缩成 presentation | 确保 5 分钟内讲清楚 |
-| 第 5 步 | 练 Q&A | 准备 evidence-based 回答 |
-| 第 6 步 | 检查 fairness / compliance | 每人 40 秒、activity-log、Part A 报告页数 |
+| 第 1 阶段 | 完成 Part A 系统分析框架 | 系统模型、威胁模型、主要网络弱点初稿 |
+| 第 2 阶段 | 锁定 Part B 真实世界 finding | target、scope、复现路径、影响证据 |
+| 第 3 阶段 | 完成严重性与新颖性映射 | severity mapping、impact evidence、novelty evidence |
+| 第 4 阶段 | 组织 presentation 内容 | 5 分钟脚本、演讲分配、可视化材料 |
+| 第 5 阶段 | 完成 Q&A 彩排 | 针对 tutor 可能提问准备证据型回答 |
+| 第 6 阶段 | 提交前检查合规性 | 时长、页数、模板、发言时长、activity-log |
 
 ---
 
-## 十四、当前仓库里已经有什么
+## 十三、当前仓库已包含的课程文件
 
 | 文件 | 说明 |
 |---|---|
 | `a2_case1.apk` | Assignment 相关 APK 样本 |
-| `assignment1-spec.pdf` | Assignment 1 说明 |
+| `assignment1-spec.pdf` | Assignment 1 说明文档 |
 | `assignment2-rubric-1.pdf` | Assignment 2 Rubric 原始 PDF |
 
-### 建议后续继续补充
+### 建议后续补充的文件
 
-| 建议新增文件 | 用途 |
+| 文件/目录 | 用途 |
 |---|---|
 | `activity-log.pdf` | 成员贡献说明 |
 | `report.pdf` | Part A 正式报告 |
 | `presentation.mp4` | 最终演示视频 |
-| `presentation-script.md` | 演讲稿 / 分工台词 |
-| `finding-evidence/` | Part B 的截图、抓包、复现材料 |
-| `severity-mapping.md` | 平台等级 / CVSS / novelty 论证 |
+| `presentation-script.md` | 演讲稿与发言分配 |
+| `finding-evidence/` | Part B 截图、抓包、复现材料 |
+| `severity-mapping.md` | 严重性、新颖性与影响论证 |
 
 ---
 
-## 十五、最后一句话总结
+## 十四、总结
 
-**Assignment 2 不是普通课程作业，而是“Part A 证明你懂系统化安全分析，Part B 证明你能在合法真实环境中找到高价值漏洞”的组合题。真正拉开分差的，是你们提交的那个最高影响力真实世界 finding。**
+Assignment 2 的本质并非单纯撰写一份课程报告，而是要求团队：
+
+1. 在 **Part A** 中展示系统化的网络安全分析能力；
+2. 在 **Part B** 中提交一个**合法、有效、可验证、影响明确且尽可能高价值**的真实世界 finding；
+3. 以正式、合规、证据充分的方式完成展示与答辩。
+
+团队若希望获得高分，应将重点放在：**finding 的合法性、证据完整性、影响论证质量、严重性映射准确性，以及 zero-day candidate 的充分支撑**。
