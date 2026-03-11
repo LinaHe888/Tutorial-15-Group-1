@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Temporary analysis files
+*.log
+*.tmp
+*.bak
+*.orig
+
+# Reverse engineering / extraction caches
+jadx-output/
+apktool-output/
+decompiled/
+unpacked/
+
+# Media exports / accidental local artifacts
+screenshots/tmp/
+exports/tmp/
+
+# Archive clutter
+*.zip
+*.tar.gz
