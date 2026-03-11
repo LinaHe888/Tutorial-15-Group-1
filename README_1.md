@@ -3,6 +3,7 @@
 > 作业主题：**AI-Assisted Cryptographic Vulnerability Discovery**  
 > 占比：**20% of final grade**  
 > 满分：**15 分**  
+> 截止时间：**Mon Mar 30, 2026 5:00pm**  
 > 形式：**小组提交**（优先 5 人；6 人团队仅在至少有 1 名 non-technical 成员时允许）
 
 ---
@@ -199,3 +200,48 @@ Assignment 1 的评分重点在于：
 - 是否能把技术证据、AI 辅助过程与正式写作要求结合起来；
 - 是否能在篇幅受限的前提下，完成高质量表达。
 
+
+
+---
+
+## 十二、Assignment 1 Rubric（补充整理）
+
+### 评分结构
+
+| 项目 | 分值 | 评价重点 |
+|---|---:|---|
+| System & Threat Model | 4 | 系统模型、关键资产、数据流与攻击者目标/能力是否明确，并与漏洞形成清晰联系 |
+| Vulnerability Discovery & Explanation | 6 | 是否正确识别 randomness / cryptography 相关漏洞，并说明发现方法、风险与攻击路径 |
+| Fix / Mitigation | 2 | 修复方案是否具体、技术正确、能解释为何有效 |
+| Recorded Presentation & Q&A | 3 | 5 分钟内是否清楚讲明模型、漏洞、修复，并能在 Q&A 中证明理解与贡献 |
+| **总计** | **15** |  |
+
+### 评分说明
+
+| 档位 | 要点 |
+|---|---|
+| 高分 | 准确识别与 randomness / cryptography 相关的核心漏洞，并给出完整攻击路径与证据 |
+| 中档 | 基本识别到预期问题，但论证深度或证据质量略有不足 |
+| 低档 | 仅部分正确，或分析混入不相关漏洞类别 |
+| 0 分风险 | 未识别出有效的 randomness / cryptography 漏洞 |
+
+### 重要修改与罚分项（基于 rubric）
+
+| 规则 | 说明 |
+|---|---|
+| 评分聚焦 | Assignment 1 只按 **randomness / cryptography** 相关漏洞评分 |
+| AI 使用 | 允许使用 AI，但最终结果必须能由团队自行解释与答辩 |
+| 必交文件 | `report.pdf`、`ai-log/`、`pocs/`、`presentation.mp4`、`activity-log.pdf` |
+| 缺少必交项 | **每缺少任一 required item，扣 5 分** |
+| 演示超时 | 每超 10 秒，扣 1 分（/15） |
+| 报告不合规 | 超过 2 页或未用 USENIX 模板，扣 3 分 |
+| 成员发言时长 | 每人至少 40 秒，否则按公式折算个人分数 |
+| activity-log 格式 | 必须采用 **N×N contribution matrix** |
+
+### 当前建议
+
+由于当前阶段正在完成 Assignment 1，建议团队优先准备：
+- `a1_case1.apk` 的分析材料
+- `assignment1-rubric-2.pdf` 对应的评分项证据
+- `activity-log.pdf` 的 N×N contribution matrix
+- 一份能在 5 分钟内完成且每名成员均满足 40 秒发言要求的 presentation

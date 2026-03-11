@@ -2,8 +2,16 @@
 
 > 作业主题：**AI-Assisted Network Security Analysis & Bug Bounty Exploration**  
 > 总分：**25 分**  
+> 截止时间：**Mon May 11, 2026 5:00pm**  
 > 主要评分依据：**团队提交的单个最高影响力、有效、真实世界（in-the-wild）漏洞**  
 > 最高优先级：**具备充分证据支撑的 zero-day candidate**
+
+---
+
+## 当前状态说明
+
+当前仓库已整理 Assignment 2 的 Spec 与 Rubric，供后续参考。
+考虑到当前阶段优先完成 **Assignment 1**，Assignment 2 相关工作可暂缓推进，待 Assignment 1 提交后再集中展开。
 
 ---
 
