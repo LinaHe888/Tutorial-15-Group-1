@@ -20,3 +20,13 @@
 - **Evidence / screenshots:** Based on previously reviewed Java and layout files.
 - **Next step:** Redraw the system model as a figure or continue to Task 3 vulnerability discovery.
 
+
+### [2026-03-21 03:58]
+- **Step:** Add detailed Task 2 evidence document
+- **What I did:** Wrote a detailed evidence file for the system model, covering app purpose, components, assets, data flows, and trust boundaries.
+- **Commands used:** created `submission/task-2-system-model/evidence/task2-detailed-evidence.md`
+- **Files changed:** `submission/task-2-system-model/evidence/task2-detailed-evidence.md`
+- **What I found:** Task 2 now has a clear evidence chain from code/layout files to the final system model narrative.
+- **Evidence / screenshots:** Based on `MainActivity.java`, `Login.java`, `Profile.java`, layout XML files, and `AndroidManifest.xml`.
+- **Next step:** Add screenshots and captions for the Task 2 system model evidence, or turn the diagram template into a final figure.
+
