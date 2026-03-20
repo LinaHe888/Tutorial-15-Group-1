@@ -32,7 +32,7 @@
 - **Step:** Decompile APK and verify basic app entry points
 - **What I did:** Set `JAVA_HOME` to JDK 22, ran `apktool` to decode the APK, and ran `jadx` to generate readable Java source code.
 - **Commands used:** `export JAVA_HOME=$(/usr/libexec/java_home -v 22)`, `export PATH="$JAVA_HOME/bin:$PATH"`, `apktool d a1_case1.apk -o submission/task-1-decompilation/my-task1-analysis/apktool -f`, `jadx -d submission/task-1-decompilation/my-task1-analysis/jadx a1_case1.apk`
-- **Files changed:** `submission/task-1-decompilation/my-task1-analysis/apktool/`, `submission/task-1-decompilation/my-task1-analysis/jadx/`, `submission/task-1-decompilation/my-task1-analysis/notes/task1-notes.md`
+- **Files changed:** `submission/task-1-decompilation/apktool/`, `submission/task-1-decompilation/jadx/`, `submission/task-1-decompilation/notes/task1-notes.md`
 - **What I found:** Identified package name `com.example.mastg_test0016`, launcher activity `com.example.mastg_test0016.MainActivity`, manifest file under the apktool output, and login-related class `Login.java` in the jadx output.
 - **Evidence / screenshots:** Need manifest screenshot and Login.java screenshot next.
 - **Next step:** Inspect `AndroidManifest.xml` and `Login.java` in detail, then capture screenshots and record exact evidence lines.
@@ -42,7 +42,7 @@
 - **Step:** Organize Task 1 evidence from manifest and Login.java
 - **What I did:** Treated Joey's uploaded screenshot as evidence, copied it into the Task 1 evidence folder, and extracted exact evidence from `AndroidManifest.xml` and `Login.java`.
 - **Commands used:** `cp ... step-1-terminal-screenshot.jpg`, `nl -ba ... AndroidManifest.xml`, `nl -ba ... Login.java`
-- **Files changed:** `submission/task-1-decompilation/my-task1-analysis/evidence/step-1-terminal-screenshot.jpg`, `submission/task-1-decompilation/my-task1-analysis/evidence/manifest-and-login-evidence.md`, `submission/task-1-decompilation/my-task1-analysis/notes/task1-notes.md`
+- **Files changed:** `submission/task-1-decompilation/evidence/step-1-terminal-screenshot.jpg`, `submission/task-1-decompilation/evidence/manifest-and-login-evidence.md`, `submission/task-1-decompilation/notes/task1-notes.md`
 - **What I found:** Confirmed package name, launcher activity, and login-related class with exact file paths and evidence lines. Also identified session token creation logic for later tasks.
 - **Evidence / screenshots:** Terminal screenshot uploaded; manifest and Login.java evidence organized into a dedicated markdown file.
 - **Next step:** Capture code/editor screenshots for the manifest and `Login.java`, or move on to drafting the Task 1 write-up using the recorded evidence.
@@ -71,8 +71,8 @@
 ### [2026-03-21 03:09]
 - **Step:** Add manifest and Login.java screenshots as Task 1 evidence
 - **What I did:** Added the selected manifest screenshot and Login.java screenshot to the evidence folder for Task 1.
-- **Commands used:** copied inbound screenshots into `submission/task-1-decompilation/my-task1-analysis/evidence/`
-- **Files changed:** `submission/task-1-decompilation/my-task1-analysis/evidence/manifest-screenshot.jpg`, `submission/task-1-decompilation/my-task1-analysis/evidence/login-java-screenshot.jpg`
+- **Commands used:** copied inbound screenshots into `submission/task-1-decompilation/evidence/`
+- **Files changed:** `submission/task-1-decompilation/evidence/manifest-screenshot.jpg`, `submission/task-1-decompilation/evidence/login-java-screenshot.jpg`
 - **What I found:** Both screenshots are clear enough to support package/main activity evidence and login flow evidence.
 - **Evidence / screenshots:** manifest screenshot and Login.java screenshot saved in evidence folder.
 - **Next step:** Either refine Task 1 write-up into final report wording or move on to Task 2 system model work.

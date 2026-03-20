@@ -1,7 +1,7 @@
 # Task 1 Evidence — Manifest and Login.java
 
 ## 1. Package name evidence
-- **File:** `submission/task-1-decompilation/my-task1-analysis/apktool/AndroidManifest.xml`
+- **File:** `submission/task-1-decompilation/apktool/AndroidManifest.xml`
 - **Line:** 2
 - **Evidence:**
   ```xml
@@ -10,7 +10,7 @@
 - **Conclusion:** The app package name is `com.example.mastg_test0016`.
 
 ## 2. Main activity / launcher evidence
-- **File:** `submission/task-1-decompilation/my-task1-analysis/apktool/AndroidManifest.xml`
+- **File:** `submission/task-1-decompilation/apktool/AndroidManifest.xml`
 - **Lines:** 8-12
 - **Evidence:**
   ```xml
@@ -24,7 +24,7 @@
 - **Conclusion:** `com.example.mastg_test0016.MainActivity` is the launcher activity.
 
 ## 3. Login-related class evidence
-- **File:** `submission/task-1-decompilation/my-task1-analysis/jadx/sources/com/example/mastg_test0016/Login.java`
+- **File:** `submission/task-1-decompilation/jadx/sources/com/example/mastg_test0016/Login.java`
 - **Lines:** 25-29
 - **Evidence:**
   ```java
@@ -36,7 +36,7 @@
 - **Conclusion:** `Login.java` is an authentication-related activity and manages session token storage.
 
 ## 4. Login flow evidence
-- **File:** `submission/task-1-decompilation/my-task1-analysis/jadx/sources/com/example/mastg_test0016/Login.java`
+- **File:** `submission/task-1-decompilation/jadx/sources/com/example/mastg_test0016/Login.java`
 - **Lines:** 49-60
 - **Evidence:**
   ```java
@@ -56,16 +56,16 @@
 - **Conclusion:** The login activity verifies credentials and, on success, creates a session before opening the profile screen.
 
 ## 5. Credential checking evidence
-- **File:** `submission/task-1-decompilation/my-task1-analysis/jadx/sources/com/example/mastg_test0016/Login.java`
+- **File:** `submission/task-1-decompilation/jadx/sources/com/example/mastg_test0016/Login.java`
 - **Lines:** 77-93
 - **Evidence summary:** The app opens `credentials.txt`, reads stored values, and compares them with the user input.
 - **Conclusion:** The login logic is implemented in `Login.java`, making it valid Task 1 evidence for an authentication-related class.
 
 ## 6. Session token generation evidence (useful for later tasks)
-- **File:** `submission/task-1-decompilation/my-task1-analysis/jadx/sources/com/example/mastg_test0016/Login.java`
+- **File:** `submission/task-1-decompilation/jadx/sources/com/example/mastg_test0016/Login.java`
 - **Lines:** 174-189
 - **Evidence summary:** `createSession()` stores `generateSessionToken()`, which uses `java.util.Random`.
 - **Conclusion:** This is strong candidate evidence for later vulnerability analysis in Task 3.
 
 ## Uploaded screenshot evidence
-- `submission/task-1-decompilation/my-task1-analysis/evidence/step-1-terminal-screenshot.jpg`
+- `submission/task-1-decompilation/evidence/step-1-terminal-screenshot.jpg`

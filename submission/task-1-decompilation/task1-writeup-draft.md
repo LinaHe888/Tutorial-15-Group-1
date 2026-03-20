@@ -19,8 +19,8 @@ After decompiling the provided APK (`a1_case1.apk`), we identified the following
 
 - **Package name:** `com.example.mastg_test0016`
 - **Main activity:** `com.example.mastg_test0016.MainActivity`
-- **Manifest file:** `submission/task-1-decompilation/my-task1-analysis/apktool/AndroidManifest.xml`
-- **Authentication-related class:** `submission/task-1-decompilation/my-task1-analysis/jadx/sources/com/example/mastg_test0016/Login.java`
+- **Manifest file:** `submission/task-1-decompilation/apktool/AndroidManifest.xml`
+- **Authentication-related class:** `submission/task-1-decompilation/jadx/sources/com/example/mastg_test0016/Login.java`
 
 ## Evidence summary
 The package name was identified in the manifest declaration. The launcher activity was confirmed through the `MAIN` and `LAUNCHER` intent filter in `AndroidManifest.xml`. We also located `Login.java`, which contains the login flow, credential checking logic, and session creation logic. These findings confirm that the APK was successfully unpacked and that the main app entry points were recovered.

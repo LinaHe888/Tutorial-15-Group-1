@@ -7,7 +7,7 @@
 - Terminal output showing `apktool` / `jadx` execution or analysis workspace setup.
 
 **Current evidence file:**
-- `submission/task-1-decompilation/my-task1-analysis/evidence/step-1-terminal-screenshot.jpg`
+- `submission/task-1-decompilation/evidence/step-1-terminal-screenshot.jpg`
 
 **Suggested caption:**
 > Figure 1. Initial Task 1 setup and APK decompilation process using reverse engineering tools.
@@ -24,7 +24,7 @@
 - Include the `MainActivity` block with `MAIN` and `LAUNCHER`
 
 **File:**
-- `submission/task-1-decompilation/my-task1-analysis/apktool/AndroidManifest.xml`
+- `submission/task-1-decompilation/apktool/AndroidManifest.xml`
 
 **Suggested caption:**
 > Figure 2. Decompiled Android manifest showing the package name and launcher activity (`MainActivity`).
@@ -42,7 +42,7 @@
 - `createSession()` call on successful login
 
 **File:**
-- `submission/task-1-decompilation/my-task1-analysis/jadx/sources/com/example/mastg_test0016/Login.java`
+- `submission/task-1-decompilation/jadx/sources/com/example/mastg_test0016/Login.java`
 
 **Suggested caption:**
 > Figure 3. Decompiled `Login.java` showing the authentication flow, including credential validation and session creation.

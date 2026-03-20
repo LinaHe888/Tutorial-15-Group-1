@@ -10,8 +10,8 @@
 ## Key findings
 - Package name: `com.example.mastg_test0016`
 - Main activity: `com.example.mastg_test0016.MainActivity`
-- Manifest path: `submission/task-1-decompilation/my-task1-analysis/apktool/AndroidManifest.xml`
-- Login/auth related class: `submission/task-1-decompilation/my-task1-analysis/jadx/sources/com/example/mastg_test0016/Login.java`
+- Manifest path: `submission/task-1-decompilation/apktool/AndroidManifest.xml`
+- Login/auth related class: `submission/task-1-decompilation/jadx/sources/com/example/mastg_test0016/Login.java`
 
 ## Evidence
 - Screenshot 1: Uploaded terminal screenshot `evidence/step-1-terminal-screenshot.jpg`
