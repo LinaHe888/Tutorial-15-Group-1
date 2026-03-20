@@ -36,3 +36,13 @@
 - **What I found:** Identified package name `com.example.mastg_test0016`, launcher activity `com.example.mastg_test0016.MainActivity`, manifest file under the apktool output, and login-related class `Login.java` in the jadx output.
 - **Evidence / screenshots:** Need manifest screenshot and Login.java screenshot next.
 - **Next step:** Inspect `AndroidManifest.xml` and `Login.java` in detail, then capture screenshots and record exact evidence lines.
+
+
+### [2026-03-21 02:35]
+- **Step:** Organize Task 1 evidence from manifest and Login.java
+- **What I did:** Treated Joey's uploaded screenshot as evidence, copied it into the Task 1 evidence folder, and extracted exact evidence from `AndroidManifest.xml` and `Login.java`.
+- **Commands used:** `cp ... step-1-terminal-screenshot.jpg`, `nl -ba ... AndroidManifest.xml`, `nl -ba ... Login.java`
+- **Files changed:** `submission/task-1-decompilation/my-task1-analysis/evidence/step-1-terminal-screenshot.jpg`, `submission/task-1-decompilation/my-task1-analysis/evidence/manifest-and-login-evidence.md`, `submission/task-1-decompilation/my-task1-analysis/notes/task1-notes.md`
+- **What I found:** Confirmed package name, launcher activity, and login-related class with exact file paths and evidence lines. Also identified session token creation logic for later tasks.
+- **Evidence / screenshots:** Terminal screenshot uploaded; manifest and Login.java evidence organized into a dedicated markdown file.
+- **Next step:** Capture code/editor screenshots for the manifest and `Login.java`, or move on to drafting the Task 1 write-up using the recorded evidence.

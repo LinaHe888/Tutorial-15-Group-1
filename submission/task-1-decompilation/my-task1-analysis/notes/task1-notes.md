@@ -14,9 +14,10 @@
 - Login/auth related class: `submission/task-1-decompilation/my-task1-analysis/jadx/sources/com/example/mastg_test0016/Login.java`
 
 ## Evidence
-- Screenshot 1: AndroidManifest package name + launcher activity
-- Screenshot 2: Login.java class and login flow
-- Screenshot 3: Decompiled output directories
+- Screenshot 1: Uploaded terminal screenshot `evidence/step-1-terminal-screenshot.jpg`
+- Screenshot 2: Manifest package name + launcher activity
+- Screenshot 3: Login.java class and login flow
+- Evidence summary doc: `evidence/manifest-and-login-evidence.md`
 
 ## Commands run
 - `export JAVA_HOME=$(/usr/libexec/java_home -v 22)`
