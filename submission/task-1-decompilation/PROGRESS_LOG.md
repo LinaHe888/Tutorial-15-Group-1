@@ -56,3 +56,13 @@
 - **What I found:** The current evidence is already sufficient to support a solid Task 1 write-up covering APK definition, decompilation purpose, tools used, and key findings.
 - **Evidence / screenshots:** Based on previously recorded manifest, Login.java, and uploaded screenshot evidence.
 - **Next step:** Refine wording for the final report format or continue extracting more screenshots if needed.
+
+
+### [2026-03-21 02:43]
+- **Step:** Prepare screenshot plan and captions for Task 1
+- **What I did:** Created a screenshot checklist for the final Task 1 write-up and added ready-to-use English figure captions.
+- **Commands used:** Created `submission/task-1-decompilation/screenshot-plan-and-captions.md`
+- **Files changed:** `submission/task-1-decompilation/screenshot-plan-and-captions.md`
+- **What I found:** Three screenshots are already enough for a strong Task 1 evidence set: terminal/setup, manifest, and Login.java.
+- **Evidence / screenshots:** Existing terminal screenshot plus planned manifest and Login.java screenshots.
+- **Next step:** Capture the manifest and Login.java screenshots, or refine the Task 1 draft into report-ready wording.
