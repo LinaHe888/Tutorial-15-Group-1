@@ -30,3 +30,13 @@
 - **Evidence / screenshots:** Based on `MainActivity.java`, `Login.java`, `Profile.java`, layout XML files, and `AndroidManifest.xml`.
 - **Next step:** Add screenshots and captions for the Task 2 system model evidence, or turn the diagram template into a final figure.
 
+
+### [2026-03-21 04:00]
+- **Step:** Add Task 2 screenshot plan and captions
+- **What I did:** Prepared a screenshot checklist and ready-to-use captions for Task 2.
+- **Commands used:** created `submission/task-2-system-model/screenshot-plan-and-captions.md`
+- **Files changed:** `submission/task-2-system-model/screenshot-plan-and-captions.md`
+- **What I found:** Task 2 can be supported well with 3 core screenshots: MainActivity, Login, and Profile.
+- **Evidence / screenshots:** planned screenshot set for system model support.
+- **Next step:** add actual screenshots or finalize the diagram into a report figure.
+
