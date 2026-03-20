@@ -46,3 +46,13 @@
 - **What I found:** Confirmed package name, launcher activity, and login-related class with exact file paths and evidence lines. Also identified session token creation logic for later tasks.
 - **Evidence / screenshots:** Terminal screenshot uploaded; manifest and Login.java evidence organized into a dedicated markdown file.
 - **Next step:** Capture code/editor screenshots for the manifest and `Login.java`, or move on to drafting the Task 1 write-up using the recorded evidence.
+
+
+### [2026-03-21 02:39]
+- **Step:** Draft Task 1 write-up in English
+- **What I did:** Converted the collected manifest and Login.java evidence into a structured English draft for Task 1.
+- **Commands used:** Created `submission/task-1-decompilation/task1-writeup-draft.md`
+- **Files changed:** `submission/task-1-decompilation/task1-writeup-draft.md`
+- **What I found:** The current evidence is already sufficient to support a solid Task 1 write-up covering APK definition, decompilation purpose, tools used, and key findings.
+- **Evidence / screenshots:** Based on previously recorded manifest, Login.java, and uploaded screenshot evidence.
+- **Next step:** Refine wording for the final report format or continue extracting more screenshots if needed.
