@@ -66,3 +66,13 @@
 - **What I found:** Three screenshots are already enough for a strong Task 1 evidence set: terminal/setup, manifest, and Login.java.
 - **Evidence / screenshots:** Existing terminal screenshot plus planned manifest and Login.java screenshots.
 - **Next step:** Capture the manifest and Login.java screenshots, or refine the Task 1 draft into report-ready wording.
+
+
+### [2026-03-21 03:09]
+- **Step:** Add manifest and Login.java screenshots as Task 1 evidence
+- **What I did:** Added the selected manifest screenshot and Login.java screenshot to the evidence folder for Task 1.
+- **Commands used:** copied inbound screenshots into `submission/task-1-decompilation/my-task1-analysis/evidence/`
+- **Files changed:** `submission/task-1-decompilation/my-task1-analysis/evidence/manifest-screenshot.jpg`, `submission/task-1-decompilation/my-task1-analysis/evidence/login-java-screenshot.jpg`
+- **What I found:** Both screenshots are clear enough to support package/main activity evidence and login flow evidence.
+- **Evidence / screenshots:** manifest screenshot and Login.java screenshot saved in evidence folder.
+- **Next step:** Either refine Task 1 write-up into final report wording or move on to Task 2 system model work.
