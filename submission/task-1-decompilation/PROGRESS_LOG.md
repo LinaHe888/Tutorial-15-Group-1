@@ -26,3 +26,13 @@
 - **What I found:** `apktool` and `jadx` are installed and ready.
 - **Evidence / screenshots:** N/A
 - **Next step:** Run `apktool` and `jadx` on `a1_case1.apk` and start extracting manifest/app entry information.
+
+
+### [2026-03-21 02:31]
+- **Step:** Decompile APK and verify basic app entry points
+- **What I did:** Set `JAVA_HOME` to JDK 22, ran `apktool` to decode the APK, and ran `jadx` to generate readable Java source code.
+- **Commands used:** `export JAVA_HOME=$(/usr/libexec/java_home -v 22)`, `export PATH="$JAVA_HOME/bin:$PATH"`, `apktool d a1_case1.apk -o submission/task-1-decompilation/my-task1-analysis/apktool -f`, `jadx -d submission/task-1-decompilation/my-task1-analysis/jadx a1_case1.apk`
+- **Files changed:** `submission/task-1-decompilation/my-task1-analysis/apktool/`, `submission/task-1-decompilation/my-task1-analysis/jadx/`, `submission/task-1-decompilation/my-task1-analysis/notes/task1-notes.md`
+- **What I found:** Identified package name `com.example.mastg_test0016`, launcher activity `com.example.mastg_test0016.MainActivity`, manifest file under the apktool output, and login-related class `Login.java` in the jadx output.
+- **Evidence / screenshots:** Need manifest screenshot and Login.java screenshot next.
+- **Next step:** Inspect `AndroidManifest.xml` and `Login.java` in detail, then capture screenshots and record exact evidence lines.
