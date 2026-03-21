@@ -1,79 +1,97 @@
-# INFO5995 小组作业仓库
+# INFO5995 Assignment 1 — Working Repository
 
-本仓库用于 INFO5995 课程小组作业，目前主要推进 **Assignment 1**。
+This is the team's main working repository for INFO5995 Assignment 1.
 
----
+## Current Status
 
-## 当前进度（main 分支）
+| Task | Status | Branch |
+|------|--------|--------|
+| Task 1 — Decompile APK | ✅ Done | `joey-task1` |
+| Task 2 — System Model | ✅ Done | `joey-task2` |
+| Task 3 — Vulnerability Discovery | ✅ Done → Merged to `main` | `joey-task3` |
+| Task 4 — Threat Model | ✅ Done | `joey-task4` |
+| Task 5 — Report & Presentation | ⏳ Pending | — |
 
-| 任务 | 状态 | 说明 |
-|---|---|---|
-| Task 1 — APK 反编译 | ✅ 已完成 | APK 解包、manifest 分析、Login 类定位 |
-| Task 2 — 系统模型 | ✅ 已完成 | App 组件、数据流、信任边界 |
-| Task 3 — 漏洞发现 | ✅ 已完成 | 主漏洞：Session Token 使用 `java.util.Random` 预测性问题 |
-| Task 4 — 威胁模型 | ✅ 已完成 | 攻击路径、影响分析 |
-| Task 5 — 报告与演示 | ⏳ 待完成 | 最终报告、Presentation |
+## Branch Structure
 
-**主漏洞结论：**  
-App 在 `Login.generateSessionToken()` 中使用 `java.util.Random` 生成 Session Token，Token 承担安全敏感角色，不应使用弱随机源。
+| Branch | Purpose |
+|--------|---------|
+| `main` | Stable branch — contains Task 1 + Task 3 |
+| `joey-task1` | Task 1 work |
+| `joey-task2` | Task 2 work |
+| `joey-task3` | Task 3 work |
+| `joey-task4` | Task 4 work |
 
----
-
-## 目录结构
+## Repository Structure
 
 ```
 submission/
-├── task-1-decompilation/          # APK 反编译结果与证据
-├── task-2-system-model/          # 系统模型与数据流
-├── task-3-vulnerability-discovery/  # 漏洞发现与候选分析
-├── task-4-threat-model/           # 威胁模型与攻击路径
-└── task-5-report-and-presentation/  # 最终报告与演示（待完成）
+├── task-1-decompilation/       # APK decompilation, evidence, screenshots
+│   ├── apktool/
+│   ├── jadx/
+│   ├── evidence/
+│   ├── notes/
+│   ├── screenshots/
+│   ├── task1-writeup-draft.md
+│   └── PROGRESS_LOG.md
+├── task-2-system-model/        # System model, diagram, data flow
+│   ├── evidence/
+│   ├── notes/
+│   ├── system-model-diagram-template.md
+│   ├── task2-initial-model.md
+│   ├── task2-short-report-paragraph.md
+│   └── PROGRESS_LOG.md
+├── task-3-vulnerability-discovery/  # Candidate findings, primary vulnerability
+│   ├── evidence/
+│   ├── notes/
+│   ├── screenshots/
+│   ├── task3-candidate-findings.md
+│   ├── task3-expanded-findings.md
+│   ├── task3-primary-vulnerability-draft.md
+│   └── PROGRESS_LOG.md
+├── task-4-threat-model/         # Threat model, attack path, impact
+│   ├── evidence/
+│   ├── notes/
+│   ├── screenshots/
+│   ├── task4-threat-model-draft.md
+│   ├── task4-attack-path-short.md
+│   └── PROGRESS_LOG.md
+└── task-5-report-and-presentation/  # Pending — final report + presentation
 ```
 
----
+## Key Files
 
-## 关键文件
+| File | Description |
+|------|-------------|
+| `a1_case1.apk` | Target APK for analysis |
+| `assignment1-spec.pdf` | Assignment specification |
+| `assignment1-rubric-2.pdf` | Grading rubric |
+| `README_1.md` | Assignment 1 full guide |
 
-| 文件 | 内容 |
-|---|---|
-| `a1_case1.apk` | 待分析的 APK 样本 |
-| `assignment1-spec.pdf` | Assignment 1 原始说明 |
-| `assignment1-rubric-2.pdf` | Assignment 1 评分标准 |
-| `README_1.md` | Assignment 1 完整说明与执行建议 |
+## Submission Requirements (Assignment 1)
 
----
-
-## Assignment 1 必交文件
-
-- `report.pdf`（最多 2 页，USENIX 模板）
+- `report.pdf` — max 2 pages, USENIX template
 - `ai-log/`
 - `pocs/`
 - `presentation.mp4`
-- `activity-log.pdf`（N×N contribution matrix）
+- `activity-log.pdf` — N×N contribution matrix
 
----
+**Penalty reminders:**
+- Missing required item: −5 marks
+- Presentation > 5 min + 10 sec: −1 mark / 10 sec
+- Report > 2 pages or wrong template: −3 marks
+- Each member must speak ≥ 40 seconds
 
-## 扣分注意事项
+## Deadline
 
-- 缺少任一 required item → 扣 5 分
-- 演示超时每 10 秒 → 扣 1 分
-- 报告超过 2 页或未用正确模板 → 扣 3 分
-- 每位组员发言不足 40 秒 → 按公式折算分数
+**Mon Mar 30, 2026, 5:00pm**
 
----
+## Pre-submission Checklist
 
-## 截止时间
-
-**Mon Mar 30, 2026 5:00pm**
-
----
-
-## 提交前检查清单
-
-- [ ] Task 1–4 内容完整、证据齐全
-- [ ] 报告使用 USENIX 模板，不超过 2 页
-- [ ] 演示总时长不超过 5 分钟
-- [ ] 所有 required files 准备齐全
-- [ ] `ai-log/` 记录 AI 使用情况
-- [ ] `activity-log.pdf` 使用 N×N contribution matrix
-- [ ] 每位组员在演示中发言至少 40 秒
+- [ ] Task 1–4 complete with evidence
+- [ ] Report uses USENIX template, ≤ 2 pages
+- [ ] Presentation ≤ 5 min
+- [ ] All required files prepared
+- [ ] AI usage logged in `ai-log/`
+- [ ] `activity-log.pdf` uses N×N contribution matrix
+- [ ] Every team member speaks ≥ 40 seconds in presentation
