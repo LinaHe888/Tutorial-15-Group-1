@@ -30,13 +30,15 @@
 
 ### 当前各 Task 进度（只看 main 分支）
 
-| Task | 状态 | 说明 |
-|---|---|---|
-| Task 1 — APK 反编译 | ✅ main 已完成 | 已反编译、定位关键类、整理证据与截图 |
-| Task 2 — 系统模型 | ⏳ 待合并 | 内容在 `joey-task2` 分支，需合并到 main |
-| Task 3 — 漏洞发现 | ✅ main 已完成 | 主漏洞：Session Token 使用 `java.util.Random` |
-| Task 4 — 威胁模型 | ⏳ 待合并 | 内容在 `joey-task4` 分支，需合并到 main |
-| Task 5 — 报告与演示 | ⏳ 待完成 | 需 Task 2/4 合并后才能收尾 |
+> **joey 只负责 Task 3**，其他 Task 由其他组员负责。`joey-task*` 分支为个人测试分支，不计入团队进度。
+
+| Task | 负责人 | main 状态 | 说明 |
+|---|---|---|---|
+| Task 1 — APK 反编译 | 其他组员 | ✅ | 已完成 |
+| Task 2 — 系统模型 | 其他组员 | ⏳ | 等待其他组员提交 |
+| Task 3 — 漏洞发现 | **joey** | ✅ | 主漏洞：Session Token 使用 `java.util.Random` |
+| Task 4 — 威胁模型 | 其他组员 | ⏳ | 等待其他组员提交 |
+| Task 5 — 报告与演示 | 全员 | ⏳ | 需所有人完成后收尾 |
 
 ---
 
