@@ -70,7 +70,7 @@
 |--------|------------------------|
 | **Jiakai Bao** |  |
 | **Clarissa Mo** |  |
-| **C** |  |
+| **Yi Qiao** |  |
 | **Jiazhou Shen** |  |
 | **Lina He** |  |
 | **Handong Ding** |  |
