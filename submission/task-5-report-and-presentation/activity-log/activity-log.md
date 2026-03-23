@@ -1,7 +1,7 @@
 # INFO5995 Assignment 1 - Activity Log
 ## Contribution Matrix (N×N Format)
 
-**Team Members:** Jiakai, B, C, D, E, F
+**Team Members:** Jiakai, B, C, Jiazhou Shen, Lina He, Handong Ding
 
 ---
 
@@ -12,9 +12,9 @@
 | Jiakai |  |
 | B |  |
 | C |  |
-| D | |
-| E |  |
-| F |  |
+| Jiazhou Shen | |
+| Lina He |  |
+| Handong Ding |  |
 
 ---
 
@@ -27,9 +27,9 @@
 | **Jiakai** | Decompiling APK and using AI for preliminary vulnerability analysis |
 | **B** |  |
 | **C** |  |
-| **D** |  |
-| **E** |  |
-| **F** |  |
+| **Jiazhou Shen** |  |
+| **Lina He** |  |
+| **Handong Ding** |  |
 
 ### Member B's Assessment
 
@@ -38,9 +38,9 @@
 | **Jiakai** |  |
 | **B** |  |
 | **C** |  |
-| **D** |  |
-| **E** |  |
-| **F** |  |
+| **Jiazhou Shen** |  |
+| **Lina He** |  |
+| **Handong Ding** |  |
 
 ### Member C's Assessment
 
@@ -49,42 +49,42 @@
 | **Jiakai** |  |
 | **B** |  |
 | **C** |  |
-| **D** |  |
-| **E** |  |
-| **F** |  |
+| **Jiazhou Shen** |  |
+| **Lina He** |  |
+| **Handong Ding** |  |
 
-### Member D's Assessment
-
-| Member | Contribution Description |
-|--------|------------------------|
-| **Jiakai** |  |
-| **B** |  |
-| **C** |  |
-| **D** |  |
-| **E** |  |
-| **F** |  |
-
-### Member E's Assessment
+### Member Jiazhou Shen's Assessment
 
 | Member | Contribution Description |
 |--------|------------------------|
 | **Jiakai** |  |
 | **B** |  |
 | **C** |  |
-| **D** |  |
-| **E** |  |
-| **F** |  |
+| **Jiazhou Shen** |  |
+| **Lina He** |  |
+| **Handong Ding** |  |
 
-### Member F's Assessment
+### Member Lina He's Assessment
 
 | Member | Contribution Description |
 |--------|------------------------|
 | **Jiakai** |  |
 | **B** |  |
 | **C** |  |
-| **D** |  |
-| **E** |  |
-| **F** |  |
+| **Jiazhou Shen** |  |
+| **Lina He** |  |
+| **Handong Ding** |  |
+
+### Member Handong Ding's Assessment
+
+| Member | Contribution Description |
+|--------|------------------------|
+| **Jiakai** |  |
+| **B** |  |
+| **C** |  |
+| **Jiazhou Shen** |  |
+| **Lina He** |  |
+| **Handong Ding** |  |
 
 ---
 
@@ -92,8 +92,3 @@
 
 We confirm that all members contributed roughly equally to this assignment. Each member participated in analysis, documentation, and presentation preparation.
 
-**Signatures:**
-
-Member A: __________________    Member B: __________________    Member C: __________________
-
-Member D: __________________    Member E: __________________    Member F: __________________
