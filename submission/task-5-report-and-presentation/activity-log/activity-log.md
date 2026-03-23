@@ -1,7 +1,7 @@
 # INFO5995 Assignment 1 - Activity Log
 ## Contribution Matrix (N×N Format)
 
-**Team Members:** A, B, C, D, E, F
+**Team Members:** Jiakai, B, C, D, E, F
 
 ---
 
@@ -9,7 +9,7 @@
 
 | Member | Main Contributions |
 |--------|-------------------|
-| A |  |
+| Jiakai |  |
 | B |  |
 | C |  |
 | D | |
@@ -20,11 +20,11 @@
 
 ## N×N Contribution Matrix
 
-### Member A's Assessment
+### Member Jiakai's Assessment
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **A** |  |
+| **Jiakai** | Decompiling APK and using AI for preliminary vulnerability analysis |
 | **B** |  |
 | **C** |  |
 | **D** |  |
@@ -35,7 +35,7 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **A** |  |
+| **Jiakai** |  |
 | **B** |  |
 | **C** |  |
 | **D** |  |
@@ -46,7 +46,7 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **A** |  |
+| **Jiakai** |  |
 | **B** |  |
 | **C** |  |
 | **D** |  |
@@ -57,7 +57,7 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **A** |  |
+| **Jiakai** |  |
 | **B** |  |
 | **C** |  |
 | **D** |  |
@@ -68,7 +68,7 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **A** |  |
+| **Jiakai** |  |
 | **B** |  |
 | **C** |  |
 | **D** |  |
@@ -79,7 +79,7 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **A** |  |
+| **Jiakai** |  |
 | **B** |  |
 | **C** |  |
 | **D** |  |
