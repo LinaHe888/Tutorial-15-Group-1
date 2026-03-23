@@ -1,7 +1,7 @@
 # INFO5995 Assignment 1 - Activity Log
 ## Contribution Matrix (N×N Format)
 
-**Team Members:** Jiakai, B, C, Jiazhou Shen, Lina He, Handong Ding
+**Team Members:** Jiakai Bao, Clarissa Mo, Yi Qiao, Jiazhou Shen, Lina He, Handong Ding
 
 ---
 
@@ -9,9 +9,9 @@
 
 | Member | Main Contributions |
 |--------|-------------------|
-| Jiakai |  |
-| B |  |
-| C |  |
+| Jiakai Bao |  |
+| Clarissa Mo |  |
+| Yi Qiao |  |
 | Jiazhou Shen | |
 | Lina He |  |
 | Handong Ding |  |
@@ -20,35 +20,35 @@
 
 ## N×N Contribution Matrix
 
-### Member Jiakai's Assessment
+### Member Jiakai Bao's Assessment
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai** | Decompiling APK and using AI for preliminary vulnerability analysis |
-| **B** |  |
-| **C** |  |
+| **Jiakai Bao** | Decompiling APK and using AI for preliminary vulnerability analysis |
+| **Clarissa Mo** |  |
+| **Yi Qiao** |  |
 | **Jiazhou Shen** |  |
 | **Lina He** |  |
 | **Handong Ding** |  |
 
-### Member B's Assessment
+### Member Clarissa Mo's Assessment
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai** |  |
-| **B** |  |
-| **C** |  |
+| **Jiakai Bao** |  |
+| **Clarissa Mo** |  |
+| **Yi Qiao** |  |
 | **Jiazhou Shen** |  |
 | **Lina He** |  |
 | **Handong Ding** |  |
 
-### Member C's Assessment
+### Member Yi Qiao's Assessment
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai** |  |
-| **B** |  |
-| **C** |  |
+| **Jiakai Bao** |  |
+| **Clarissa Mo** |  |
+| **Yi Qiao** |  |
 | **Jiazhou Shen** |  |
 | **Lina He** |  |
 | **Handong Ding** |  |
@@ -57,9 +57,9 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai** |  |
-| **B** |  |
-| **C** |  |
+| **Jiakai Bao** |  |
+| **Clarissa Mo** |  |
+| **Yi Qiao** |  |
 | **Jiazhou Shen** |  |
 | **Lina He** |  |
 | **Handong Ding** |  |
@@ -68,8 +68,8 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai** |  |
-| **B** |  |
+| **Jiakai Bao** |  |
+| **Clarissa Mo** |  |
 | **C** |  |
 | **Jiazhou Shen** |  |
 | **Lina He** |  |
@@ -79,9 +79,9 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai** |  |
-| **B** |  |
-| **C** |  |
+| **Jiakai Bao** |  |
+| **Clarissa Mo** |  |
+| **Yi Qiao** |  |
 | **Jiazhou Shen** |  |
 | **Lina He** |  |
 | **Handong Ding** |  |
