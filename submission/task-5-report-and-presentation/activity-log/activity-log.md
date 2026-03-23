@@ -48,7 +48,7 @@
 |--------|------------------------|
 | **Jiakai Bao** | Task 1 APK decompilation (JADX + APKTool setup and execution), reverse engineering of a1_case1.apk, initial vulnerability identification in Login.generateSessionToken(), team handoff documentation with verified findings and process playbook, APK analysis ZIP packaging |
 | **Clarissa Mo** | |
-| **Yi Qiao** | Task 3 primary vulnerability discovery (CWE-338: java.util.Random for session token), complete vulnerability chain analysis with 4-step evidence chain (role definition, timing, storage, weak RNG), quantitative attack feasibility analysis (48-bit LCG, 2^48 seed space, days-to-crack timeline), report.tex contributions (Task 3 section, System and Threat Model), video scripts for Tasks 2/3/4 (~45-50s each), repo branch management and merge coordination |
+| **Yi Qiao** | Task 3 primary vulnerability discovery (CWE-338: java.util.Random for session token), complete vulnerability chain analysis with 4-step evidence chain (role definition, timing, storage, weak RNG), quantitative attack feasibility analysis (48-bit LCG, 2^48 seed space, days-to-crack timeline), report.pdf contributions (Task 3 section, System and Threat Model), repo branch management and merge coordination |
 | **Jiazhou Shen** | Task 4 threat model and exploitation analysis — threat model, root cause analysis, attacker model (rooted-device/reverse engineer), attacker capabilities and preconditions, 6-step attack path, impact and risk analysis (Medium risk) |
 | **Lina He** | |
 | **Handong Ding** | |
