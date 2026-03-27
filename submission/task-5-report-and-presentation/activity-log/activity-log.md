@@ -84,7 +84,7 @@
 | **Yi Qiao** | |
 | **Jiazhou Shen** | |
 | **Lina He** | |
-| **Handong Ding** | Conducted independent feasibility validation for Tasks 1-5 during the project startup and established the preliminary security models and reporting framework. Collaborated with the team to discuss and refine the logic for the PoC verification methods. |
+| **Handong Ding** | Conducted independent feasibility validation for Tasks 1-5 during the project startup and established the preliminary threat & security models and reporting framework & draft. Collaborated with the team to discuss and refine the logic for the PoC verification methods. |
 
 ---
 
