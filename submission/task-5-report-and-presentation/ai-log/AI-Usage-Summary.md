@@ -40,7 +40,6 @@ All AI-generated wording was manually reviewed and edited before use. AI outputs
 
 ## Documents and References Used
 
-- Assignment materials in the project repository, including README files, task notes, and submission drafts.
 - Android Debug Bridge documentation: https://developer.android.com/tools/adb
 - Android Emulator documentation: https://developer.android.com/studio/run/emulator
 - JADX project documentation: https://github.com/skylot/jadx
