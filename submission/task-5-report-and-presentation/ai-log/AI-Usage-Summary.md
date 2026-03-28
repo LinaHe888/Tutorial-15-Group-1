@@ -22,9 +22,11 @@ This file summarises how AI tools were used in this assignment. Summaries are pr
 
 AI assistance was used to:
 
-- draft concise summaries suitable for the report and presentation;
-- refine the wording of PoC explanations and video narration;
-- help produce a short summary of how AI was used across the assignment.
+- converting content into LaTeX formatted code;
+- suggesting how to record the PoC videos;
+- helping to understand key concepts;
+- conducting mock Q&A;
+- helping identify methods for obtaining login tokens and generating related scripts.
 
 ## Human Verification and Limits
 
