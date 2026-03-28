@@ -1,4 +1,4 @@
-# AI Usage Summary
+# AI Usage Log
 
 This file summarises how AI tools were used in this assignment. Summaries are provided instead of full prompt-response transcripts. The complete prompt–response transcripts for the LLM-based mock Q&A are included below.
 
@@ -37,7 +37,6 @@ All AI-generated wording was manually reviewed and edited before use. AI outputs
 - OpenAI Codex / ChatGPT: used for explanation, drafting, PoC narration, and workflow suggestions.
 - JADX: used manually for APK decompilation and inspection of Java code.
 - Android Emulator: used manually to demonstrate application behaviour during PoC preparation.
-- Android Debug Bridge (`adb`): used manually for APK installation, app launching, and screen recording.
 
 ## Documents and References Used
 
@@ -47,8 +46,6 @@ All AI-generated wording was manually reviewed and edited before use. AI outputs
 - JADX project documentation: https://github.com/skylot/jadx
 - Java `Random` documentation: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html
 - Java `SecureRandom` documentation: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/security/SecureRandom.html
-
-
 
 # Mock Q&A Simulation
 
