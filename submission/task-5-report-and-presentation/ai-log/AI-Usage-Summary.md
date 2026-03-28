@@ -26,7 +26,7 @@ AI assistance was used to:
 - suggesting how to record the PoC videos;
 - helping to understand key concepts;
 - conducting mock Q&A;
-- helping identify methods for obtaining login tokens and generating related scripts.
+- helping identify methods for obtaining login tokens and generating related scripts;
 
 ## Human Verification and Limits
 
