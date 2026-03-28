@@ -60,7 +60,7 @@
 | **Clarissa Mo** |Task2 app’s functionality and build system and threat model.|
 | **Yi Qiao** |Task3 Identify vulnerability related to randomness or cryptographic misuse.|
 | **Jiazhou Shen** |Task4 Explain why the vulnerability exists and how an attacker could exploit it.|
-| **Lina He** |Task5 Mitigation and document the findings clearly and organise required submission materials.|
+| **Lina He** |Task5 Mitigation and document the findings clearly and required submission materials.|
 | **Handong Ding** | |
 
 ### Member Handong Ding's Assessment
