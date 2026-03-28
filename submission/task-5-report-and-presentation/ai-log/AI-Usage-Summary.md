@@ -40,7 +40,6 @@ All AI-generated wording was manually reviewed and edited before use. AI outputs
 
 ## Documents and References Used
 
-- Android Debug Bridge documentation: https://developer.android.com/tools/adb
 - Android Emulator documentation: https://developer.android.com/studio/run/emulator
 - JADX project documentation: https://github.com/skylot/jadx
 - Java `Random` documentation: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html
