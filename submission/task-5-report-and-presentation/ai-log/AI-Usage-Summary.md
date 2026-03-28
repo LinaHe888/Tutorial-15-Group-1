@@ -8,34 +8,25 @@ AI was used as a support tool for explanation, organisation, and presentation pr
 
 ## Task 1
 
-AI assistance was used to help explain decompiled Android code structure and to turn technical findings into short written summaries. The actual APK inspection, decompilation review, and interpretation of application logic were completed manually.
+
 
 ## Task 2
 
-AI assistance was used to help organise system-model notes into clearer written explanations and to improve wording for security-relevant interactions, trust boundaries, and attack surfaces. Final modelling decisions remained based on manual analysis of the target application and assignment requirements.
+
 
 ## Task 3
 
-AI assistance was used to:
 
-- explain the role of `checkCredentials()`, `createSession()`, `generateSessionToken()`, and `new Random()` in the vulnerability chain;
-- help organise the vulnerability evidence into a clear Proof of Concept narrative;
-- draft concise English and Chinese explanations for the vulnerability;
-- prepare a PoC video script, including a login demonstration on an Android emulator and a code-evidence walkthrough;
-- suggest practical recording steps using `adb` and Android Emulator.
-
-The vulnerability itself was manually confirmed through APK decompilation, direct review of the relevant code paths, and manual inspection of screenshots and notes.
 
 ## Task 4
 
-AI assistance was used to improve the structure and clarity of threat-model explanations, including attacker goals, assets, abuse paths, and mitigations. The substantive threat analysis and risk conclusions were manually reviewed before inclusion in the submission.
+
 
 ## Task 5
 
 AI assistance was used to:
 
 - draft concise summaries suitable for the report and presentation;
-- prepare an AI usage statement;
 - refine the wording of PoC explanations and video narration;
 - help produce a short summary of how AI was used across the assignment.
 
@@ -53,9 +44,6 @@ All AI-generated wording was manually reviewed and edited before use. AI outputs
 ## Documents and References Used
 
 - Assignment materials in the project repository, including README files, task notes, and submission drafts.
-- [AI Usage Log.md](/Users/lina/Desktop/Tutorial-15-Group-1-main 2/submission/task-5-report-and-presentation/ai-log/AI Usage Log.md)
-- [task3-video-script.md](/Users/lina/Desktop/Tutorial-15-Group-1-main 2/submission/task-3-vulnerability-discovery/task3-video-script.md)
-- [official-links.md](/Users/lina/Desktop/Tutorial-15-Group-1-main 2/references/official-links.md)
 - Android Debug Bridge documentation: https://developer.android.com/tools/adb
 - Android Emulator documentation: https://developer.android.com/studio/run/emulator
 - JADX project documentation: https://github.com/skylot/jadx
