@@ -5,18 +5,6 @@
 
 ---
 
-## Contribution Summary
-
-| Member | Main Contributions |
-|--------|-------------------|
-| Jiakai Bao | |
-| Clarissa Mo | |
-| Yi Qiao | |
-| Jiazhou Shen | |
-| Lina He | |
-| Handong Ding | |
-
----
 
 ## N×N Contribution Matrix
 
