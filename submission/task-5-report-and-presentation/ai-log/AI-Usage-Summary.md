@@ -34,7 +34,7 @@ All AI-generated wording was manually reviewed and edited before use. AI outputs
 
 ## Tools Used
 
-- OpenAI Codex / ChatGPT: used for explanation, drafting, PoC narration, and workflow suggestions.
+- OpenAI Codex / ChatGPT: assisting with assignment guidance and conducting mock Q&A sessions.
 - JADX: used manually for APK decompilation and inspection of Java code.
 - Android Emulator: used manually to demonstrate application behaviour during PoC preparation.
 
