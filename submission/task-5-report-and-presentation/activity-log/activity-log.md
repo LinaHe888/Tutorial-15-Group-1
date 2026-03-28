@@ -56,11 +56,11 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai Bao** | |
-| **Clarissa Mo** | |
-| **Yi Qiao** | |
-| **Jiazhou Shen** | |
-| **Lina He** | |
+| **Jiakai Bao** |Task1 Decompile the APK and initial analyse. |
+| **Clarissa Mo** |Task2 app’s functionality and build system and threat model.|
+| **Yi Qiao** |Task3 Identify vulnerability related to randomness or cryptographic misuse.|
+| **Jiazhou Shen** |Task4 Explain why the vulnerability exists and how an attacker could exploit it.|
+| **Lina He** |Task5 Mitigation and document the findings clearly and organise required submission materials.|
 | **Handong Ding** | |
 
 ### Member Handong Ding's Assessment
