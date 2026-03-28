@@ -50,7 +50,7 @@ All AI-generated wording was manually reviewed and edited before use. AI outputs
 - Java `Random` documentation: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html
 - Java `SecureRandom` documentation: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/security/SecureRandom.html
 
-## Short Submission-Friendly Summary
+
 
 # Mock Q&A Simulation
 
