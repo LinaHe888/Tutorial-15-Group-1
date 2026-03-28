@@ -1,10 +1,6 @@
 # AI Usage Summary
 
-This file summarises how AI tools were used in this assignment. Summaries are provided instead of full prompt-response transcripts.
-
-## Scope of AI Use
-
-AI was used as a support tool for explanation, organisation, and presentation preparation. It was not used as a substitute for manual reverse engineering, manual evidence collection, or final security judgement.
+This file summarises how AI tools were used in this assignment. Summaries are provided instead of full prompt-response transcripts. The complete prompt–response transcripts for the LLM-based mock Q&A are included below.
 
 ## Task 1
 
