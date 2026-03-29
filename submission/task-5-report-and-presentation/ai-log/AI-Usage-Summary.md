@@ -20,6 +20,85 @@ Tools Used: Codex
 
 
 ## Task 3
+### Task 3 Progress AI-Log
+
+Tools Used: Codex, ChatGPT
+
+- Used AI-assisted review of the decompiled source to search for security-sensitive values related to randomness, tokens, sessions, and local storage.
+- Used JADX output plus AI support to identify `Login.generateSessionToken()` as the primary Task 3 finding because it uses `java.util.Random` to generate a session token.
+- Used AI to compare candidate weaknesses and justify why the session-token issue should be treated as the core vulnerability, while plaintext credential storage remained a supporting weakness.
+- Used AI to help structure the Task 3 evidence chain linking `KEY_SESSION_TOKEN`, successful credential verification, `createSession()`, and `generateSessionToken()`.
+- Used AI to draft and refine the detailed evidence file, short report paragraph, screenshot captions, and the primary-vs-secondary justification note.
+- Used AI to strengthen the attack feasibility analysis, including explanation of `java.util.Random` as a 48-bit LCG, why this is a weak PRNG for authentication tokens, and why `SecureRandom` is the correct mitigation.
+- Used AI support during dynamic PoC preparation to explain how to verify `credentials.txt`, inspect `SessionPrefs.xml`, and collect valid session tokens after login on the emulator.
+- The Task 3 workflow and progress were recorded in the Task 3 working files, especially `submission/task-3-vulnerability-discovery/PROGRESS_LOG.md`, `task3-primary-vulnerability-draft.md`, and `task3-complete-vulnerability-chain.md`.
+### [2026-03-21 03:13]
+- **Step:** Start Task 3 vulnerability discovery
+- **What I did:** Created a candidate findings table and drafted the primary vulnerability around session token generation.
+- **Commands used:** created `task3-candidate-findings.md` and `task3-primary-vulnerability-draft.md`
+- **Files changed:** `submission/task-3-vulnerability-discovery/task3-candidate-findings.md`, `submission/task-3-vulnerability-discovery/task3-primary-vulnerability-draft.md`, `submission/task-3-vulnerability-discovery/PROGRESS_LOG.md`
+- **What I found:** The strongest randomness-related issue is the use of `java.util.Random` in `Login.generateSessionToken()` for session token creation.
+- **Evidence / screenshots:** Based on `Login.java` and `MainActivity.java` from the decompiled output.
+- **Next step:** Extract exact code evidence lines and connect the vulnerability to attacker impact and threat model.
+
+
+### [2026-03-21 03:21]
+- **Step:** Expand Task 3 findings beyond the primary vulnerability
+- **What I did:** Reviewed local storage, session handling, and logging behavior to identify additional supporting security issues.
+- **Commands used:** searched the decompiled source for file I/O, token handling, logging, and randomness usage.
+- **Files changed:** `submission/task-3-vulnerability-discovery/task3-expanded-findings.md`
+- **What I found:** Besides the main `java.util.Random` token issue, the app also stores credentials in plaintext, relies on weak local session design, and includes minor debug logging around security-relevant logic.
+- **Evidence / screenshots:** Based on `MainActivity.java`, `Login.java`, `Profile.java`, and the manifest.
+- **Next step:** Write exact code evidence and convert the main finding into attack path + impact analysis.
+
+
+### [2026-03-21 03:27]
+- **Step:** Prepare Task 3 working structure
+- **What I did:** Created `evidence/`, `screenshots/`, and `notes/` folders for Task 3, plus a notes file and an evidence template.
+- **Commands used:** created Task 3 working folders and markdown templates.
+- **Files changed:** `submission/task-3-vulnerability-discovery/notes/task3-notes.md`, `submission/task-3-vulnerability-discovery/evidence/task3-evidence-template.md`
+- **What I found:** Task 3 is now organized in the same workflow style as Task 1, making it easier to collect screenshots and evidence.
+- **Evidence / screenshots:** none yet added for this specific step.
+- **Next step:** capture screenshots for `createSession()`, `KEY_SESSION_TOKEN`, and `generateSessionToken()`.
+
+
+### [2026-03-21 03:40]
+- **Step:** Write detailed Task 3 evidence document
+- **What I did:** Created a detailed evidence file for the randomness/session-token weakness in the same style as the Task 1 evidence document.
+- **Commands used:** created `submission/task-3-vulnerability-discovery/evidence/task3-randomness-evidence.md`
+- **Files changed:** `submission/task-3-vulnerability-discovery/evidence/task3-randomness-evidence.md`
+- **What I found:** The evidence chain is now clear: `sessionToken` -> `createSession()` -> `generateSessionToken()` -> `java.util.Random`, with plaintext credential storage as supporting context.
+- **Evidence / screenshots:** Based on `Login.java` and `MainActivity.java` from the decompiled output.
+- **Next step:** Add screenshots for the exact code blocks and connect this to Task 4 attack path/threat model.
+
+
+### [2026-03-21 03:49]
+- **Step:** Add Task 3 screenshot evidence
+- **What I did:** Added four screenshots covering session creation, weak token generation, login flow, and plaintext credential storage.
+- **Commands used:** copied inbound screenshots into `submission/task-3-vulnerability-discovery/evidence/`
+- **Files changed:** screenshot files under `submission/task-3-vulnerability-discovery/evidence/`, `submission/task-3-vulnerability-discovery/notes/task3-notes.md`
+- **What I found:** The screenshot set now visually supports both the primary vulnerability and the key supporting weakness.
+- **Evidence / screenshots:** `create-session-screenshot.jpg`, `generate-session-token-screenshot.jpg`, `login-flow-screenshot.jpg`, `plaintext-credentials-screenshot.jpg`
+- **Next step:** Convert Task 3 findings into attack path / impact text or start Task 4 threat model write-up.
+
+
+### [2026-03-22 23:17]
+- **Step:** Strengthen Task 3 report packaging
+- **What I did:** Added a short report paragraph, a screenshot index with captions, and a justification note explaining why the session-token weakness is the primary vulnerability and plaintext credential storage is secondary.
+- **Commands used:** created three Task 3 supporting markdown files.
+- **Files changed:** `submission/task-3-vulnerability-discovery/task3-short-report-paragraph.md`, `submission/task-3-vulnerability-discovery/evidence/task3-screenshot-index.md`, `submission/task-3-vulnerability-discovery/task3-primary-vs-secondary-justification.md`
+- **What I found:** Task 3 now has better report-ready packaging and clearer rubric alignment.
+- **Evidence / screenshots:** reuses the four existing Task 3 screenshots.
+- **Next step:** merge into the main report draft or update the LaTeX write-up accordingly.
+
+
+### [2026-03-22 23:40]
+- **Step:** Upgrade Task 3 to high-score standard
+- **What I did:** Added detailed attack feasibility analysis (48-bit LCG state, 62^16 search space), fix effectiveness analysis with quantitative comparison (SecureRandom 128-bit vs Random 48-bit state), and strengthened the primary vulnerability draft to match high-scoring rubric expectations.
+- **Files changed:** `evidence/task3-randomness-evidence.md`, `task3-primary-vulnerability-draft.md`
+- **What I found:** Task 3 now covers all high-score rubric requirements including concrete attack feasibility numbers and quantitative fix justification.
+- **Next step:** Update the LaTeX report with the stronger attack scenario and fix analysis.
+
 
 
 
