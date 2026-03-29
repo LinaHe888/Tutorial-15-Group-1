@@ -23,8 +23,12 @@ Tools Used Codex:
 
 
 ## Task 4
+Tools Used: Codex
 
-
+-Used AI to build the attacker model for the weak session-token vulnerability
+-Used AI to explain why java.util.Random is insecure for session-token generation
+-Used Codex to confirm that the token is created after successful login and stored as session data
+-Used Codex to support my own reproduction trial on the emulator
 
 ## Task 5
 
