@@ -55,7 +55,7 @@ To successfully reproduce this PoC, the following environment is required:
     ```bash
     adb shell cat /data/data/com.example.mastg.test0016/shared_prefs/SessionPrefs.xml
     ```
-3.  Identify the string value for the key `sessionToken` (e.g., `QnidCjrq5doa5Drh/`).
+3.  Identify the string value for the key `sessionToken` (e.g., `NLLwIJ6xssR28v1G/`).
 
 #### Step 3: Pattern Collection
 1.  Click **Log out** in the app.
@@ -72,7 +72,7 @@ To successfully reproduce this PoC, the following environment is required:
 The provided video (`poc-video.mp4`) illustrates the following:
 * **00:00 - 00:05:** Introduction to the test case and token constraints (16 characters).
 * **00:06 - 00:45:** The iterative process of logging in, dumping the `SessionPrefs.xml` via ADB, and copying tokens to a notepad.
-* **00:46 - 01:05:** Comparison of multiple tokens (e.g., `MmCGQ7ZJiXDoG8ut/`, `b9JOcSUilGqxF0bC/`) to confirm the predictable nature of the sequence.
+* **00:46 - 01:05:** Comparison of multiple tokens (e.g., `hCRz5d2hU2gMBWFe/`, `yPQtN59JTSDL0qt7/`) to confirm the predictable nature of the sequence.
 
 ---
 
