@@ -12,7 +12,7 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai Bao** | Decompiling APK and using AI for preliminary vulnerability analysis |
+| **Jiakai Bao** | Decompiling APK and using AI for preliminary vulnerability analysis Video editing |
 | **Clarissa Mo** | |
 | **Yi Qiao** | |
 | **Jiazhou Shen** | |
