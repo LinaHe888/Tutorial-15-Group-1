@@ -32,7 +32,7 @@ Tools Used: Codex
 
 ## Task 5
 
-AI assistance was used to:
+Tools Used: Codex and Chatgpt
 
 - converting content into LaTeX formatted code;
 - suggesting how to record the PoC videos;
