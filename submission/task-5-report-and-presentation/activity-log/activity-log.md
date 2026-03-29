@@ -45,12 +45,12 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai Bao** | |
-| **Clarissa Mo** | |
-| **Yi Qiao** | |
-| **Jiazhou Shen** | |
-| **Lina He** | |
-| **Handong Ding** | |
+| **Jiakai Bao** | Task 1: Worked on decompiling the APK, doing the initial analysis, and editing the presentation video. |
+| **Clarissa Mo** | Task 2: Worked on analysing the app’s functionality and building the system model. |
+| **Yi Qiao** | Task 3: Worked on identifying the vulnerability related to randomness or cryptographic misuse. |
+| **Jiazhou Shen** | Task 4: Refined the attacker threat model and explained why the vulnerability exists and how an attacker could potentially exploit it. |
+| **Lina He** | Task 5: Worked on mitigation, documenting the findings, and preparing the submission materials. |
+| **Handong Ding** | Prepared the comprehensive README and helped review and consolidate the relevant supporting materials for the final submission. |
 
 ### Member Lina He's Assessment
 
