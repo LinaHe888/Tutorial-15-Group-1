@@ -12,12 +12,12 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai Bao** | Decompiling APK and using AI for preliminary vulnerability analysis Video editing. |
+| **Jiakai Bao** | Task1: Decompiling APK and using AI for preliminary vulnerability analysis Video editing. |
 | **Clarissa Mo** | Task 2: Application functionality, system architecture, and threat model. |
-| **Yi Qiao** | |
-| **Jiazhou Shen** | |
-| **Lina He** | |
-| **Handong Ding** | |
+| **Yi Qiao** | Task 3: Detect and analyse vulnerabilities associated with insecure randomness or misuse of cryptographic mechanisms. |
+| **Jiazhou Shen** | Task 4: Describe the root causes of these vulnerabilities and outline potential attack vectors that could be leveraged by adversaries. |
+| **Lina He** | Task 5: Propose appropriate mitigation strategies and thoroughly document the identified issues along with the required deliverables. |
+| **Handong Ding** | Prepare a comprehensive README file and examine all relevant supporting materials. |
 
 ### Member Clarissa Mo's Assessment
 
