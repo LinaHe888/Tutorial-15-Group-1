@@ -480,3 +480,20 @@ If you want, I can now simulate **a harder follow-up (challenge questions tutors
 
 ---
 Powered by [ChatGPT Exporter](https://www.chatgptexporter.com)
+
+# Summary of Prompt–Response Interactions(Gemini)
+
+### 1. Initial Phase: Project Setup and Code Analysis
+* **Prompt Intent**: The user sought to understand the assignment requirements and initiate the audit process for the `MASTG_TEST0016` application.
+* **AI Support**: Guidance was provided on utilizing **JADX** for decompilation (Task 1) and mapping the application's internal data flow between `MainActivity`, `Login`, and `Profile` components (Task 2).
+* **Key Outcome**: Successful identification of the core technical roadmap and critical assets, including user credentials and session tokens.
+
+### 2. Vulnerability Identification and Technical Deep Dive
+* **Prompt Intent**: To pinpoint specific security flaws within the reverse-engineered source code.
+* **AI Support**: The interaction focused on the `Login.java` class (Lines 183-189), identifying the misuse of a weak **48-bit PRNG** (`java.util.Random`).
+* **Technical Discovery**: It was determined that the PRNG state was deterministic and predictable. Additionally, a secondary flaw was identified where credentials were stored in **plaintext** within `credentials.txt`.
+
+### 3. PoC Development and Mitigation Strategy
+* **Prompt Intent**: To construct a logical Proof of Concept (PoC) and develop professional remediation steps.
+* **AI Support**: The AI assisted in articulating the **PoC logic**—reconstructing the PRNG seed from observed previous tokens to predict future values.
+* **Final Recommendations**: Remediation strategies were refined to include upgrading the implementation to **`SecureRandom`** and increasing the session token length to **32 characters** to ensure sufficient entropy and security.
