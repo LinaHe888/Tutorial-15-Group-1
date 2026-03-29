@@ -3,6 +3,16 @@
 This file summarises how AI tools were used in this assignment. Summaries are provided instead of full prompt-response transcripts. The complete prompt–response transcripts for the LLM-based mock Q&A are included below.
 
 ## Task 1
+Tools Used
+Codex:
+Used AI to identify suitable tools for APK analysis (apktool and jadx)
+Used AI to understand the decompilation workflow and tool purposes
+Used Codex to confirm that the APK was successfully unpacked and key files were accessible
+Used AI to help locate key components:
+package name
+AndroidManifest.xml
+MainActivity
+Login.java
 
 
 
