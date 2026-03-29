@@ -67,11 +67,11 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai Bao** | |
-| **Clarissa Mo** | |
-| **Yi Qiao** | |
-| **Jiazhou Shen** | |
-| **Lina He** | |
+| **Jiakai Bao** | Responsible for decompiling the APK using JADX to reconstruct the Java source code. Collaborated with the team to perform preliminary vulnerability scans and managed the final video production. |
+| **Clarissa Mo** | Defined the application’s functional architecture and mapped the data flows between MainActivity, Login, and Profile. Contributed to identifying the protected assets and established the initial threat boundaries. |
+| **Yi Qiao** | Focused on detecting cryptographic weaknesses, specifically locating the 48-bit PRNG flaw in Login.java and the plaintext storage issue in MainActivity. Collaborated on analyzing the technical root causes. |
+| **Jiazhou Shen** | Developed the attack vectors and refined the PoC (Proof of Concept) logic to demonstrate how PRNG seed reconstruction leads to session hijacking. Worked with the team to verify the exploitability of identified flaws. |
+| **Lina He** | Proposed cryptographic mitigation strategies, including the implementation of SecureRandom and increasing token entropy. Responsible for thorough documentation of all identified issues and required deliverables. |
 | **Handong Ding** | Conducted independent feasibility validation for Tasks 1-5 during the project startup and established the preliminary threat & security models and reporting framework & draft. Collaborated with the team to discuss and refine the logic for the PoC verification methods. |
 
 ---
