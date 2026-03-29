@@ -12,8 +12,8 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai Bao** | Decompiling APK and using AI for preliminary vulnerability analysis Video editing |
-| **Clarissa Mo** | |
+| **Jiakai Bao** | Decompiling APK and using AI for preliminary vulnerability analysis Video editing. |
+| **Clarissa Mo** | Task 2: Application functionality, system architecture, and threat model. |
 | **Yi Qiao** | |
 | **Jiazhou Shen** | |
 | **Lina He** | |
