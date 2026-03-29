@@ -54,10 +54,10 @@
 
 | 检查项 | 状态 | 备注 |
 |---|---|---|
-| `presentation.mp4` 可正常播放 | ☐ | 目前仅看到 `presentation/README.md`，未看到最终 `presentation.mp4` |
-| 演示总时长不超过 5 分钟 | ☐ | 待最终视频确认 |
-| 每位成员发言至少 40 秒 | ☐ | 待最终视频确认 |
-| 演示已覆盖 model、vulnerability、fix | ☐ | 待最终视频/讲稿统一确认 |
+| `presentation.mp4` 可正常播放 | ☑ | `presentation/presentation.mp4` 已放入目录 |
+| 演示总时长不超过 5 分钟 | ☑ | 当前视频时长 299.5 秒 |
+| 每位成员发言至少 40 秒 | ☐ | 仍需人工逐人确认 |
+| 演示已覆盖 model、vulnerability、fix | ☐ | 建议人工播放最终视频确认 |
 | 团队已准备 Q&A | ☑ | AI log 中已包含 rubric-driven mock Q&A |
 
 
