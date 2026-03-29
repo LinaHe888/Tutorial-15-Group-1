@@ -1,9 +1,17 @@
 # Presentation Folder
 
-This folder is used to store presentation materials.
+## Purpose
+This folder stores presentation-related materials for the final Assignment 1 submission.
 
-Suggested contents:
+## Current Contents
+- `README.md`: folder description
+
+## Intended Use
+This folder is intended for:
 - `presentation.mp4`
-- speaking script
+- speaking scripts
 - allocated speaking parts
-- screenshots or supporting diagrams for explanation
+- screenshots or supporting diagrams used in the presentation
+
+## Notes
+At the moment, the final presentation video is not yet stored in this folder and should be added here before final submission.
