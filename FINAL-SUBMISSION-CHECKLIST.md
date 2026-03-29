@@ -8,10 +8,10 @@
 
 | 检查项 | 状态 | 备注 |
 |---|---|---|
-| 所有必交文件均已准备 | ☐ | `presentation.mp4` 与 `activity-log.pdf` 仍需确认/补齐 |
-| 文件命名清晰且版本一致 | ☐ | 仍有 `Report.pdf`、`PoC video.mp4` 等命名待统一确认 |
+| 所有必交文件均已准备 | ☑ | 当前仓库中已包含 report, ai-log, pocs, presentation, and activity-log artefacts |
+| 文件命名清晰且版本一致 | ☑ | 关键提交文件已统一为 lowercase / hyphenated naming style |
 | 最终文件均已放入正确目录 | ☑ | 现有提交材料已位于对应 submission 子目录 |
-| 仓库中无临时文件、缓存文件、无关截图 | ☐ | 仍存在 `.DS_Store` 等临时文件 |
+| 仓库中无临时文件、缓存文件、无关截图 | ☑ | `.DS_Store` temporary files have been removed |
 | 无敏感信息、密钥、账号凭证误传 | ☐ | 建议提交前再做一次人工复核 |
 
 ---
@@ -22,8 +22,8 @@
 
 | 检查项 | 状态 | 备注 |
 |---|---|---|
-| 使用官方 USENIX paper template | ☑ | 当前 `Report.pdf` 为双栏学术模板样式 |
-| `report.pdf` 页数不超过 2 页 | ☑ | 当前 `Report.pdf` 共 2 页 |
+| 使用官方 USENIX paper template | ☑ | 当前 `report.pdf` 为双栏学术模板样式 |
+| `report.pdf` 页数不超过 2 页 | ☑ | 当前 `report.pdf` 共 2 页 |
 | 已覆盖 system/threat model | ☑ | 报告含 “System and Threat Model” 章节 |
 | 已覆盖 vulnerability discovery & explanation | ☑ | 报告含 “Vulnerability Discovery” 与 “Vulnerability Analysis” |
 | 已覆盖 mitigation | ☑ | 报告含 “Mitigation” 章节 |
@@ -33,8 +33,8 @@
 
 | 检查项 | 状态 | 备注 |
 |---|---|---|
-| 已准备 `ai-log/` | ☑ | 目录及 `AI-Usage-Summary.md` 已存在 |
-| 已记录 AI 使用摘要 | ☑ | `AI-Usage-Summary.md` 已整理 |
+| 已准备 `ai-log/` | ☑ | 目录及 `ai-usage-summary.md` 已存在 |
+| 已记录 AI 使用摘要 | ☑ | `ai-usage-summary.md` 已整理 |
 | 已记录 tools/docs references | ☑ | AI log 中已列出 tools/docs references |
 | 已完成 rubric-driven mock Q&A | ☑ | AI log 中已包含 mock Q&A 记录 |
 | 已记录关键改进点 | ☑ | AI log 中已总结 key improvements |
@@ -45,8 +45,8 @@
 | 检查项 | 状态 | 备注 |
 |---|---|---|
 | 已准备 `pocs/` | ☑ | `pocs/` 目录已存在 |
-| PoC 视频可正常播放 | ☑ | `PoC video.mp4` 已存在 |
-| README 能说明 PoC 内容 | ☑ | `PoC README.md` 已存在 |
+| PoC 视频可正常播放 | ☑ | `poc-video.mp4` 已存在 |
+| README 能说明 PoC 内容 | ☑ | `poc-readme.md` 已存在 |
 | 关键截图、证据、说明完整 | ☑ | Task 3 evidence、截图和说明文件已整理 |
 
 

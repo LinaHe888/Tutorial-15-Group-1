@@ -4,7 +4,7 @@
 This folder contains the materials for Task 2, which explains how the app works and summarises the system model, protected assets, and main data flows.
 
 ## Current Contents
-- `Task 2 analysis.md`: Task 2 write-up describing app behaviour and system model
+- `task-2-analysis.md`: Task 2 write-up describing app behaviour and system model
 - `README.md`: folder description
 
 ## Role in the Assignment

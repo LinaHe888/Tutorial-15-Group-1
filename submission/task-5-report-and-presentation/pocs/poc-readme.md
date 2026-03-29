@@ -69,7 +69,7 @@ To successfully reproduce this PoC, the following environment is required:
 ---
 
 ### 5. Video Demonstration Summary
-The provided video (`PoC video.mp4`) illustrates the following:
+The provided video (`poc-video.mp4`) illustrates the following:
 * **00:00 - 00:05:** Introduction to the test case and token constraints (16 characters).
 * **00:06 - 00:45:** The iterative process of logging in, dumping the `SessionPrefs.xml` via ADB, and copying tokens to a notepad.
 * **00:46 - 01:05:** Comparison of multiple tokens (e.g., `MmCGQ7ZJiXDoG8ut/`, `b9JOcSUilGqxF0bC/`) to confirm the predictable nature of the sequence.

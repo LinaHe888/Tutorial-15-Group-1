@@ -4,7 +4,7 @@
 This folder contains the materials for Task 4, which explains why the identified vulnerability matters from the attacker’s perspective.
 
 ## Current Contents
-- `Task 4 – Threat Model and Exploitation Analysis.md`: Task 4 write-up covering attacker model, attack path, impact, and mitigation reasoning
+- `task-4-threat-model-and-exploitation-analysis.md`: Task 4 write-up covering attacker model, attack path, impact, and mitigation reasoning
 - `README.md`: folder description
 
 ## Role in the Assignment

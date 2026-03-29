@@ -4,7 +4,7 @@
 This folder stores the AI usage records for Assignment 1.
 
 ## Current Contents
-- `AI-Usage-Summary.md`: summary of how AI tools were used across the assignment, including mock Q&A and improvement notes
+- `ai-usage-summary.md`: summary of how AI tools were used across the assignment, including mock Q&A and improvement notes
 - `README.md`: folder description
 
 ## Role in the Assignment
@@ -16,4 +16,4 @@ This folder is intended to satisfy the assignment requirement to record:
 - key improvement points identified during rehearsal and revision
 
 ## Notes
-`AI-Usage-Summary.md` is currently the main AI log artefact in this folder.
+`ai-usage-summary.md` is currently the main AI log artefact in this folder.
