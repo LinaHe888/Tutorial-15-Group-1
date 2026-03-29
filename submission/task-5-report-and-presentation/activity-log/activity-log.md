@@ -23,12 +23,12 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai Bao** | |
-| **Clarissa Mo** | |
-| **Yi Qiao** | |
-| **Jiazhou Shen** | |
-| **Lina He** | |
-| **Handong Ding** | |
+| **Jiakai Bao** | Task 1: APK decompilcation, initial vulnerability analysis and presentation video editing.|
+| **Clarissa Mo** | Task 2: System and threat modeling based on simulator (main) and static analysis.|
+| **Yi Qiao** | Task 3: Vulnerability analysis related to randomness and cryptographic misuse.|
+| **Jiazhou Shen** | Task 4: Theoretical analysis on the reason of vulnerability and possible methods of exploitation.|
+| **Lina He** | Task 5: Mitigation strategies and preparation of submission materials.|
+| **Handong Ding** | README file and review and validation of submission materials.|
 
 ### Member Yi Qiao's Assessment
 
