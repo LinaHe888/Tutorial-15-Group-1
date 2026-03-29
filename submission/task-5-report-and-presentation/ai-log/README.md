@@ -1,9 +1,9 @@
 # AI Log Folder
 
-本目录用于存放 AI 使用记录。
+This folder is used to store AI usage records.
 
-建议内容：
+Suggested contents:
 - prompt-response summaries
-- 工具与文档引用
-- rubric-driven mock Q&A 记录
-- 修改与改进说明
+- tool and document references
+- rubric-driven mock Q&A records
+- revision and improvement notes

@@ -1,9 +1,9 @@
 # Task 2 - System Model
 
-建议上传内容：
-- App 功能总结
-- 系统模型图
-- 组件说明
-- 关键资产说明
-- 数据流说明
-- 安全假设与分析边界
+Suggested contents:
+- app functionality summary
+- system model diagram
+- component descriptions
+- key asset descriptions
+- data flow explanation
+- security assumptions and analysis boundaries

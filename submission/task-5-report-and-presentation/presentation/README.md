@@ -1,9 +1,9 @@
 # Presentation Folder
 
-本目录用于存放演示材料。
+This folder is used to store presentation materials.
 
-建议内容：
+Suggested contents:
 - `presentation.mp4`
-- 演讲稿
-- 分工台词
-- 讲解用截图或辅助图表
+- speaking script
+- allocated speaking parts
+- screenshots or supporting diagrams for explanation

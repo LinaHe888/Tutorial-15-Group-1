@@ -1,8 +1,8 @@
 # Activity Log Folder
 
-本目录用于存放成员贡献记录。
+This folder is used to store team contribution records.
 
-建议内容：
+Suggested contents:
 - `activity-log.pdf`
-- N×N contribution matrix 草稿
-- 小组分工记录
+- draft N×N contribution matrix
+- team task allocation records

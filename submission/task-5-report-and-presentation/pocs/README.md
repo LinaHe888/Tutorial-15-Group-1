@@ -1,8 +1,8 @@
 # PoC Folder
 
-本目录用于存放漏洞验证相关材料。
+This folder is used to store vulnerability validation materials.
 
-建议内容：
-- 漏洞复现视频
+Suggested contents:
+- vulnerability reproduction videos
 - PoC README
-- 支撑截图与说明文件
+- supporting screenshots and explanatory files
