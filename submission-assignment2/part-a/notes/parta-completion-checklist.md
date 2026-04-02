@@ -1,6 +1,10 @@
 # Part A Completion Checklist
 
 ## Core Deliverables
+- [x] Task 1 materials created
+- [x] Task 2 materials created
+- [x] Task 3 materials created
+- [x] Task 4 materials created
 - [x] Initial static scan completed
 - [x] System and threat model draft created
 - [x] Code evidence file created
