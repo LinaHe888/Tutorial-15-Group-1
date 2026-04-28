@@ -1,0 +1,28 @@
+# GET https://api.github.com/repos/HeadmasterEggy/info5995-a2-private-beta/contents/README.md
+HTTP/2 404 
+access-control-allow-origin: *
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+content-length: 141
+content-security-policy: default-src 'none'
+content-type: application/json; charset=utf-8
+date: [redacted]
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+vary: Accept-Encoding, Accept, X-Requested-With
+x-content-type-options: nosniff
+x-frame-options: deny
+x-github-api-version-selected: 2022-11-28
+x-github-media-type: github.v3; format=json
+x-xss-protection: 0
+server: [redacted]
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 56
+x-ratelimit-used: 4
+x-ratelimit-resource: core
+x-ratelimit-reset: 1777368802
+x-github-request-id: [redacted]
+
+{
+  "message": "Not Found",
+  "documentation_url": "https://docs.github.com/rest/repos/contents#get-repository-content",
+  "status": "404"
+}

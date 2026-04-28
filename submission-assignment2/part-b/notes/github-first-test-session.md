@@ -31,14 +31,14 @@ Commands to run only after env vars are set:
 curl -sS -i \
   -H "Authorization: Bearer $GH_ACCOUNT_B_TOKEN" \
   -H "Accept: application/vnd.github+json" \
-  -H "X-GitHub-Api-Version: 2026-03-10" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
   "https://api.github.com/repos/$GH_TEST_ORG/$GH_REPO_B"
 
 # REST: repo contents as Account B
 curl -sS -i \
   -H "Authorization: Bearer $GH_ACCOUNT_B_TOKEN" \
   -H "Accept: application/vnd.github+json" \
-  -H "X-GitHub-Api-Version: 2026-03-10" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
   "https://api.github.com/repos/$GH_TEST_ORG/$GH_REPO_B/contents/README.md"
 ```
 
@@ -126,7 +126,7 @@ Safe API examples to check permissions before attempting state-changing actions:
 curl -sS -i \
   -H "Authorization: Bearer $GH_ACCOUNT_B_TOKEN" \
   -H "Accept: application/vnd.github+json" \
-  -H "X-GitHub-Api-Version: 2026-03-10" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
   "https://api.github.com/repos/$GH_TEST_ORG/$GH_REPO_A"
 ```
 
