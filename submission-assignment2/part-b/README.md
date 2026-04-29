@@ -13,6 +13,7 @@ Current working materials:
 - `notes/agentic-bounty-playbook.md`: safe testing strategy for AI/agentic/MCP-style targets.
 - `notes/day-1-execution-plan.md`: two-hour execution checklist for selecting and testing the first target.
 - `notes/safe-test-payloads.md`: benign canary-based payloads for authorized testing.
+- `notes/superhuman-coda-first-target.md`: concrete first target plan for Superhuman/Coda-style AI boundary testing.
 - `scope/target-shortlist.md`: ranked target ideas and scope links to verify before testing.
 - `evidence/test-matrix.md`: reproducibility and evidence tracking table.
 - `evidence/finding-report-template.md`: template for turning a candidate into a bounty/course finding.
