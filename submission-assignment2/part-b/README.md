@@ -7,3 +7,9 @@ Expected submission path targets:
 - `evidence/`
 - `scope/`
 - `notes/`
+
+Current working materials:
+
+- `notes/agentic-bounty-playbook.md`: safe testing strategy for AI/agentic/MCP-style targets.
+- `scope/target-shortlist.md`: ranked target ideas and scope links to verify before testing.
+- `evidence/test-matrix.md`: reproducibility and evidence tracking table.
