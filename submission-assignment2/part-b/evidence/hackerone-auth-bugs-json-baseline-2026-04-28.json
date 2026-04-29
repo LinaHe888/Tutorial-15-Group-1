@@ -1,0 +1,37 @@
+{
+  "page": {
+    "url": "https://hackerone.com/hacker_dashboard/overview",
+    "title": "Dashboard | HackerOne"
+  },
+  "result": {
+    "id": 2,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": [
+          {
+            "u": "https://hackerone.com/bugs.json?subject=user",
+            "status": 404,
+            "ct": "text/html; charset=utf-8",
+            "len": 2608,
+            "head": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>Page not found | HackerOne</title>\n  <meta name=\"viewport\" content=\"width=device-width, user-scalable=yes, initial-scale=1\">\n  <meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'none'; base-uri 'self'; font-src 'self'; form-action 'none'; img-src 'self'; style-src 'self'\">\n  <meta http-equiv=\"Cross-Origin-Opener-Policy\" content=\"same-origin-allow-popups\">\n  <link rel=\"stylesheet\" href=\"/assets/error_pages-8b10b633daeba"
+          },
+          {
+            "u": "https://hackerone.com/bugs.json",
+            "status": 404,
+            "ct": "text/html; charset=utf-8",
+            "len": 2608,
+            "head": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>Page not found | HackerOne</title>\n  <meta name=\"viewport\" content=\"width=device-width, user-scalable=yes, initial-scale=1\">\n  <meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'none'; base-uri 'self'; font-src 'self'; form-action 'none'; img-src 'self'; style-src 'self'\">\n  <meta http-equiv=\"Cross-Origin-Opener-Policy\" content=\"same-origin-allow-popups\">\n  <link rel=\"stylesheet\" href=\"/assets/error_pages-8b10b633daeba"
+          },
+          {
+            "u": "https://hackerone.com/bugs?subject=user",
+            "status": 200,
+            "ct": "text/html; charset=utf-8",
+            "len": 2566,
+            "head": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <!--[if lte IE 8]>\n  <meta http-equiv=\"refresh\" content=\"0; url=/browser-not-supported.html\">\n  <![endif]-->\n\n  <meta charset=\"utf-8\">\n    <meta name=\"referrer\" content=\"origin-when-cross-origin\">\n  <meta name=\"viewport\" content=\"width=device-width, user-scalable=yes, initial-scale=1\">\n  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\n  \n\n  <title>HackerOne</title>\n\n  <meta\n    name=\"slack-app-id\"\n    content=\"A0BFC2YUS\" >\n    <meta\n      name=\""
+          }
+        ]
+      }
+    }
+  }
+}

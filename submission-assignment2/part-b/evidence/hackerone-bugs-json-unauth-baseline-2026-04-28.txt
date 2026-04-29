@@ -1,0 +1,3 @@
+BODY <empty> STATUS 412 CT text/plain; charset=utf-8 LOC None HEAD 
+BODY query=test STATUS 412 CT text/plain; charset=utf-8 LOC None HEAD 
+BODY page=1&view=default STATUS 412 CT text/plain; charset=utf-8 LOC None HEAD 

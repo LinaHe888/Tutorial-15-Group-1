@@ -1,0 +1,74 @@
+{
+  "page": {
+    "url": "https://hackerone.com/hacker_dashboard/overview",
+    "title": "Dashboard | HackerOne"
+  },
+  "result": {
+    "id": 2,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": [
+          {
+            "name": "whitelisted_teams",
+            "status": 200,
+            "data": {
+              "data": {
+                "me": {
+                  "id": "Z2lkOi8vaGFja2Vyb25lL1VzZXIvNDQ0MjA5MA==",
+                  "whitelisted_teams": {
+                    "edges": []
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "private_opportunity_fields",
+            "status": 200,
+            "data": {
+              "errors": [
+                {
+                  "message": "Expected NAME, actual: UNKNOWN_CHAR (\"\") at [1, 92]",
+                  "locations": [
+                    {
+                      "line": 1,
+                      "column": 92
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "name": "pending_invitations_guess",
+            "status": 200,
+            "data": {
+              "errors": [
+                {
+                  "message": "Field 'invitations' doesn't exist on type 'User' (Did you mean `notifications`?)",
+                  "locations": [
+                    {
+                      "line": 1,
+                      "column": 17
+                    }
+                  ],
+                  "path": [
+                    "query",
+                    "me",
+                    "invitations"
+                  ],
+                  "extensions": {
+                    "code": "undefinedField",
+                    "typeName": "User",
+                    "fieldName": "invitations"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+
+### security_public_reports
+{
+  "data": {
+    "reports": {
+      "edges": [
+        {
+          "node": {
+            "id": "Z2lkOi8vaGFja2Vyb25lL1JlcG9ydC8zMzc4NTQw",
+            "_id": "3378540",
+            "title": "Lack of Validation in Reward Redemption Allows Unlimited Burp Suite License Abuse",
+            "url": "https://hackerone.com/reports/3378540",
+            "disclosed_at": "2026-03-18T12:47:07.794Z",
+            "severity": {
+              "rating": "low"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "Z2lkOi8vaGFja2Vyb25lL1JlcG9ydC8zMjg3MjA4",
+            "_id": "3287208",
+            "title": "DOS via Mutation Aliasing in GraphQL Account Recovery Phone Number Verification API",
+            "url": "https://hackerone.com/reports/3287208",
+            "disclosed_at": "2026-04-16T12:00:20.788Z",
+            "severity": null
+          }
+        },
+        {
+          "node": {
+            "id": "Z2lkOi8vaGFja2Vyb25lL1JlcG9ydC8zMTc4OTk5",
+            "_id": "3178999",
+            "title": "Account takeover of existing HackerOne accounts through SCIM provisioning",
+            "url": "https://hackerone.com/reports/3178999",
+            "disclosed_at": "2025-07-17T14:12:57.135Z",
+            "severity": {
+              "rating": "high"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "Z2lkOi8vaGFja2Vyb25lL1JlcG9ydC8zMTY4Njkx",
+            "_id": "3168691",
+            "title": "Residual Malicious Payloads on HackerOne after Vulnerability Fixes",
+            "url": "https://hackerone.com/reports/3168691",
+            "disclosed_at": "2026-04-16T12:06:13.890Z",
+            "severity": {
+              "rating": "medium"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "Z2lkOi8vaGFja2Vyb25lL1JlcG9ydC8zMTEzMzk4",
+            "_id": "3113398",
+            "title": "Internal Access to Hackerone confluence Docs",
+            "url": "https://hackerone.com/reports/3113398",
+            "disclosed_at": "2025-08-15T15:30:51.456Z",
+            "severity": {
+              "rating": "high"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "Z2lkOi8vaGFja2Vyb25lL1JlcG9ydC8zMDAwNTEw",
+            "_id": "3000510",
+            "title": "The /reports/:id.json endpoint discloses potentially sensitive user attributes when reporter summary is present",
+            "url": "https://hackerone.com/reports/3000510",
+            "disclosed_at": "2025-04-01T18:
+
+### custom_fields_internal_vs_external
+{
+  "data": {
+    "team": {
+      "id": "Z2lkOi8vaGFja2Vyb25lL0VuZ2FnZW1lbnRzOjpCdWdCb3VudHlQcm9ncmFtLzEz",
+      "handle": "security",
+      "internal_custom_fields": {
+        "edges": []
+      },
+      "hacker_facing_custom_fields": {
+        "edges": []
+      }
+    }
+  }
+}
+
+### credential_claim_surface
+{
+  "errors": [
+    {
+      "message": "Field 'asset_identifier' doesn't exist on type 'StructuredScopeWithCredential'",
+      "locations": [
+        {
+          "line": 1,
+          "column": 339
+        }
+      ],
+      "path": [
+        "query",
+        "team",
+        "structured_scopes_with_credentials",
+        "asset_identifier"
+      ],
+      "extensions": {
+        "code": "undefinedField",
+        "typeName": "StructuredScopeWithCredential",
+        "fieldName": "asset_identifier"
+      }
+    },
+    {
+      "message": "Field 'claimed_credential' doesn't exist on type 'StructuredScopeWithCredential'",
+      "locations": [
+        {
+          "line": 1,
+          "column": 356
+        }
+      ],
+      "path": [
+        "query",
+        "team",
+        "structured_scopes_with_credentials",
+        "claimed_credential"
+      ],
+      "extensions": {
+        "code": "undefinedField",
+        "typeName": "StructuredScopeWithCredential",
+        "fieldName": "claimed_credential"
+      }
+    }
+  ]
+}
+
+### legacy_features_and_private_flags
+{
+  "data": {
+    "teams": {
+      "nodes": [
+        {
+          "id": "Z2lkOi8vaGFja2Vyb25lL0VuZ2FnZW1lbnRzOjpCdWdCb3VudHlQcm9ncmFtLzEz",
+          "name": "HackerOne",
+          "legacy_features": null,
+          "team_member_groups": []
+        }
+      ]
+    }
+  }
+}

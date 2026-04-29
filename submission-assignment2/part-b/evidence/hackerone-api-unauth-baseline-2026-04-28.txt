@@ -1,0 +1,4 @@
+/v1/hackers/programs/security STATUS 401 CT application/json; charset=utf-8 HEAD {"errors":[{"status":401}]}
+/v1/hackers/programs/security/updates STATUS 401 CT application/json; charset=utf-8 HEAD {"errors":[{"status":401}]}
+/v1/hackers/programs/security/structured_scopes STATUS 401 CT application/json; charset=utf-8 HEAD {"errors":[{"status":401}]}
+/v1/hackers/programs/github STATUS 401 CT application/json; charset=utf-8 HEAD {"errors":[{"status":401}]}

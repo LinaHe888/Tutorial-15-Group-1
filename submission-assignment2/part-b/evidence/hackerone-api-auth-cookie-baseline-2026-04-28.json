@@ -1,0 +1,61 @@
+{
+  "page": {
+    "url": "https://hackerone.com/security/reports/new?type=team&report_type=vulnerability",
+    "title": "HackerOne | Report Submission | HackerOne"
+  },
+  "result": {
+    "id": 2,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {}
+      },
+      "exceptionDetails": {
+        "exceptionId": 2,
+        "text": "Uncaught (in promise) TypeError: Failed to fetch",
+        "lineNumber": 26,
+        "columnNumber": 6957,
+        "scriptId": "9",
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "",
+              "scriptId": "9",
+              "url": "https://hackerone.com/assets/static/vendor-DwnXL0PB.js",
+              "lineNumber": 25,
+              "columnNumber": 6956
+            },
+            {
+              "functionName": "s",
+              "scriptId": "9",
+              "url": "https://hackerone.com/assets/static/vendor-DwnXL0PB.js",
+              "lineNumber": 294,
+              "columnNumber": 475
+            },
+            {
+              "functionName": "",
+              "scriptId": "170",
+              "url": "",
+              "lineNumber": 0,
+              "columnNumber": 271
+            },
+            {
+              "functionName": "",
+              "scriptId": "170",
+              "url": "",
+              "lineNumber": 0,
+              "columnNumber": 469
+            }
+          ]
+        },
+        "exception": {
+          "type": "object",
+          "subtype": "error",
+          "className": "TypeError",
+          "description": "TypeError: Failed to fetch\n    at https://hackerone.com/assets/static/vendor-DwnXL0PB.js:26:6957\n    at s (https://hackerone.com/assets/static/vendor-DwnXL0PB.js:295:476)\n    at <anonymous>:1:272\n    at <anonymous>:1:470",
+          "objectId": "670119482098972191.19.1"
+        }
+      }
+    }
+  }
+}

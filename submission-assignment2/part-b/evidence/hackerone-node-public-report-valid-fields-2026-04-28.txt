@@ -1,0 +1,37 @@
+{
+  "data": {
+    "node": {
+      "__typename": "Report",
+      "id": "Z2lkOi8vaGFja2Vyb25lL1JlcG9ydC8zMDAwNTEw",
+      "_id": "3000510",
+      "title": "The /reports/:id.json endpoint discloses potentially sensitive user attributes when reporter summary is present",
+      "url": "https://hackerone.com/reports/3000510",
+      "created_at": "2025-02-19T10:52:12.719Z",
+      "disclosed_at": "2025-04-01T18:23:00.654Z",
+      "state": null,
+      "substate": "resolved",
+      "reporter": {
+        "username": "avinash_",
+        "email": null,
+        "cleared": false,
+        "verified": false,
+        "hackerone_triager": false
+      },
+      "team": {
+        "handle": "security",
+        "name": "HackerOne",
+        "state": "public_mode",
+        "submission_state": "open"
+      },
+      "structured_scope": null,
+      "severity": {
+        "rating": "critical",
+        "score": 9.2
+      },
+      "weakness": {
+        "id": "Z2lkOi8vaGFja2Vyb25lL1dlYWtuZXNzLzE4",
+        "name": "Information Disclosure"
+      }
+    }
+  }
+}

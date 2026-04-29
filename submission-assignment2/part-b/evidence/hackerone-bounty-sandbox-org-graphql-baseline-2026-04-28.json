@@ -1,0 +1,50 @@
+{
+  "page": {
+    "url": "https://hackerone.com/organizations/info5995_bounty_sandbox_joey_2_demo/engagements",
+    "title": "Engagements | HackerOne"
+  },
+  "result": {
+    "id": 2,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "data": {
+            "organizations": {
+              "nodes": [
+                {
+                  "id": "Z2lkOi8vaGFja2Vyb25lL09yZ2FuaXphdGlvbi83NTg0OQ==",
+                  "_id": "75849",
+                  "handle": "info5995_bounty_sandbox_joey_2_demo",
+                  "name": "INFO5995 Bounty Sandbox Joey 20260428",
+                  "teams": {
+                    "edges": [
+                      {
+                        "node": {
+                          "id": "Z2lkOi8vaGFja2Vyb25lL0VuZ2FnZW1lbnRzOjpCdWdCb3VudHlQcm9ncmFtLzExMjMyMQ==",
+                          "_id": "112321",
+                          "handle": "info5995_bounty_sandbox_jo_h1b",
+                          "name": "INFO5995 Bounty Sandbox Jo H1B",
+                          "type": "Engagements::BugBountyProgram",
+                          "state": "sandboxed",
+                          "offers_bounties": true,
+                          "submission_state": "open",
+                          "i_can_manage_program": true,
+                          "i_can_see_report_submit_button": true,
+                          "url": "https://hackerone.com/info5995_bounty_sandbox_jo_h1b",
+                          "structured_scopes": {
+                            "edges": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+URL: https://hackerone.com/reports/3000510.json
+STATUS: 200
+CONTENT-TYPE: application/json; charset=utf-8
+LOCATION: None
+BODY_HEAD: {"id":3000510,"global_id":"Z2lkOi8vaGFja2Vyb25lL1JlcG9ydC8zMDAwNTEw","url":"https://hackerone.com/reports/3000510","title":"The /reports/:id.json endpoint discloses potentially sensitive user attributes when reporter summary is present","state":"Closed","substate":"resolved","severity_rating":"critical","readable_substate":"Resolved","created_at":"2025-02-19T10:52:12.719Z","submitted_at":"2025-02-19T10:52:13.074Z","is_member_of_team?":false,"is_organization_group_member?":false,"is_triager?":fal
+---
+URL: https://hackerone.com/reports/2580982.json
+STATUS: 200
+CONTENT-TYPE: application/json; charset=utf-8
+LOCATION: None
+BODY_HEAD: {"id":2580982,"global_id":"Z2lkOi8vaGFja2Vyb25lL1JlcG9ydC8yNTgwOTgy","url":"https://hackerone.com/reports/2580982","title":"Private data related to program exposed via /reports/\u003cid\u003e.json endpoint to external user participant","state":"Closed","substate":"informative","severity_rating":"medium","readable_substate":"Informative","created_at":"2024-06-28T12:22:19.750Z","submitted_at":"2024-06-28T12:22:20.281Z","is_member_of_team?":false,"is_organization_group_member?":false,"is_triager?":
+---
+URL: https://hackerone.com/reports/3378540.json
+STATUS: 200
+CONTENT-TYPE: application/json; charset=utf-8
+LOCATION: None
+BODY_HEAD: {"id":3378540,"global_id":"Z2lkOi8vaGFja2Vyb25lL1JlcG9ydC8zMzc4NTQw","url":"https://hackerone.com/reports/3378540","title":"Lack of Validation in Reward Redemption Allows Unlimited Burp Suite License Abuse","state":"Closed","substate":"resolved","severity_rating":"low","readable_substate":"Resolved","created_at":"2025-10-10T10:33:07.405Z","submitted_at":"2025-10-10T10:33:07.834Z","is_member_of_team?":false,"is_organization_group_member?":false,"is_triager?":false,"reporter":{"disabled":false,"us
+---

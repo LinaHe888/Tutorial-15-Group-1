@@ -1,0 +1,92 @@
+
+ID gid://hackerone/PolicyPageAssetGroupsIndex::PolicyPageAssetGroup/3981-41287
+{
+  "errors": [
+    {
+      "message": "No such type PolicyPageAssetGroupDocument, so it can't be a fragment condition",
+      "locations": [
+        {
+          "line": 1,
+          "column": 45
+        }
+      ],
+      "path": [
+        "query",
+        "node",
+        "... on PolicyPageAssetGroupDocument"
+      ],
+      "extensions": {
+        "code": "undefinedType",
+        "typeName": "PolicyPageAssetGroupDocument"
+      }
+    }
+  ]
+}
+
+ID Z2lkOi8vaGFja2Vyb25lL1BvbGljeVBhZ2VBc3NldEdyb3Vwc0luZGV4OjpQb2xpY3lQYWdlQXNzZXRHcm91cC8zOTgxLTQxMjg3
+{
+  "errors": [
+    {
+      "message": "No such type PolicyPageAssetGroupDocument, so it can't be a fragment condition",
+      "locations": [
+        {
+          "line": 1,
+          "column": 45
+        }
+      ],
+      "path": [
+        "query",
+        "node",
+        "... on PolicyPageAssetGroupDocument"
+      ],
+      "extensions": {
+        "code": "undefinedType",
+        "typeName": "PolicyPageAssetGroupDocument"
+      }
+    }
+  ]
+}
+
+ID gid://hackerone/PolicyPageAssetGroupsIndex::PolicyPageAssetGroup/3981-41287 typename-only
+{
+  "errors": [
+    {
+      "message": "Resource does not exist",
+      "locations": [
+        {
+          "line": 1,
+          "column": 17
+        }
+      ],
+      "path": [
+        "node"
+      ],
+      "type": "NOT_FOUND"
+    }
+  ],
+  "data": {
+    "node": null
+  }
+}
+
+ID Z2lkOi8vaGFja2Vyb25lL1BvbGljeVBhZ2VBc3NldEdyb3Vwc0luZGV4OjpQb2xpY3lQYWdlQXNzZXRHcm91cC8zOTgxLTQxMjg3 typename-only
+{
+  "errors": [
+    {
+      "message": "Resource does not exist",
+      "locations": [
+        {
+          "line": 1,
+          "column": 17
+        }
+      ],
+      "path": [
+        "node"
+      ],
+      "type": "NOT_FOUND"
+    }
+  ],
+  "data": {
+    "node": null
+  }
+}

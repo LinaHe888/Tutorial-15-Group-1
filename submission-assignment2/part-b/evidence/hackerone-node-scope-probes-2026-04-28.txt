@@ -1,0 +1,121 @@
+
+### node_public_report
+{
+  "errors": [
+    {
+      "message": "Expected NAME, actual: UNKNOWN_CHAR (\"\") at [1, 148]",
+      "locations": [
+        {
+          "line": 1,
+          "column": 148
+        }
+      ]
+    }
+  ]
+}
+
+### security_structured_scope_ids
+{
+  "errors": [
+    {
+      "message": "Selections can't be made directly on unions (see selections on DocumentUnion)",
+      "locations": [
+        {
+          "line": 1,
+          "column": 102
+        }
+      ],
+      "path": [
+        "query",
+        "team",
+        "structured_scopes_search",
+        "nodes",
+        "id"
+      ],
+      "extensions": {
+        "code": "selectionMismatch",
+        "nodeName": "DocumentUnion"
+      }
+    },
+    {
+      "message": "Selections can't be made directly on unions (see selections on DocumentUnion)",
+      "locations": [
+        {
+          "line": 1,
+          "column": 102
+        }
+      ],
+      "path": [
+        "query",
+        "team",
+        "structured_scopes_search",
+        "nodes",
+        "_id"
+      ],
+      "extensions": {
+        "code": "selectionMismatch",
+        "nodeName": "DocumentUnion"
+      }
+    },
+    {
+      "message": "Selections can't be made directly on unions (see selections on DocumentUnion)",
+      "locations": [
+        {
+          "line": 1,
+          "column": 102
+        }
+      ],
+      "path": [
+        "query",
+        "team",
+        "structured_scopes_search",
+        "nodes",
+        "asset_identifier"
+      ],
+      "extensions": {
+        "code": "selectionMismatch",
+        "nodeName": "DocumentUnion"
+      }
+    },
+    {
+      "message": "Selections can't be made directly on unions (see selections on DocumentUnion)",
+      "locations": [
+        {
+          "line": 1,
+          "column": 102
+        }
+      ],
+      "path": [
+        "query",
+        "team",
+        "structured_scopes_search",
+        "nodes",
+        "asset_type"
+      ],
+      "extensions": {
+        "code": "selectionMismatch",
+        "nodeName": "DocumentUnion"
+      }
+    },
+    {
+      "message": "Selections can't be made directly on unions (see selections on DocumentUnion)",
+      "locations": [
+        {
+          "line": 1,
+          "column": 102
+        }
+      ],
+      "path": [
+        "query",
+        "team",
+        "structured_scopes_search",
+        "nodes",
+        "instruction"
+      ],
+      "extensions": {
+        "code": "selectionMismatch",
+        "nodeName": "DocumentUnion"
+      }
+    }
+  ]
+}

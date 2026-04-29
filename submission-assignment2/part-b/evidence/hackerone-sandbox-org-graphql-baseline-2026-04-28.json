@@ -1,0 +1,245 @@
+{
+  "page": {
+    "url": "https://hackerone.com/organizations/info5995_sandbox_joey_20260428_demo/engagements",
+    "title": "Engagements | HackerOne"
+  },
+  "result": {
+    "id": 2,
+    "result": {
+      "result": {
+        "type": "object",
+        "value": {
+          "data": {
+            "organizations": {
+              "nodes": [
+                {
+                  "id": "Z2lkOi8vaGFja2Vyb25lL09yZ2FuaXphdGlvbi83NTg0OA==",
+                  "_id": "75848",
+                  "handle": "info5995_sandbox_joey_20260428_demo",
+                  "name": "INFO5995 Sandbox Joey 20260428",
+                  "teams": {
+                    "edges": []
+                  },
+                  "features": [
+                    {
+                      "key": "embedded-form-ios-fix",
+                      "enabled": true
+                    },
+                    {
+                      "key": "intake-recommendation-review-gate",
+                      "enabled": true
+                    },
+                    {
+                      "key": "shadow-agentcore-duplicate-detection",
+                      "enabled": true
+                    },
+                    {
+                      "key": "eventbridge-publishing",
+                      "enabled": true
+                    },
+                    {
+                      "key": "shadow-agentcore-precedent-analysis",
+                      "enabled": true
+                    },
+                    {
+                      "key": "churn-rejected-entry-vdp-teams",
+                      "enabled": true
+                    },
+                    {
+                      "key": "shadow-agentcore-severity",
+                      "enabled": true
+                    },
+                    {
+                      "key": "shadow-agentcore-weakness-classification",
+                      "enabled": true
+                    },
+                    {
+                      "key": "shadow-agentcore-scope-check",
+                      "enabled": true
+                    },
+                    {
+                      "key": "shadow-agentcore-vulnerability-assessment",
+                      "enabled": true
+                    },
+                    {
+                      "key": "triage-api-webhooks",
+                      "enabled": true
+                    },
+                    {
+                      "key": "agentic-automatic-intake",
+                      "enabled": true
+                    },
+                    {
+                      "key": "report-assistant-v2",
+                      "enabled": true
+                    },
+                    {
+                      "key": "hai-intake-job-rate-limit-boost",
+                      "enabled": true
+                    },
+                    {
+                      "key": "enable-2fa-with-security-keys",
+                      "enabled": true
+                    },
+                    {
+                      "key": "weakness-classification-agent-v2",
+                      "enabled": true
+                    },
+                    {
+                      "key": "agent-auto-routing",
+                      "enabled": true
+                    },
+                    {
+                      "key": "priority-agentic-mode",
+                      "enabled": true
+                    },
+                    {
+                      "key": "convert-payout-access-bans",
+                      "enabled": true
+                    },
+                    {
+                      "key": "spend-by-asset-category",
+                      "enabled": true
+                    },
+                    {
+                      "key": "report-assistant-on-anthropic-api",
+                      "enabled": true
+                    },
+                    {
+                      "key": "clear-idv-expired-user-removal",
+                      "enabled": true
+                    },
+                    {
+                      "key": "hacker-invitations-api",
+                      "enabled": true
+                    },
+                    {
+                      "key": "hai-for-hackers",
+                      "enabled": true
+                    },
+                    {
+                      "key": "report-assistant-agent-eligible-programs",
+                      "enabled": true
+                    },
+                    {
+                      "key": "intake-agent-asset-ownership-enabled",
+                      "enabled": true
+                    },
+                    {
+                      "key": "dedupe-action-recommendations",
+                      "enabled": true
+                    },
+                    {
+                      "key": "slack-migration",
+                      "enabled": true
+                    },
+                    {
+                      "key": "bounty-informed-pentest-mailing",
+                      "enabled": true
+                    },
+                    {
+                      "key": "bounty-informed-pentest",
+                      "enabled": true
+                    },
+                    {
+                      "key": "verification-updated-support-app",
+                      "enabled": true
+                    },
+                    {
+                      "key": "idv-risk-label-notifications",
+                      "enabled": true
+                    },
+                    {
+                      "key": "verification-save-risk-labels",
+                      "enabled": true
+                    },
+                    {
+                      "key": "triage-intake-dupe-recommendations",
+                      "enabled": true
+                    },
+                    {
+                      "key": "pentest-clickthrough-agreements",
+                      "enabled": true
+                    },
+                    {
+                      "key": "hai-rom-tool",
+                      "enabled": true
+                    },
+                    {
+                      "key": "stripe-payment-intents",
+                      "enabled": true
+                    },
+                    {
+                      "key": "pentest-scoping-back-to-draft",
+                      "enabled": true
+                    },
+                    {
+                      "key": "external-automations",
+                      "enabled": true
+                    },
+                    {
+                      "key": "embedded-form-version-2",
+                      "enabled": true
+                    },
+                    {
+                      "key": "analytics-use-materialized-views",
+                      "enabled": true
+                    },
+                    {
+                      "key": "hai-report-insights",
+                      "enabled": true
+                    },
+                    {
+                      "key": "hai-prompt-caching",
+                      "enabled": true
+                    },
+                    {
+                      "key": "asset-placeholder-documentation",
+                      "enabled": true
+                    },
+                    {
+                      "key": "es-notifications",
+                      "enabled": true
+                    },
+                    {
+                      "key": "write-ups-markdown-engine-kramdown",
+                      "enabled": true
+                    },
+                    {
+                      "key": "hai-return-on-mitigation",
+                      "enabled": true
+                    },
+                    {
+                      "key": "pentest-csa-customer-self-setup",
+                      "enabled": true
+                    },
+                    {
+                      "key": "auto-accept-product-entitlements",
+                      "enabled": true
+                    },
+                    {
+                      "key": "clear-voucher",
+                      "enabled": true
+                    },
+                    {
+                      "key": "inbox-mediation-summary",
+                      "enabled": true
+                    },
+                    {
+                      "key": "program-request-integrations",
+                      "enabled": true
+                    },
+                    {
+                      "key": "hai",
+                      "enabled": true
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

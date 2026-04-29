@@ -1,0 +1,252 @@
+
+### node_public_report
+{
+  "errors": [
+    {
+      "message": "Field 'public' doesn't exist on type 'Report'",
+      "locations": [
+        {
+          "line": 1,
+          "column": 75
+        }
+      ],
+      "path": [
+        "query",
+        "node",
+        "... on Report",
+        "public"
+      ],
+      "extensions": {
+        "code": "undefinedField",
+        "typeName": "Report",
+        "fieldName": "public"
+      }
+    },
+    {
+      "message": "Field 'can_view_report' doesn't exist on type 'Report'",
+      "locations": [
+        {
+          "line": 1,
+          "column": 82
+        }
+      ],
+      "path": [
+        "query",
+        "node",
+        "... on Report",
+        "can_view_report"
+      ],
+      "extensions": {
+        "code": "undefinedField",
+        "typeName": "Report",
+        "fieldName": "can_view_report"
+      }
+    },
+    {
+      "message": "Field 'can_view_team' doesn't exist on type 'Report'",
+      "locations": [
+        {
+          "line": 1,
+          "column": 98
+        }
+      ],
+      "path": [
+        "query",
+        "node",
+        "... on Report",
+        "can_view_team"
+      ],
+      "extensions": {
+        "code": "undefinedField",
+        "typeName": "Report",
+        "fieldName": "can_view_team"
+      }
+    },
+    {
+      "message": "Field 'permissions' doesn't exist on type 'Team'",
+      "locations": [
+        {
+          "line": 1,
+          "column": 212
+        }
+      ],
+      "path": [
+        "query",
+        "node",
+        "... on Report",
+        "team",
+        "permissions"
+      ],
+      "extensions": {
+        "code": "undefinedField",
+        "typeName": "Team",
+        "fieldName": "permissions"
+      }
+    }
+  ]
+}
+
+### security_structured_scope_ids
+{
+  "data": {
+    "team": {
+      "structured_scopes": {
+        "edges": [
+          {
+            "node": {
+              "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS8z",
+              "_id": "3",
+              "asset_identifier": "hackerone.com",
+              "asset_type": "URL",
+              "instruction": "This is our main application that hackers and customers use to interact with each other. It connects with a database that contains information about vulnerability reports, users, and programs. This system’s backend is written in Ruby and exposes data to the client through GraphQL, rendered pages, and JSON endpoints."
+            }
+          },
+          {
+            "node": {
+              "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS81",
+              "_id": "5",
+              "asset_identifier": "api.hackerone.com",
+              "asset_type": "URL",
+              "instruction": "This is our public API that customers use to read and interact with reports. To look for vulnerabilities in this asset, create a sandboxed program, select HackerOne Professional or HackerOne Enterprise in the Product Edition settings page, and create an API token. This system’s backend is written in Ruby, converts the request to a GraphQL query, and serializes the GraphQL result to JSON."
+            }
+          },
+          {
+            "node": {
+              "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS82",
+              "_id": "6",
+              "asset_identifier": "www.hackerone.com",
+              "asset_type": "URL",
+              "instruction": "This is our marketing website. It does not contain any report or customer information. It may store information about hackers, such as information collected through the [penetration tester sign up form](https://www.hackerone.com/hackers/pentest-community-application). The website runs Drupal with a few customizations."
+            }
+          },
+          {
+            "node": {
+              "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS8xMzA5NTk=",
+              "_id": "130959",
+              "asset_identifier": "app.pullrequest.com",
+              "asset_type": "URL",
+              "instruction": "Please use your `@wearehackerone.com` email address when signing up."
+            }
+          },
+          {
+            "node": {
+              "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS8xMzA5NjA=",
+              "_id": "130960",
+              "asset_identifier": "reviewer.pullrequest.com",
+              "asset_type": "URL",
+              "instruction": "Please use your `@wearehackerone.com` email address when signing up."
+            }
+          },
+          {
+            "node": {
+              "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS8xMzA5NjQ=",
+              "_id": "130964",
+              "asset_identifier": "hackerone-us-west-2-production-attachments.s3.us-west-2.amazonaws.com",
+              "asset_type": "URL",
+              "instruction": "This is an Amazon S3 bucket that contains attachments of reports and activities. These attachments may contain confidential information. A signed request is required to download an object."
+            }
+          },
+          {
+            "node": {
+              "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS80MDkwNTY=",
+              "_id": "409056",
+              "asset_identifier": "www.wearehackerone.com",
+              "asset_type": "URL",
+              "instruction": null
+            }
+          },
+          {
+            "node": {
+              "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS80MDkwNTc=",
+              "_id": "409057",
+              "asset_identifier": "mta-sts.wearehackerone.com",
+              "asset_type": "URL",
+              "instruction": null
+            }
+          },
+          {
+            "node": {
+              "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS82OTE3",
+              "_id": "6917",
+              "asset_identifier": "errors.hackerone.net",
+              "asset_type": "URL",
+              "instruction": "A separate domain that we use to capture information of client and server side exceptions."
+            }
+          },
+          {
+            "node": {
+              "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS82OTE4",
+              "_id": "6918",
+              "asset_identifier": "https://*.hackerone-ext-content.com",
+              "asset_type": "URL",
+              "instruction": "This domain is used to serve static marketing assets. No confidentia
+
+### scope_attachments_Y29wZS8z
+{
+  "data": {
+    "scope": {
+      "__typename": "StructuredScope",
+      "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS8z",
+      "_id": "3",
+      "asset_identifier": "hackerone.com",
+      "asset_type": "URL",
+      "attachments": []
+    }
+  }
+}
+
+### scope_attachments_Y29wZS81
+{
+  "data": {
+    "scope": {
+      "__typename": "StructuredScope",
+      "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS81",
+      "_id": "5",
+      "asset_identifier": "api.hackerone.com",
+      "asset_type": "URL",
+      "attachments": []
+    }
+  }
+}
+
+### scope_attachments_Y29wZS82
+{
+  "data": {
+    "scope": {
+      "__typename": "StructuredScope",
+      "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS82",
+      "_id": "6",
+      "asset_identifier": "www.hackerone.com",
+      "asset_type": "URL",
+      "attachments": []
+    }
+  }
+}
+
+### scope_attachments_MzA5NTk=
+{
+  "data": {
+    "scope": {
+      "__typename": "StructuredScope",
+      "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS8xMzA5NTk=",
+      "_id": "130959",
+      "asset_identifier": "app.pullrequest.com",
+      "asset_type": "URL",
+      "attachments": []
+    }
+  }
+}
+
+### scope_attachments_MzA5NjA=
+{
+  "data": {
+    "scope": {
+      "__typename": "StructuredScope",
+      "id": "Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS8xMzA5NjA=",
+      "_id": "130960",
+      "asset_identifier": "reviewer.pullrequest.com",
+      "asset_type": "URL",
+      "attachments": []
+    }
+  }
+}
