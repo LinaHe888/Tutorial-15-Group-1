@@ -1,6 +1,6 @@
-# 5. Mitigation
+# Mitigation
 
-## 5.1 Enforce HTTPS Only
+## 1. Enforce HTTPS Only
 
 Firstly, cleartext traffic should be disabled in the `AndroidManifest.xml` file by removing or changing:
 
@@ -26,7 +26,7 @@ This prevents the WebView from loading insecure content and reduces exposure to 
 
 ---
 
-## 5.2 Proper TLS Validation
+## 2. Proper TLS Validation
 
 The insecure implementation in `MainActivity.java` (line 35):
 
@@ -46,7 +46,7 @@ According to Google Android Developer Documentation, when an SSL certificate err
 
 ---
 
-## 5.3 Secure Hostname Verification
+## 3. Secure Hostname Verification
 
 In `MainActivity.java` (lines 39–42), a `HostnameVerifier` is implemented where the `verify(...)` method always returns `true`.
 
@@ -56,7 +56,7 @@ This implementation should be removed, and the application should rely on the de
 
 ---
 
-## 5.4 Network Security Configuration
+## 4. Network Security Configuration
 
 Finally, Android Network Security Configuration can be used to enforce stricter security policies, such as restricting cleartext traffic and defining trusted certificates:
 
