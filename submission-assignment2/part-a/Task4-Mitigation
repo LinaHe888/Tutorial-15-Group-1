@@ -1,0 +1,28 @@
+## Mitigation
+
+To remediate this vulnerability, the application should enforce secure communication, restore proper TLS validation, and remove all insecure trust bypasses.
+
+### 1. Enforce HTTPS Only
+
+The application should disable cleartext traffic in `AndroidManifest.xml` by changing `android:usesCleartextTraffic="true"` to `android:usesCleartextTraffic="false"`, ensuring that all sensitive communication is performed over HTTPS. According to the Android documentation, disabling cleartext traffic helps prevent platform components from making insecure network requests.
+In addition, the HTTP URL in `MainActivity.java` (line 38) should be replaced with an HTTPS URL to prevent the WebView from loading cleartext content:
+
+```java
+webView.loadUrl("https://www.example.com");
+
+### 2. Proper TLS Validation
+The application must not ignore SSL certificate errors. In MainActivity.java (line 35), the insecure call to sslErrorHandler.proceed() should be removed and replaced with: sslErrorHandler.cancel();
+Alternatively, the application may rely on the system's default handling behavior. Android explicitly warns that SSL errors should not be bypassed, because an invalid certificate indicates that the connection is not trustworthy. Proper certificate validation is essential to prevent attackers from presenting forged or malicious certificates during a man-in-the-middle attack.
+### 3. Secure Hostname Verification
+The application should remove the insecure HostnameVerifier implementation in MainActivity.java (lines 39-42), where verify(...) always returns true. Although the decompiled code does not clearly show that this verifier is actively attached to a connection, this pattern is inherently unsafe because it disables hostname verification and weakens server identity validation.
+Instead, the application should rely on the platform’s default hostname verification mechanism to ensure that certificates are only accepted when they match the legitimate server.
+### 4. Network Security Configuration
+As an additional hardening measure, the application should implement Android Network Security Configuration to centrally enforce secure transport policies, such as disabling cleartext traffic and restricting trusted certificate sources. For example:
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
+This configuration helps ensure that the application trusts only certificates from the system trust store and does not allow cleartext traffic by default. For high-risk applications, certificate pinning may also be considered to provide stronger protection against server impersonation and abuse of compromised or misissued certificates.
