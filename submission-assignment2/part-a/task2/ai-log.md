@@ -1,23 +1,23 @@
 # AI Usage Log – Assignment 2 Part A Task 2
 
 ## Tools Used
-- ChatGPT (GPT-5.3)
-- OpenClaw Agent (Goose) with exec tool
+- OpenClaw Agent (Goose) with exec and read tools
+- Kimi/kimi-code model
 
 ## Usage Summary
 
-AI tools were used to assist with the following aspects of Task 2:
+AI tools were used in the following ways during Task 2:
 
-1. **Code Analysis**: The AI read the decompiled source code (`MainActivity.java` and `AndroidManifest.xml`) from Task 1 output to understand app functionality and network behavior.
+1. **Decompiled Code Inspection**: The AI used `exec` to extract and read `MainActivity.java` and `AndroidManifest.xml` from the Task 1 decompilation output (`a2_partA_task1.zip`) to identify app behavior, network requests, and insecure configuration flags.
 
-2. **System Model Construction**: The AI generated ASCII architecture diagrams and component tables based on static analysis findings, showing the data flow from app → OS network stack → internet → server.
+2. **System & Threat Model Drafting**: Based on the code findings, the AI generated ASCII diagrams, component tables, and STRIDE-aligned threat scenarios (cleartext eavesdropping, certificate impersonation, hostname spoofing). These were structured into the final markdown report.
 
-3. **Threat Model Development**: The AI created STRIDE-aligned threat diagrams and attack scenarios (cleartext eavesdropping, certificate impersonation, hostname spoofing) based on the insecure transport patterns identified in the code.
+3. **Assignment Rubric Alignment**: The AI ensured the deliverable explicitly addressed the three required elements: app summary, data traveling over the network, and on-path attacker modeling (same Wi-Fi / MITM).
 
-4. **Documentation Formatting**: AI organized findings into structured markdown with tables, diagrams, and clear sectioning suitable for academic submission.
+## Human Direction
+- Joey instructed the AI to follow the assignment spec requirements for Task 2.
+- Joey requested the rewrite of this AI log after reviewing the initial draft.
 
-All technical content — app behavior, network flows, vulnerability patterns, and threat classifications — was derived from direct manual inspection of the decompiled application code. AI assisted with presentation, diagram generation, and documentation structure only.
-
-## Human Review
-- Joey reviewed the generated threat model for accuracy against the assignment rubric.
-- Adjustments were made to ensure the model explicitly covers the three required elements: app summary, data over network, and on-path attacker scenario.
+## Scope of AI Assistance
+- AI performed hands-on code reading and report generation.
+- All vulnerability patterns and insecure configurations referenced in the threat model were discovered through direct inspection of the decompiled source.
