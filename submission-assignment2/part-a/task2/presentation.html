@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INFO5995 A2 Part A — Task 2</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/black.css">
+<style>
+.reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+.reveal code { font-family: "SF Mono", "Fira Code", monospace; font-size: 0.75em; }
+.reveal .small { font-size: 0.7em; }
+.reveal .highlight { color: #ff6b6b; }
+.reveal table { font-size: 0.65em; }
+.reveal table th, .reveal table td { padding: 8px 12px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- Slide 1 -->
+<section>
+<h2>Task 2</h2>
+<h3>Understand the App & Build a Network-Focused Threat Model</h3>
+<p class="small">INFO5995 Assignment 2 Part A | Tutorial 15 Group 1</p>
+</section>
+
+<!-- Slide 2 -->
+<section>
+<h2>What Is This App?</h2>
+<p><strong>Package:</strong> <code>com.example.mastg_test0019</code></p>
+<ul>
+<li>Single-activity <strong>WebView</strong> browser</li>
+<li>Loads <code>http://www.example.com</code> on launch</li>
+<li>No login, no local storage, no authentication</li>
+<li class="highlight">Every network decision is deliberately insecure</li>
+</ul>
+<p class="small">(OWASP MASVS/MSTG test case — vulnerable by design)</p>
+</section>
+
+<!-- Slide 3 -->
+<section>
+<h2>Network Behavior</h2>
+<p>What travels over the network?</p>
+<table>
+<thead>
+<tr><th>Step</th><th>Action</th><th>Protocol</th><th>Security</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>DNS lookup</td><td>UDP/53</td><td>Unencrypted</td></tr>
+<tr><td>2</td><td>HTTP GET request</td><td>HTTP/80</td><td class="highlight"><strong>Cleartext</strong></td></tr>
+<tr><td>3</td><td>Server response</td><td>HTTP/80</td><td class="highlight"><strong>Cleartext</strong></td></tr>
+<tr><td>4</td><td>WebView renders</td><td>—</td><td>No integrity check</td></tr>
+</tbody>
+</table>
+<p class="highlight">No TLS. Any node on the path can read or modify traffic.</p>
+</section>
+
+<!-- Slide 4 -->
+<section>
+<h2>System Model</h2>
+<pre><code>User → MainActivity → WebView → HTTP GET → Wi-Fi/Cell → Internet → Server
+              │           │
+              └─ WebViewClient ─┘
+                 (ignores SSL errors)
+</code></pre>
+<ul>
+<li><strong>WebViewClient</strong>: <code>onReceivedSslError</code> → <code>proceed()</code></li>
+<li><strong>HostnameVerifier</strong>: returns <code>true</code> for <strong>any</strong> hostname</li>
+<li><strong>Manifest</strong>: <code>usesCleartextTraffic="true"</code></li>
+</ul>
+</section>
+
+<!-- Slide 5 -->
+<section>
+<h2>The Attacker</h2>
+<h3>On-Path MITM</h3>
+<p><strong>Position:</strong> Same Wi-Fi, rogue access point, compromised router</p>
+<p><strong>Capabilities:</strong></p>
+<ol>
+<li><span class="highlight">Read</span> all HTTP traffic (no encryption)</li>
+<li><span class="highlight">Modify</span> HTML/JS before it reaches the WebView</li>
+<li><span class="highlight">Impersonate</span> the server (certificate validation disabled)</li>
+</ol>
+<p class="small">Skill required: Low — mitmproxy, Burp Suite, or Wireshark</p>
+</section>
+
+<!-- Slide 6 -->
+<section>
+<h2>Scenario A</h2>
+<h3>Cleartext Eavesdropping</h3>
+<pre><code>Phone ──HTTP GET──> [Attacker on Wi-Fi] ──HTTP GET──> Server
+                          │
+                          ▼
+                    "GET / HTTP/1.1
+                     Host: www.example.com"
+</code></pre>
+<p>Attacker sees <strong>headers, cookies, query parameters,</strong> and <strong>full response body</strong> — zero effort.</p>
+</section>
+
+<!-- Slide 7 -->
+<section>
+<h2>Scenario B & C</h2>
+<h3>Even HTTPS Would Not Help</h3>
+<table>
+<thead>
+<tr><th>Issue</th><th>Code Evidence</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>SSL error ignored</td>
+<td><code>sslErrorHandler.proceed()</code></td>
+<td>Any fake certificate accepted</td>
+</tr>
+<tr>
+<td>Hostname bypass</td>
+<td><code>HostnameVerifier</code> returns <code>true</code></td>
+<td>Wrong server accepted</td>
+</tr>
+</tbody>
+</table>
+<p class="highlight">App thinks it is talking to www.example.com — but it could be attacker.com.</p>
+</section>
+
+<!-- Slide 8 -->
+<section>
+<h2>STRIDE Summary</h2>
+<table>
+<thead>
+<tr><th>Threat</th><th>Applicable?</th><th>Why</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>S</strong>poofing</td><td>✅ Yes</td><td>No hostname validation</td></tr>
+<tr><td><strong>T</strong>ampering</td><td>✅ Yes</td><td>HTTP allows injection</td></tr>
+<tr><td><strong>I</strong>nformation Disclosure</td><td>✅ Yes</td><td>Cleartext traffic</td></tr>
+<tr><td><strong>E</strong>levation of Privilege</td><td>✅ Yes</td><td>Injected JS runs in WebView</td></tr>
+</tbody>
+</table>
+<br>
+<h3 class="highlight">No Confidentiality · No Integrity · No Authenticity</h3>
+<p class="small">Next: Task 3 — exact code locations</p>
+</section>
+
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+<script>
+Reveal.initialize({
+  hash: true,
+  slideNumber: 'c/t',
+  transition: 'slide'
+});
+</script>
+</body>
+</html>
