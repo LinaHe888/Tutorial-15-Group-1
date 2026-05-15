@@ -1,4 +1,4 @@
-# INFO5995 Assignment 1 - Activity Log
+# INFO5995 Assignment 2 - Activity Log
 ## Contribution Matrix (N×N Format)
 
 **Team Members:** Jiakai Bao, Clarissa Mo, Yi Qiao, Jiazhou Shen, Lina He, Handong Ding
