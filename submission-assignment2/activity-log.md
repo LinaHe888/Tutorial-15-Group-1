@@ -56,12 +56,12 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai Bao** |  |
-| **Clarissa Mo** |*PartA* report and AI log writting. |
-| **Yi Qiao** | |
-| **Jiazhou Shen** ||
-| **Lina He** |*PartA* Task4 Mitigation. *PartB* Bug's finding and comfirmation.|
-| **Handong Ding** | |
+| **Jiakai Bao** | *PartA* Task1 Unpack and Decompile the Network APK, preliminary vulnerability analysis and Video editing. *PartB*：Vulnerability reproduction and PoC.|
+| **Clarissa Mo** | |
+| **Yi Qiao** | *PartA* Task2 Understand the App and Build a Network-Focused Model. *PartB* The vulnerability and the impact.|
+| **Jiazhou Shen** |*PartA* report and AI log writting. |
+| **Lina He** |*PartA* Task4 Mitigation. *PartB* Bug's finding and comfirmation. *PartB* Novelty Justification.|
+| **Handong Ding** |*PartA* Task3 Find and Explain the Network Vulnerability.  |
 
 ### Member Handong Ding's Assessment
 
