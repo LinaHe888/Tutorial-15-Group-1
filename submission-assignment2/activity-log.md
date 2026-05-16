@@ -45,12 +45,12 @@
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai Bao** | |
-| **Clarissa Mo** |  |
-| **Yi Qiao** | |
-| **Jiazhou Shen** |  |
-| **Lina He** | |
-| **Handong Ding** |  |
+| **Jiakai Bao** | Part A: APK decompilation and initial analysis. Part B: Minimal PoC and reproduction evidence. |
+| **Clarissa Mo** | Part A: Certificate pinning explanation. Part B: Impact justification and mitigation. |
+| **Yi Qiao** | Part A: Network system and attacker model. Part B: Vulnerability root cause and attacker impact. |
+| **Jiazhou Shen** | Part A: Final summary, report wording, and AI log. Part B: Final summary and presentation narrative. |
+| **Lina He** | Part A: Baseline mitigation strategies. Part B: Target, bounty source, and finding type. |
+| **Handong Ding** | Part A: Vulnerability discovery and TLS-related weaknesses. Part B: Novelty review and zero-day candidate justification. |
 
 ### Member Lina He's Assessment
 
