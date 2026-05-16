@@ -10,14 +10,18 @@
 
 ### Member Jiakai Bao's Assessment
 
-| Member | Contribution Description |
-|--------|------------------------|
-| **Jiakai Bao** |  |
-| **Clarissa Mo** |  |
-| **Yi Qiao** |  |
-| **Jiazhou Shen** |  |
-| **Lina He** | |
-| **Handong Ding** | |
+| **Jiakai Bao** | Part A: APK decompilation, initial vulnerability assessment, video editing, and final video compilation/assembly.
+Part B: Vulnerability reproduction and Proof-of-Concept (PoC) development. |
+| **Clarissa Mo** | Part A: Further development of Task 4 mitigation strategies.
+Part B: Mitigation implementation for the real-world vulnerable application. |
+| **Yi Qiao** | Part A: System architecture and threat modelling.
+Part B: Vulnerability analysis and impact assessment. |
+| **Jiazhou Shen** | Part A: Report preparation and AI interaction log documentation.
+Part B: Final conclusion and summary writing. |
+| **Lina He** | Part A: Mitigation design for Task 4.
+Part B: Vulnerability discovery and verification.|
+| **Handong Ding** | Part A: Identification and explanation of the network vulnerability.
+Part B: Justification of the vulnerability’s novelty.|
 
 ### Member Clarissa Mo's Assessment
 
