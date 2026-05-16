@@ -61,7 +61,7 @@ Part B: Justification of the vulnerability’s novelty.|
 | Member | Contribution Description |
 |--------|------------------------|
 | **Jiakai Bao** | *PartA*: Task1 Unpack and Decompile the Network APK, preliminary vulnerability analysis and Video editing. *PartB*：Vulnerability reproduction and PoC.|
-| **Clarissa Mo** | |
+| **Clarissa Mo** |*PartA*:certificate pinning,*PartB*：mitigation |
 | **Yi Qiao** | *PartA*: Task2 Understand the App and Build a Network-Focused Model. *PartB*: The vulnerability and the impact.|
 | **Jiazhou Shen** |*PartA*: report and AI log writting. |
 | **Lina He** |*PartA*: Task4 Mitigation. *PartB*: Bug finding and comfirmation.|
