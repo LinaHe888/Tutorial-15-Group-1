@@ -65,14 +65,14 @@
 
 ### Member Handong Ding's Assessment
 
-| Member | Contribution Description |
-|--------|------------------------|
-| **Jiakai Bao** |  |
-| **Clarissa Mo** | |
-| **Yi Qiao** |  |
-| **Jiazhou Shen** | |
-| **Lina He** |  |
-| **Handong Ding** | |
+| Member | Contribution Summary |
+|---|---|
+| **Jiakai Bao** | *Part A:* Led APK decompilation, conducted the initial vulnerability reconnaissance and static analysis workflow, and managed final video editing and presentation assembly. *Part B:* Reproduced the identified vulnerability and developed the Proof-of-Concept (PoC) demonstrating exploitability. |
+| **Clarissa Mo** | *Part A:* Expanded the mitigation analysis by researching and evaluating advanced defensive mechanisms, including certificate pinning and secure TLS validation practices. *Part B:* Developed and justified mitigation strategies addressing the identified vulnerability and its underlying root cause. |
+| **Yi Qiao** | *Part A:* Constructed the system and threat model, including attacker capabilities, trust boundaries, and network communication flows. *Part B:* Analysed and explained the vulnerability mechanics and evaluated the potential security impact and attacker outcomes. |
+| **Jiazhou Shen** | *Part A:* Coordinated report writing, refined the USENIX-style documentation, and organised the AI usage log and supporting materials. *Part B:* Prepared the concluding analysis, summarising the overall findings, security implications, and key lessons learned. |
+| **Lina He** | *Part A:* Designed and documented the primary mitigation proposals to address insecure transport and TLS validation weaknesses. *Part B:* Conducted bug hunting, validated the finding, and assisted in confirming vulnerability reproducibility and scope compliance. |
+| **Handong Ding** | *Part A:* Identified and explained the insecure transport/TLS configuration vulnerability, including MITM attack implications and impact analysis. *Part B:* Performed novelty assessment and justification, including comparison against prior disclosures and classification as non-zero-day or zero-day candidate. |
 
 ---
 
