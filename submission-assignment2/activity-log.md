@@ -24,7 +24,7 @@
 | Member | Contribution Description |
 |--------|------------------------|
 | **Jiakai Bao** | *PartA*: Task1 Decompilation, preliminary vulnerability analysis and Video editing. *PartB*：Vulnerability reproduction and PoC.|
-| **Clarissa Mo** | *PartA*: Expansion of Task 4 Mitigation. *PartB*：Mitigation of the in-the-wild program.|
+| **Clarissa Mo** | *PartA*: Expansion of Task 4 Mitigation (certificate pinning). *PartB*：Mitigation.|
 | **Yi Qiao** | *PartA*: Task2 System and threat modelling. *PartB*: The vulnerability and the impact.|
 | **Jiazhou Shen** | *PartA*: report and AI log writting. *PartB*: Conclusion.|
 | **Lina He** | *PartA*: Task4 Mitigation. *PartB*: Bug finding and comfirmation.|
