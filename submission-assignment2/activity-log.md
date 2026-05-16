@@ -38,12 +38,12 @@ Part B: Justification of the vulnerability’s novelty.|
 
 | Member | Contribution Description |
 |--------|------------------------|
-| **Jiakai Bao** | |
-| **Clarissa Mo** | |
-| **Yi Qiao** | |
-| **Jiazhou Shen** | |
-| **Lina He** |  |
-| **Handong Ding** | |
+| **Jiakai Bao** | *Part A:* Completed APK decompilation and initial static analysis, supported early vulnerability triage, and prepared the final video editing and assembly. *Part B:* Reproduced the selected vulnerability and developed the Proof-of-Concept (PoC) material demonstrating exploitability. |
+| **Clarissa Mo** | *Part A:* Expanded the Task 4 mitigation discussion, especially secure TLS validation and certificate pinning strategies. *Part B:* Contributed to mitigation implementation and explained how the proposed fixes address the vulnerable real-world application. |
+| **Yi Qiao** | *Part A:* Built the system architecture and network-focused threat model, including trust boundaries, attacker capabilities, assets, and communication/data-flow analysis. *Part B:* Analysed the vulnerability mechanics and assessed the security impact, including attacker outcomes and practical risk. |
+| **Jiazhou Shen** | *Part A:* Prepared and refined the report materials and organised the AI interaction log documentation. *Part B:* Wrote the final conclusion and summary, consolidating the overall findings and lessons learned. |
+| **Lina He** | *Part A:* Designed the Task 4 mitigation approach and documented recommended defensive changes. *Part B:* Conducted vulnerability discovery, bug confirmation, and supporting validation for the selected real-world case. |
+| **Handong Ding** | *Part A:* Identified and explained the network vulnerability, including insecure transport/TLS configuration implications. *Part B:* Developed the novelty justification by comparing the finding with related prior vulnerabilities and fix evidence. |
 
 ### Member Jiazhou Shen's Assessment
 
