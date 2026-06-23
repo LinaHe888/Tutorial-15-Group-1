@@ -1,0 +1,637 @@
+- banner:
+  - navigation:
+    - link "Hackerone logo":
+      - /url: /
+      - img "Hackerone logo"
+    - generic: 
+- main:
+  - generic: Program guidelines
+  - combobox
+  - heading "Introduction" [level=2]
+  - strong: Welcome to Superhuman’s Bug Bounty Program! 🚀
+  - text: At
+  - strong: Superhuman (formerly Grammarly + Coda)
+  - text: ", security and privacy are at the heart of everything we build. We’re committed to protecting our users and ensuring the integrity of our platform as we bring words, data, and teams together in powerful new ways."
+  - generic: Collaboration with the security research community is essential to that mission — your expertise helps us create safer, smarter, and more resilient products.
+  - generic: We’re thrilled to partner with you and truly value your insights. 🐞🔍
+  - heading "Program highlights" [level=2]
+  - generic: Open Scope
+  - text: Rewards reports for all owned assets based on impact, even if not listed in scope.
+  - link "Learn more about Open Scope (opens in a new tab)":
+    - /url: https://docs.hackerone.com/en/articles/8490833-security-page#h_46a5b35ded
+  - generic: Fast Payment
+  - text: Ensures payment within 1 month of receiving a vulnerability report.
+  - link "Learn more about Fast Payment (opens in a new tab)":
+    - /url: https://docs.hackerone.com/en/articles/8490833-security-page#h_9c1fc6b7c0
+  - generic: Gold Standard Safe Harbor
+  - text: Adheres to Gold Standard Safe Harbor.
+  - link "Learn more about Gold Standard Safe Harbor (opens in a new tab)":
+    - /url: https://docs.hackerone.com/en/articles/8494525-gold-standard-safe-harbor-statement
+  - generic: Platform Standards
+  - text: Fully compliant with Platform Standards.
+  - link "Learn more about Platform Standards (opens in a new tab)":
+    - /url: https://docs.hackerone.com/en/articles/8369826-detailed-platform-standards#h_e01bc643a8
+  - generic: Top Response Efficiency
+  - text: This program's response efficiency is above 90%.
+  - link "Learn more about Top Response Efficiency (opens in a new tab)":
+    - /url: https://docs.hackerone.com/en/articles/8490880-response-target-indicators
+  - generic: Managed by HackerOne
+  - generic: Collaboration Enabled
+  - generic: Includes Retesting
+  - generic: 6 hours
+  - generic: Average time to first response
+  - generic: 21 hours
+  - generic: Average time to triage
+  - generic: 3 days, 22 hours
+  - generic: Average time to bounty
+  - generic: 4 days, 19 hours
+  - generic: Average time from submission to bounty
+  - generic: 4 months, 4 weeks
+  - generic: Average time to resolution
+  - heading "Rewards summary" [level=2]
+  - generic: Last updated on November 24, 2025.
+  - link "View changes":
+    - /url: /superhuman/bounty_table_versions
+    - text: View changes
+  - generic: Each severity lists the 90-day average bounty and the percentage of total resolved reports, if applicable.
+  - table:
+    - row "Asset Low Avg. bounty $417 38.93% submissions Medium Avg. bounty $859 46.31% submissions High Avg. bounty n/a 10.69% submissions Critical Avg. bounty $4,337 4.07% submissions":
+      - columnheader "Asset":
+        - heading "Asset" [level=2]
+      - columnheader "Low Avg. bounty $417 38.93% submissions":
+        - generic: Low
+        - paragraph:
+          - generic: Avg. bounty $417
+          - generic: 38.93% submissions
+      - columnheader "Medium Avg. bounty $859 46.31% submissions":
+        - generic: Medium
+        - paragraph:
+          - generic: Avg. bounty $859
+          - generic: 46.31% submissions
+      - columnheader "High Avg. bounty n/a 10.69% submissions":
+        - generic: High
+        - paragraph:
+          - generic: Avg. bounty n/a
+          - generic: 10.69% submissions
+      - columnheader "Critical Avg. bounty $4,337 4.07% submissions":
+        - generic: Critical
+        - paragraph:
+          - generic: Avg. bounty $4,337
+          - generic: 4.07% submissions
+    - row "*.grammarly.com $500 $500 – $5,000 $5,000 – $13,000 $13,000 – $30,000":
+      - cell "*.grammarly.com":
+        - generic: "*.grammarly.com"
+      - cell "$500":
+        - generic: $500
+      - cell "$500 – $5,000":
+        - generic: $500 – $5,000
+      - cell "$5,000 – $13,000":
+        - generic: $5,000 – $13,000
+      - cell "$13,000 – $30,000":
+        - generic: $13,000 – $30,000
+    - row "coda.grammarly.com $250 $250 – $500 $500 – $1,000 $1,000 – $3,000":
+      - cell "coda.grammarly.com":
+        - generic: coda.grammarly.com
+      - cell "$250":
+        - generic: $250
+      - cell "$250 – $500":
+        - generic: $250 – $500
+      - cell "$500 – $1,000":
+        - generic: $500 – $1,000
+      - cell "$1,000 – $3,000":
+        - generic: $1,000 – $3,000
+    - row "superhuman.com $500 $500 – $1,000 $1,000 – $5,000 $5,000 – $13,000":
+      - cell "superhuman.com":
+        - generic: superhuman.com
+      - cell "$500":
+        - generic: $500
+      - cell "$500 – $1,000":
+        - generic: $500 – $1,000
+      - cell "$1,000 – $5,000":
+        - generic: $1,000 – $5,000
+      - cell "$5,000 – $13,000":
+        - generic: $5,000 – $13,000
+    - row "settings.superhuman.com $500 $500 – $1,000 $1,000 – $5,000 $5,000 – $13,000":
+      - cell "settings.superhuman.com":
+        - generic: settings.superhuman.com
+      - cell "$500":
+        - generic: $500
+      - cell "$500 – $1,000":
+        - generic: $500 – $1,000
+      - cell "$1,000 – $5,000":
+        - generic: $1,000 – $5,000
+      - cell "$5,000 – $13,000":
+        - generic: $5,000 – $13,000
+    - row "*.superhuman.com $500 $500 – $1,000 $1,000 – $5,000 $5,000 – $13,000":
+      - cell "*.superhuman.com":
+        - generic: "*.superhuman.com"
+      - cell "$500":
+        - generic: $500
+      - cell "$500 – $1,000":
+        - generic: $500 – $1,000
+      - cell "$1,000 – $5,000":
+        - generic: $1,000 – $5,000
+      - cell "$5,000 – $13,000":
+        - generic: $5,000 – $13,000
+    - row "All assets $500 $500 – $1,000 $1,000 – $5,000 $5,000 – $13,000":
+      - cell "All assets":
+        - generic: All assets
+      - cell "$500":
+        - generic: $500
+      - cell "$500 – $1,000":
+        - generic: $500 – $1,000
+      - cell "$1,000 – $5,000":
+        - generic: $1,000 – $5,000
+      - cell "$5,000 – $13,000":
+        - generic: $5,000 – $13,000
+    - row "*.coda.io $250 $250 – $500 $500 – $1,000 $1,000 – $3,000":
+      - cell "*.coda.io":
+        - generic: "*.coda.io"
+      - cell "$250":
+        - generic: $250
+      - cell "$250 – $500":
+        - generic: $250 – $500
+      - cell "$500 – $1,000":
+        - generic: $500 – $1,000
+      - cell "$1,000 – $3,000":
+        - generic: $1,000 – $3,000
+    - row "coda.io $250 $250 – $500 $500 – $1,000 $1,000 – $3,000":
+      - cell "coda.io":
+        - generic: coda.io
+      - cell "$250":
+        - generic: $250
+      - cell "$250 – $500":
+        - generic: $250 – $500
+      - cell "$500 – $1,000":
+        - generic: $500 – $1,000
+      - cell "$1,000 – $3,000":
+        - generic: $1,000 – $3,000
+    - row "codahosted.io $250 $250 – $500 $500 – $1,000 $1,000 – $3,000":
+      - cell "codahosted.io":
+        - generic: codahosted.io
+      - cell "$250":
+        - generic: $250
+      - cell "$250 – $500":
+        - generic: $250 – $500
+      - cell "$500 – $1,000":
+        - generic: $500 – $1,000
+      - cell "$1,000 – $3,000":
+        - generic: $1,000 – $3,000
+    - row "codacontent.io $250 $250 – $500 $500 – $1,000 $1,000 – $3,000":
+      - cell "codacontent.io":
+        - generic: codacontent.io
+      - cell "$250":
+        - generic: $250
+      - cell "$250 – $500":
+        - generic: $250 – $500
+      - cell "$500 – $1,000":
+        - generic: $500 – $1,000
+      - cell "$1,000 – $3,000":
+        - generic: $1,000 – $3,000
+    - row "Capture the Flag — — — $100,000":
+      - cell "Capture the Flag":
+        - generic: Capture the Flag
+      - cell "—":
+        - generic: —
+      - cell "—":
+        - generic: —
+      - cell "—":
+        - generic: —
+      - cell "$100,000":
+        - generic: $100,000
+  - generic: These values are indicative and we reserve the right to determine the final amount or even whether a reward should be granted at all.
+  - heading "Scope exclusions" [level=2]
+  - text: Core Ineligible Findings are out of scope.
+  - link "Learn more":
+    - /url: https://docs.hackerone.com/en/articles/8494488-core-ineligible-findings
+    - generic: Learn more
+  - generic: Social Engineering of Grammarly Employees and Users
+  - generic: Social engineering (e.g., phishing, vishing, smishing) of Grammarly employees and users is strictly prohibited.
+  - generic: Publicly Known Vulnerable Libraries Without a Working Proof of Concept
+  - generic: Reports concerning vulnerabilities in publicly known libraries will only be considered if accompanied by a working Proof of Concept (PoC). Without a PoC, such reports will be excluded from the scope.
+  - generic: Stack Traces, Path Disclosure, and Directory Listings
+  - generic: Reports related to stack traces, path disclosures, and directory listings will be excluded from the scope unless they directly demonstrate a significant security impact.
+  - generic: Self-XSS or User-Pasted JavaScript into the Browser Console
+  - generic: Reports involving Self-XSS or scenarios where users need to paste JavaScript into the browser console will be excluded from the scope.
+  - generic: Vulnerabilities in outdated versions of Grammarly software
+  - generic: Reports involving vulnerabilities found in outdated versions of Grammarly software will be excluded from the scope.
+  - generic: Issues Relating to Non-Grammarly Products
+  - generic: Reports about problems found in non-Grammarly products, such as third-party integrations.
+  - generic: Any Activity That Could Lead to the Disruption of Our Service (DoS)
+  - generic: Reports involving activities that could lead to the disruption of our service, including Denial of Service (DoS) attacks.
+  - generic: Crash Dumps or Other Automated Tool Output
+  - generic: Reports that consist solely of crash dumps or output from automated tools without accompanying proof of concept code.
+  - generic: Open Ports Scanning and Information Disclosure
+  - generic: Reports involving open ports scanning, banner grabbing, and software version disclosure issues will be excluded from the scope.
+  - generic: MITM and Mixed Content Issues
+  - generic: Reports involving Man-In-The-Middle (MITM) attacks on secure connections and mixed content issues with no significant impact will be excluded from the scope.
+  - generic: Vulnerabilities Requiring Elevated Permissions
+  - generic: Reports involving vulnerabilities that necessitate root-level permissions or physical access to the targeted device.
+  - generic: Outdated User Agents and Unsupported Platforms
+  - generic: Reports concerning issues that only affect outdated user agents or unsupported platforms.
+  - generic: Issues Related to the Missing Address Bar in Grammarly’s Desktop App
+  - generic: Reports concerning the missing address bar in Grammarly’s desktop app.
+  - generic: Third-Party SaaS
+  - generic: Reports that identify issues within external SaaS platforms we subscribe to or use are out of scope. Since these services are managed by independent vendors, we cannot validate or triage vulnerabilities that do not affect assets directly controlled by us.
+  - generic: Third-Party Built Packs/Agents
+  - generic: Our platform allows third-party developers to build custom packs and agents. Any security issues that arise within the code or logic of these third-party extensions fall outside this program’s scope. Only packs/agents explicitly developed and owned by us are eligible for triage and rewards.
+  - heading "Overview" [level=2]
+  - generic: Last updated on March 13, 2026.
+  - link "View changes":
+    - /url: /superhuman/policy_versions
+    - text: View changes
+  - heading "🛡️ Superhuman (formerly Grammarly) Bug Bounty Program" [level=1]
+  - generic: Welcome, Hackers 👋
+  - text: We’ve merged the
+  - strong: Grammarly
+  - text: and
+  - strong: Coda
+  - text: programs into a single unified program —
+  - strong: Superhuman (formerly Grammarly)
+  - text: .
+  - text: We’re excited to continue working with the security community to help keep our users, data, and systems secure.
+  - separator
+  - heading "🌍 Our Story" [level=2]
+  - generic: Superhuman builds powerful, collaborative tools that bring words, data, and teams together — from the next generation of document creation (formerly Coda) to AI-enhanced writing and productivity tools (formerly Grammarly).
+  - generic: Security and privacy remain at the core of everything we build. We look forward to collaborating with researchers worldwide to identify and resolve vulnerabilities responsibly.
+  - separator
+  - heading "🧭 Program Scope" [level=2]
+  - heading "In Scope" [level=3]
+  - list:
+    - code: "*.grammarly.com"
+    - code: "*.coda.io"
+    - code: "*.superhuman.com"
+    - text: (excluding Superhuman Mail — see below)
+    - listitem: Browser extensions for Chrome, Safari, Firefox, and Edge
+    - listitem: Desktop applications for macOS and Windows
+    - listitem: Mobile apps and keyboards for Android and iOS
+  - blockquote:
+    - text: 💡
+    - strong: "Note:"
+    - text: Vulnerabilities in the
+    - strong: Superhuman Mail
+    - text: product are out of scope. We are working on logistics to create a new program for this.
+  - separator
+  - heading "⏱️ Response Targets" [level=2]
+  - table:
+    - rowgroup:
+      - row "Stage Target Timeframe":
+        - columnheader "Stage"
+        - columnheader "Target Timeframe"
+    - rowgroup:
+      - row "Time to first response 2 business days":
+        - cell "Time to first response"
+        - cell "2 business days"
+      - row "Time to triage 4 business days":
+        - cell "Time to triage"
+        - cell "4 business days"
+      - row "Time to bounty (after triage) 7 business days":
+        - cell "Time to bounty (after triage)"
+        - cell "7 business days"
+  - generic: We’ll keep you updated throughout the process.
+  - separator
+  - heading "🧩 Rules for Researchers" [level=2]
+  - list:
+    - text: Be an
+    - strong: ethical hacker
+    - text: and follow HackerOne’s
+    - link "disclosure guidelines":
+      - /url: https://www.hackerone.com/disclosure-guidelines
+    - text: .
+    - text: Respect privacy —
+    - strong: only interact with test accounts
+    - text: that you own.
+    - text: Do
+    - strong: not
+    - text: test or exploit bugs on real customer accounts. Doing so may reduce bounty awards by up to
+    - strong: 50%
+    - text: .
+    - strong: No DoS, spam, or abuse of customer support channels
+    - text: to gain attention.
+    - text: Do
+    - strong: not
+    - text: use leaked customer credentials.
+    - text: We
+    - strong: will
+    - text: pay bounties for working
+    - emphasis: employee credential leaks
+    - text: when properly demonstrated.
+    - listitem: If you encounter user data inadvertently, stop testing immediately, report it, and purge all local data.
+    - listitem: Submit one vulnerability per report (unless chaining is needed for impact).
+    - text: Only the
+    - strong: first valid report
+    - text: of a vulnerability will be rewarded.
+    - listitem: Multiple issues stemming from the same root cause may be combined into one bounty.
+    - listitem: Social engineering (phishing, vishing, smishing, etc.) is strictly prohibited.
+    - text: Do
+    - strong: not
+    - text: contact us through customer support channels or email. Any attempts to establish out-of-band communication will result in the report being closed as N/A and report to HackerOne.
+  - separator
+  - heading "🧪 Test Accounts" [level=2]
+  - generic: Create your own test accounts to explore and validate findings.
+  - list:
+    - text: For
+    - strong: Coda testing
+    - text: ":"
+    - list:
+      - text: Create a free account at
+      - link "https://coda.io/welcome":
+        - /url: https://coda.io/welcome
+      - text: .
+      - text: Use a
+      - strong: Google
+      - text: or
+      - strong: email+password
+      - text: sign-up.
+      - text: Append
+      - code: hackeronetester
+      - text: to your email (e.g.,
+      - code: codahackeronetester@gmail.com
+      - text: ) if you’re not using a
+      - code: "@wearehackerone.com"
+      - text: domain.
+      - text: Do not create more than
+      - strong: 5 test accounts
+      - text: .
+      - listitem: Use only the free plan — do not use fake payment data.
+    - text: For
+    - strong: Grammarly/Superhuman testing
+    - text: ":"
+    - list:
+      - text: Use
+      - code: "@wearehackerone.com"
+      - text: to sign up.
+      - text: Append
+      - code: hackeronetester
+      - text: to your email (e.g.,
+      - code: grammarlyhackeronetester@gmail.com
+      - text: ) if you’re not using a
+      - code: "@wearehackerone.com"
+      - text: domain.
+  - deletion: Need a specific subscription level? Contact us, and we’ll provide access as needed.
+  - text: We are currently
+  - strong: not providing
+  - text: free upgrades for testing. We will update when we plan to resume; please do not create support tickets requesting a subscription or related questions about bug bounties.
+  - separator
+  - heading "🚫 Out of Scope" [level=2]
+  - text: When reporting, please consider exploitability and impact. The following are
+  - strong: out of scope
+  - text: or
+  - strong: non-qualifying
+  - text: ":"
+  - heading "Technical Exclusions" [level=3]
+  - list:
+    - text: Apparent SSRF of
+    - code: /api/oembedResolve
+    - text: (uses Iframely)
+    - listitem: Clickjacking on non-sensitive pages
+    - listitem: Unauthenticated / logout / login CSRF
+    - listitem: MITM or physical access–dependent attacks
+    - listitem: Known vulnerable libraries without working PoC
+    - listitem: CSV injection without clear exploit
+    - listitem: Missing SSL/TLS, DNS, CSP, or header “best practices”
+    - listitem: Content spoofing or text injection without HTML/CSS modification
+    - listitem: DoS or service disruption attempts
+    - listitem: Overly large payloads in docs
+    - listitem: “Best practice” or theoretical issues
+  - heading "Business Logic & Policy Exclusions" [level=3]
+  - list:
+    - listitem: Credential reuse from public dumps
+    - listitem: Username/account enumeration
+    - listitem: Promo/invite code or referral abuse
+    - listitem: Account sharing or subscription misuse
+    - listitem: Institutional or educational access code issues
+    - listitem: Email verification or password complexity complaints
+  - separator
+  - heading "💰 Rewards" [level=2]
+  - text: We reward based on the
+  - strong: impact and severity
+  - text: of the vulnerability.
+  - text: Final bounty amounts are at the discretion of the Superhuman Security Team.
+  - generic: "Bounty tiers for different products:"
+  - list:
+    - listitem: Grammarly - Upto $30k
+    - listitem: Superhuman - Upto $13k (Excludes Superhuman Mail)
+    - listitem: Coda - Upto $3k
+  - text: Duplicate reports (including known internal issues) will not be rewarded.
+  - text: Multiple vulnerabilities from a single root cause may be combined into one payout.
+  - blockquote:
+    - text: ⚑
+    - strong: CTF Challenge
+    - text: The first hacker who reports the
+    - code: $FLAG
+    - text: saved in document ID
+    - code: "1198436185"
+    - text: under user
+    - code: h1_ctf@grammarly.com
+    - text: (user_id
+    - code: "1411519194"
+    - text: ) in Grammarly (Classic doc only) will earn a
+    - strong: $100,000 bounty
+    - text: .
+    - text: If it’s in scope, the challenge remains active — no need to ask for confirmation.
+  - separator
+  - heading "Legal" [level=1]
+  - heading "🛡️ Safe Harbor" [level=2]
+  - text: We comply with
+  - strong: HackerOne’s Golden Safe Harbor Standard
+  - text: .
+  - text: Activities conducted in accordance with this policy will be considered authorized and exempt from legal action.
+  - link "Learn more → Safe Harbor FAQ":
+    - /url: https://docs.hackerone.com/en/articles/8494502-safe-harbor-faq
+  - heading "Ineligible Participants" [level=2]
+  - generic: Former employees and contractors of Superhuman are ineligible for bug-bounty payments for 6 months after their employment ends.
+  - separator
+  - heading "✉️ Questions or Access Requests" [level=2]
+  - text: Need additional test environments or subscriptions?
+  - text: Reach us directly via your HackerOne submission or contact
+  - strong:
+    - link "security@superhuman.com":
+      - /url: mailto:security@superhuman.com
+  - text: .
+  - separator
+  - text: Thank you for helping keep
+  - strong: Superhuman
+  - text: ", our users, and the broader community safe."
+  - text: We deeply appreciate your skill, curiosity, and professionalism — together, we’re building something truly secure 🚀
+  - heading "Top hackers" [level=2]
+  - link "See all hackers":
+    - /url: /superhuman/thanks
+    - text: See all hackers
+  - generic: "1"
+  - img "metnew"
+  - link "metnew":
+    - /url: /metnew?type=user
+  - generic "439": "Reputation: 439"
+  - generic: "2"
+  - img "0xcyborg"
+  - link "0xcyborg":
+    - /url: /0xcyborg?type=user
+  - generic "403": "Reputation: 403"
+  - generic: "3"
+  - img "adn_sh"
+  - link "adn_sh":
+    - /url: /adn_sh?type=user
+  - generic "402": "Reputation: 402"
+  - generic: "4"
+  - img "matanber"
+  - link "matanber":
+    - /url: /matanber?type=user
+  - generic "402": "Reputation: 402"
+  - generic: "5"
+  - img "exception"
+  - link "exception":
+    - /url: /exception?type=user
+  - generic "350": "Reputation: 350"
+  - generic: "6"
+  - img "bigbug"
+  - link "bigbug":
+    - /url: /bigbug?type=user
+  - generic "337": "Reputation: 337"
+  - generic: "7"
+  - img "vijaysimha-reddy"
+  - link "vijaysimha-reddy":
+    - /url: /vijaysimha-reddy?type=user
+  - generic "298": "Reputation: 298"
+  - generic: "8"
+  - img "mlitchfield"
+  - link "mlitchfield":
+    - /url: /mlitchfield?type=user
+  - generic "292": "Reputation: 292"
+  - generic: "9"
+  - img "cache-money"
+  - link "cache-money":
+    - /url: /cache-money?type=user
+  - generic "281": "Reputation: 281"
+  - generic: "10"
+  - img "fransrosen"
+  - link "fransrosen":
+    - /url: /fransrosen?type=user
+  - generic "230": "Reputation: 230"
+  - generic: "11"
+  - img "tomtenisse"
+  - link "tomtenisse":
+    - /url: /tomtenisse?type=user
+  - generic "203": "Reputation: 203"
+  - generic: "12"
+  - img "brdoors3"
+  - link "brdoors3":
+    - /url: /brdoors3?type=user
+  - generic "184": "Reputation: 184"
+  - img "superhuman"
+  - generic: Superhuman (formerly Grammarly)
+  - link "https://superhuman.com/":
+    - /url: https://superhuman.com/
+  - generic: Superhuman (formerly Grammarly) unites Grammarly, Superhuman Mail, Coda, and Go with AI to unlock superhuman potential in everyone.
+  - text: Bug Bounty Program
+  - generic: launched in Dec 2018
+  - text: "Response efficiency: 100%"
+  - img "Response efficiency calculation information":
+    - img "Response efficiency calculation information"
+  - link "upload Submit without Report Assistant":
+    - /url: /superhuman/reports/new?type=team&report_type=vulnerability
+    - img "upload":
+      - img "upload"
+    - generic: Submit without Report Assistant
+  - heading "Rewards" [level=1]
+  - table:
+    - row "Severity Rewards":
+      - columnheader "Severity":
+        - paragraph: Severity
+      - columnheader "Rewards":
+        - paragraph: Rewards
+    - row "Low Avg. bounty $417 38.93% submissions $250 – $500":
+      - cell "Low Avg. bounty $417 38.93% submissions":
+        - generic: Low
+        - paragraph:
+          - generic: Avg. bounty $417
+          - generic: 38.93% submissions
+      - cell "$250 – $500":
+        - generic: $250 – $500
+    - row "Medium Avg. bounty $859 46.31% submissions $250 – $5,000":
+      - cell "Medium Avg. bounty $859 46.31% submissions":
+        - generic: Medium
+        - paragraph:
+          - generic: Avg. bounty $859
+          - generic: 46.31% submissions
+      - cell "$250 – $5,000":
+        - generic: $250 – $5,000
+    - row "High Avg. bounty n/a 10.69% submissions $500 – $13,000":
+      - cell "High Avg. bounty n/a 10.69% submissions":
+        - generic: High
+        - paragraph:
+          - generic: Avg. bounty n/a
+          - generic: 10.69% submissions
+      - cell "$500 – $13,000":
+        - generic: $500 – $13,000
+    - row "Critical Avg. bounty $4,337 4.07% submissions $1,000 – $100,000":
+      - cell "Critical Avg. bounty $4,337 4.07% submissions":
+        - generic: Critical
+        - paragraph:
+          - generic: Avg. bounty $4,337
+          - generic: 4.07% submissions
+      - cell "$1,000 – $100,000":
+        - generic: $1,000 – $100,000
+  - heading "Stats" [level=1]
+  - table:
+    - rowgroup:
+      - row "Total bounties paid $978,739":
+        - cell "Total bounties paid"
+        - cell "$978,739":
+          - generic: $978,739
+      - row "Average bounty $500":
+        - cell "Average bounty"
+        - cell "$500":
+          - generic: $500
+      - row "Top bounty range $3,750 - $50,000":
+        - cell "Top bounty range"
+        - cell "$3,750 - $50,000":
+          - generic: $3,750
+          - text: "-"
+          - generic: $50,000
+      - row "Bounties paid | 90 days $13,709":
+        - cell "Bounties paid | 90 days"
+        - cell "$13,709":
+          - generic: $13,709
+      - row "Reports received | 90 days 602":
+        - cell "Reports received | 90 days"
+        - cell "602"
+      - row "Last report resolved 5 days ago":
+        - cell "Last report resolved"
+        - cell "5 days ago"
+      - row "Reports resolved 412":
+        - cell "Reports resolved"
+        - cell "412"
+      - row "Hackers thanked 413":
+        - cell "Hackers thanked"
+        - cell "413"
+      - row "Assets In Scope 24":
+        - cell "Assets In Scope"
+        - cell "24"
+  - generic: © HackerOne
+  - list:
+    - link "Opportunities":
+      - /url: /opportunities/all
+    - link "Security":
+      - /url: /security
+    - link "Leaderboard":
+      - /url: /leaderboard
+    - link "Blog":
+      - /url: https://www.hackerone.com/blog
+    - link "Status":
+      - /url: https://www.hackeronestatus.com/
+    - link "Docs":
+      - /url: https://docs.hackerone.com
+    - link "Support":
+      - /url: https://support.hackerone.com
+    - link "Disclosure Guidelines":
+      - /url: https://www.hackerone.com/disclosure-guidelines
+    - link "Press":
+      - /url: https://www.hackerone.com/press
+    - link "Privacy":
+      - /url: https://www.hackerone.com/privacy
+    - link "Terms":
+      - /url: https://www.hackerone.com/terms
+    - link "X":
+      - /url: https://x.com/hacker0x01
+      - img "X"
